@@ -1,10 +1,10 @@
 ;Clase para los espacios donde guardaremos animales
 (defclass EspacioAnimales (is-a INITIAL-OBJECT) 
-(slot establos
-(type INTEGER)
-(default 0)
-(create-accessor read-write))
 (slot tamanio
+(type INTEGER)
+(allowed-values 0 1)
+(create-accessor read-write))
+(slot establos
 (type INTEGER)
 (default 0)
 (create-accessor read-write))
