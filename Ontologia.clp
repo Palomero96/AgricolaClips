@@ -4,7 +4,7 @@
 (type INTEGER)
 (default 0)
 (create-accessor read-write))
-(slot tamaño
+(slot tamanio
 (type INTEGER)
 (default 0)
 (create-accessor read-write))
@@ -27,8 +27,8 @@
 (create-accessor read-write))
 (slot animal
 (type STRING)
-(allowed-values Vaca Oveja Cerdo Ninguno)
-(default Ninguno)
+(allowed-strings "Vaca" "Oveja" "Cerdo" "Ninguno")
+(default "Ninguno")
 (create-accessor read-write))
 )
 
@@ -36,8 +36,8 @@
 (defclass EspacioCampo (is-a INITIAL-OBJECT)
 (slot tipo
 (type STRING)
-(allowed-values Cereal Hortaliza Ninguno)
-(default Ninguno)
+(allowed-strings "Cereal" "Hortaliza" "Ninguno")
+(default "Ninguno")
 (create-accessor read-write))
 (slot cantidad 
 (type INTEGER)
@@ -49,26 +49,26 @@
 (defclass EspacioHabitacion (is-a INITIAL-OBJECT)
 (slot tipo
 (type STRING)
-(allowed-values Piedra Madera Adobe)
+(allowed-strings "Piedra" "Madera" "Adobe")
 (create-accessor read-write))
 (slot habitante
 (type SYMBOL)
-(allowed-values True False)
+(allowed-symbols True False)
 (default False)
 (create-accessor read-write)))
 
 ;Clase para representar la información con respecto a las adquisiciones
-(defclass AdquisicionMayor
+(defclass AdquisicionMayor (is-a INITIAL-OBJECT)
 (slot tipo
 (type STRING)
-(allowed values Hogar Cocina Pozo Cesteria Alfareria HornoPiedra Ebanisteria HornoAdobe))
+(allowed-strings "Hogar" "Cocina" "Pozo" "Cesteria" "Alfareria" "HornoPiedra" "Ebanisteria" "HornoAdobe"))
 (slot puntos
 (type INTEGER))
 (slot coste
 (type INTEGER))
 (slot disponible
 (type SYMBOL)
-(allowed-values True False)
+(allowed-symbols True False)
 (default True)
 (create-accessor read-write)))
 
@@ -77,8 +77,8 @@
 (slot nombre
 (type STRING))
 (slot disponibles
-(type Symbol)
-(allowed-values True False)
+(type SYMBOL)
+(allowed-symbols True False)
 (create-accessor read-write))
 (slot cantidad
 (type INTEGER)
@@ -88,7 +88,7 @@
 (deftemplate Almacenado
 (slot tipo
 (type STRING)
-(allowed-values Madera Adobe Piedra Junco Comida Cereal Hortaliza))
+(allowed-strings "Madera" "Adobe" "Piedra" "Junco" "Comida" "Cereal" "Hortaliza"))
 (slot cantidad
 (type INTEGER)
 (default 0))
