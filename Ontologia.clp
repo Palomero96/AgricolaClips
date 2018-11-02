@@ -2,11 +2,11 @@
 (defclass EspacioAnimales (is-a INITIAL-OBJECT) 
 (slot tamanio
 (type INTEGER)
-(allowed-values 0 1)
+(allowed-values 1 2)
 (create-accessor read-write))
 (slot establos
 (type INTEGER)
-(default 0)
+(allowed-values 0 1 2)
 (create-accessor read-write))
 (slot vallas
 (type INTEGER)
