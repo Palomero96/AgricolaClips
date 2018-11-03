@@ -64,8 +64,18 @@
 (allowed-strings "Hogar" "Cocina" "Pozo" "Cesteria" "Alfareria" "HornoPiedra" "Ebanisteria" "HornoAdobe"))
 (slot puntos
 (type INTEGER))
-(slot coste
-(type INTEGER))
+(slot adobe
+(type INTEGER)
+(default 0))
+(slot juncal
+(type INTEGER)
+(default 0))
+(slot madera
+(type INTEGER)
+(default 0))
+(slot piedra
+(type INTEGER)
+(default 0))
 (slot disponible
 (type SYMBOL)
 (allowed-symbols True False)
@@ -123,5 +133,13 @@
 (slot nombre
 (type STRING))
 (slot turno
+(type INTEGER))
+)
+
+;Plantilla para saber contabilizar los habitantes y los recien nacidos
+(deftemplate Habitantes
+(slot total
+(type INTEGER))
+(slot nacidos
 (type INTEGER))
 )
