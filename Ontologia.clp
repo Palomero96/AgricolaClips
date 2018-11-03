@@ -73,7 +73,7 @@
 (create-accessor read-write)))
 
 ;Clase para representar la información de las acciones, el atributo cantidad tendra valor 0 para aquellas acciones como por ejemplo reformar casa o reformar granja que no requieren tener un contador para contabilizar la acumulacion de los recursos correspondientes
-(defclass Acciones (is-a INITIAL-OBJECT)
+(defclass Accion (is-a INITIAL-OBJECT)
 (slot nombre
 (type STRING))
 (slot disponibles
@@ -84,14 +84,15 @@
 (type INTEGER)
 (create-accessor read-write)))
 
-;Plantilla para contabilizar el inventario de materiales y de siembra
-(deftemplate Almacenado
+;Clase para contabilizar el inventario de materiales y de siembra
+(defclass Almacenado (is-a INITIAL-OBJECT)
 (slot tipo
 (type STRING)
 (allowed-strings "Madera" "Adobe" "Piedra" "Junco" "Comida" "Cereal" "Hortaliza"))
-(slot cantidad
+(slot cantidad 
 (type INTEGER)
-(default 0))
+(default 0)
+(create-accessor read-write))
 )
 
 ;Plantilla para controlar el numero de ronda y fase en cada momento
