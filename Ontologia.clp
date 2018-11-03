@@ -76,13 +76,28 @@
 (defclass Accion (is-a INITIAL-OBJECT)
 (slot nombre
 (type STRING))
-(slot disponibles
+(slot disponible
 (type SYMBOL)
 (allowed-symbols True False)
 (create-accessor read-write))
+(slot utilizado
+(type SYMBOL)
+(allowed-symbols True False)
+(default False)
+(create-accessor read-write))
 (slot cantidad
 (type INTEGER)
-(create-accessor read-write)))
+(default 0)
+(create-accessor read-write))
+(slot recolocar
+(default 0)
+(type INTEGER))
+(slot recolocado
+(type SYMBOL)
+(allowed-symbols True False)
+(default False)
+(create-accessor read-write))
+)
 
 ;Clase para contabilizar el inventario de materiales y de siembra
 (defclass Almacenado (is-a INITIAL-OBJECT)
@@ -104,7 +119,7 @@
 )
 
 ;Plantilla para saber cuando estaran disponibles las acciones
-(deftemplate AccionesDisponibles
+(deftemplate AccionDisponible
 (slot nombre
 (type STRING))
 (slot turno
