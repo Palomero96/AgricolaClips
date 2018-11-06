@@ -1,3 +1,11 @@
+;Regla para establecer la estrategia y el comando 
+(defrule inicio
+(declare (salience 100))
+=>
+(set-strategy random)
+(dribble-on "dribble.txt")
+)
+
 ;Regla para habilitar la nueva accion correspondiente en cada ronda
 (defrule AccionesRonda
 ?info <- (InfoJuego (turno ?y) (fase ?x))
