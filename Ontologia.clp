@@ -50,11 +50,11 @@
 (slot tipo
 (type STRING)
 (allowed-strings "Piedra" "Madera" "Adobe")
+(default Madera)
 (create-accessor read-write))
-(slot habitante
-(type SYMBOL)
-(allowed-symbols True False)
-(default False)
+(slot habitantes
+(type INTEGER)
+(default 0)
 (create-accessor read-write)))
 
 ;Clase para representar la información con respecto a las adquisiciones
@@ -76,10 +76,10 @@
 (slot piedra
 (type INTEGER)
 (default 0))
-(slot disponible
+(slot adquirido
 (type SYMBOL)
 (allowed-symbols True False)
-(default True)
+(default False)
 (create-accessor read-write)))
 
 ;Clase para representar la información de las acciones, el atributo cantidad tendra valor 0 para aquellas acciones como por ejemplo reformar casa o reformar granja que no requieren tener un contador para contabilizar la acumulacion de los recursos correspondientes
