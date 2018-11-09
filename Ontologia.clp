@@ -7,6 +7,7 @@
 (slot establos
 (type INTEGER)
 (allowed-values 0 1 2)
+(default 0)
 (create-accessor read-write))
 (slot vallas
 (type INTEGER)
@@ -50,7 +51,7 @@
 (slot tipo
 (type STRING)
 (allowed-strings "Piedra" "Madera" "Adobe")
-(default Madera)
+(default "Madera")
 (create-accessor read-write))
 (slot habitantes
 (type INTEGER)
@@ -106,6 +107,11 @@
 (type SYMBOL)
 (allowed-symbols True False)
 (default False)
+(create-accessor read-write))
+(slot acumulable
+(type SYMBOL)
+(allowed-symbols True False)
+(default True)
 (create-accessor read-write))
 )
 
