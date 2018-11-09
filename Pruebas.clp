@@ -16,13 +16,11 @@
 (InfoJuego (turno 1) (fase 1))
 (Vacios 13)
 (Habitantes (total 2) (nacidos 0))
-(Contador 0)
-)
+(Contador 0))
 
 
 (definstances Acciones
 (of Accion (nombre "AmpliacionGranja") (disponible True))
-(of Accion (nombre "LugarEncuentro") (disponible True)) ;Dudoso 
 (of Accion (nombre "SemillasCereales") (disponible True) (cantidad 1) (recolocar 0))
 (of Accion (nombre "Bosque") (disponible True) (cantidad 2) (recolocar 2))
 (of Accion (nombre "Labranza") (disponible True))
@@ -47,17 +45,7 @@
 )
 
 (definstances AdquisicionesMayores
-(of AdquisicionMayor (tipo "Hogar") (puntos 1) (adobe 3))
-(of AdquisicionMayor (tipo "Hogar") (puntos 1) (adobe 2))
-(of AdquisicionMayor (tipo "Cocina") (puntos 1) (adobe 5))
-(of AdquisicionMayor (tipo "Cocina") (puntos 1) (adobe 4)) ;solo este
-(of AdquisicionMayor (tipo "Pozo") (puntos 4) (madera 1) (piedra 3))
-(of AdquisicionMayor (tipo "Cesteria") (puntos 2) (juncal 2) (piedra 2))
-(of AdquisicionMayor (tipo "Alfareria") (puntos 2) (adobe 2) (piedra 2))
-(of AdquisicionMayor (tipo "HornoAdobe") (puntos 2) (adobe 3) (piedra 1))
-(of AdquisicionMayor (tipo "Ebanisteria") (puntos 2) (madera 2) (piedra 2))
-(of AdquisicionMayor (tipo "HornoPiedra") (puntos 3) (adobe 1) (piedra 3))
-)
+(of AdquisicionMayor (tipo "Cocina") (puntos 1) (adobe 4)))
 
 (definstances RecursosIniciales
 (of Almacenado (tipo "Madera"))
@@ -66,7 +54,6 @@
 (of Almacenado (tipo "Junco"))
 (of Almacenado (tipo "Comida"))
 (of Almacenado (tipo "Cereal"))
-(of Almacenado (tipo "Hortaliza"))
-)
+(of Almacenado (tipo "Hortaliza")))
 
 ;Crear instancias de 2 espacios de habitaciones iniciales
