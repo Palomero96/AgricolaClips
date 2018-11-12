@@ -160,7 +160,7 @@
 
 ;Regla para recoger hortalizas
 (defrule SemillasHortalizas
-?borrar <- (Hortalizas ?)
+?borrar <- (SemillasHortalizas ?)
 ?almacenado <- (object (is-a Almacenado) (tipo ?tipo) (cantidad ?canti))
 (test (eq ?tipo "Hortaliza"))
 ?accion <- (object (is-a Accion) (nombre ?nombre) (disponible ?disponible) (utilizado ?utilizado) (cantidad ?cantidad))
@@ -293,9 +293,155 @@
 (modify-instance ?madera (cantidad (- ?cantim 4)))
 (make-instance ?x of EspacioAnimales (tamanio 1) (vallas 4) (habilitado True) (capacidad 2)))
 
-;Reglas para pillar animales
-;Regla para sembrar el campo
+;Regla para la accion de obtener ovejas
+(defrule MercadoOvino
+(ObtenerOvejas ?x)
+(test (eq ?x 1))
+?borrar <- (MercadoOvino ?)
+?borrar1 <- (ObtenerOvejas ?)
+?accion <- (object (is-a Accion) (nombre ?nombreA) (disponible ?disponible) (utilizado ?utilizado) (cantidad ?cantidad))
+(test (eq ?disponible True))
+(test (eq ?utilizado False))
+=>
+(retract ?borrar)
+(retract ?x)
+(retract ?borrar1)
+(assert (AnimalColocar (tipo "Oveja") (cantidad 2)))
+(assert (AnimalVender (tipo "Oveja") (cantidad (- ?cantidad 2))))
+(assert (ColocarAnimal 1))
+(assert (VenderAnimal 1)))
 
+;Regla para la accion de obtener cerdos
+(defrule MercadoPorcino
+(ObtenerCerdos ?x)
+(test (eq ?x 1))
+?borrar <- (MercadoPorcino ?)
+?borrar1 <- (ObtenerCerdos ?)
+?accion <- (object (is-a Accion) (nombre ?nombreA) (disponible ?disponible) (utilizado ?utilizado) (cantidad ?cantidad))
+(test (eq ?disponible True))
+(test (eq ?utilizado False))
+=>
+(retract ?borrar)
+(retract ?x)
+(retract ?borrar1)
+(assert (AnimalColocar (tipo "Cerdo") (cantidad 2)))
+(assert (AnimalVender (tipo "Cerdo") (cantidad (- ?cantidad 2))))
+(assert (ColocarAnimal 1))
+(assert (VenderAnimal 1)))
+
+;Regla para la accion de obtener vacas
+(defrule MercadoBovino
+(ObtenerVacas ?x)
+(test (eq ?x 1))
+?borrar1 <- (ObtenerVacas ?)
+?borrar <- (MercadoBovino ?)
+?accion <- (object (is-a Accion) (nombre ?nombreA) (disponible ?disponible) (utilizado ?utilizado) (cantidad ?cantidad))
+(test (eq ?disponible True))
+(test (eq ?utilizado False))
+=>
+(retract ?borrar)
+(retract ?borrar1)
+(assert (AnimalColocar (tipo "Vaca") (cantidad 2)))
+(assert (AnimalVender(tipo "Vaca") (cantidad (- ?cantidad 2))))
+(assert (ColocarAnimal 1))
+(assert (VenderAnimal 1)))
+
+;Regla para colocarAnimales
+(defrule ColocarAnimales
+(ColocarAnimal ?x)
+(test (eq ?x 1))
+?borrar <- (ColocarAnimal ?)
+?espacioAnimales <-(object (is-a EspacioAnimales) (habilitado ?habilitado) (ocupacion ?ocupacion))
+(test (eq ?habilitado True))
+(test (eq ?ocupacion 0))
+?animalColocar <- (AnimalColocar (tipo ?tipo) (cantidad ?cantidad))
+(test (not (< ?cantidad 2)))
+=>
+(retract ?animalColocar)
+(retract ?borrar)
+(modify-instance ?espacioAnimales (habilitado False) (ocupacion 2) (animal ?tipo)))
+
+;Regla para vender Ovejas
+(defrule VenderOvejas
+(VenderAnimal ?x)
+(test (eq ?x 1))
+?borrar <- (VenderAnimal ?)
+?cocina <- (object (is-a AdquisicionMayor) (tipo ?tipoCocina) (adquirido ?adquirido))
+(test (eq ?tipoCocina "Cocina"))
+(test (eq ?adquirido True))
+?animalVender<- (AnimalVender (tipo ?tipo) (cantidad ?cantidad))
+(test (eq ?tipo "Oveja"))
+(test (not (< ?cantidad 1)))
+?almacenado <-(object (is-a Almacenado) (tipo ?tipoAlmacenado) (cantidad ?canti))
+(test (eq ?tipoAlmacenado "Comida"))
+=>
+(retract ?animalVender)
+(retract ?borrar)
+(modify-instance ?almacenado (cantidad (+ ?canti (* 4 ?cantidad)))));No estoy seguro de esto
+
+;Regla para venderAnimales
+(defrule VenderCerdos
+(VenderAnimal ?x)
+(test (eq ?x 1))
+?borrar <- (VenderAnimal ?)
+?cocina <- (object (is-a AdquisicionMayor) (tipo ?tipoCocina) (adquirido ?adquirido))
+(test (eq ?tipoCocina "Cocina"))
+(test (eq ?adquirido True))
+?animalVender<- (AnimalVender (tipo ?tipo) (cantidad ?cantidad))
+(test (eq ?tipo "Cerdo"))
+(test (not (< ?cantidad 1)))
+?almacenado <-(object (is-a Almacenado) (tipo ?tipoAlmacenado) (cantidad ?canti))
+(test (eq ?tipoAlmacenado "Comida"))
+=>
+(retract ?animalVender)
+(retract ?borrar)
+(modify-instance ?almacenado (cantidad (+ ?canti (* 3 ?cantidad))))); No estoy seguro de esto
+
+;Regla para vender Vacas
+(defrule VenderVacas
+(VenderAnimal ?x)
+(test (eq ?x 1))
+?borrar <- (VenderAnimal ?)
+?cocina <- (object (is-a AdquisicionMayor) (tipo ?tipoCocina) (adquirido ?adquirido))
+(test (eq ?tipoCocina "Cocina"))
+(test (eq ?adquirido True))
+?animalVender<- (AnimalVender (tipo ?tipo) (cantidad ?cantidad))
+(test (eq ?tipo "Vaca"))
+(test (not (< ?cantidad 1)))
+?almacenado <-(object (is-a Almacenado) (tipo ?tipoAlmacenado) (cantidad ?canti))
+(test (eq ?tipoAlmacenado "Comida"))
+=>
+(retract ?animalVender)
+(retract ?borrar)
+(modify-instance ?almacenado (cantidad (+ ?canti (* 4 ?cantidad))))); No estoy seguro de esto
+
+
+;Regla para sembrar el campo
+(defrule Siembra
+?borrar <- (Sembrar ?)
+?espacioCampo <-(object (is-a EspacioCampo) (cantidad ?cantidad))
+(test (eq ?cantidad 0))
+?objetoSembrar <- (ObjetoSembrar (tipo ?tipo) (cantidad ?cantidad))
+(test (not (< ?cantidad 1)))
+=>
+(retract ?objetoSembrar)
+(retract ?borrar)
+(modify-instance ?espacioCampo (tipo "Cereal") (cantidad 3)))
+
+;Regla para hornear
+(defrule Hornear
+?borrar <- (Hornear ?x)
+?cocina <- (object (is-a AdquisicionMayor) (tipo ?tipoCocina) (adquirido ?adquirido))
+(test (eq ?tipoCocina "Cocina"))
+(test (eq ?adquirido True))
+?almacenado <-(object (is-a Almacenado) (tipo ?tipoAlmacenado) (cantidad ?canti))
+(test (eq ?tipoAlmacenado "Comida"))
+?almacenadoCereal <-(object (is-a Almacenado) (tipo ?tipoCereal) (cantidad ?cantiCereal))
+(test (eq ?tipoCereal "Cereal"))
+=>
+(retract ?borrar)
+(modify-instance ?almacenadoCereal (cantidad (- ?cantiCereal ?x)))
+(modify-instance ?almacenado (cantidad (+ ?canti (* 2 ?x)))));
 
 ;Reglas auxiliares para decidir que hacer en cada turno
 ;Turno 1
@@ -339,7 +485,7 @@
 (test (eq ?disponible True))
 (test (eq ?nombre "Siembra"))
 =>
-(assert (Siembra 1)) ;OJO AL NOMBRE QUE LE DAREMOS DESPUES EN LA REGLA
+(assert (Sembrar 1)) ;OJO AL NOMBRE QUE LE DAREMOS DESPUES EN LA REGLA
 (retract ?contador)
 (assert (Contador (+ ?x 1))))
 
@@ -758,7 +904,8 @@
 (Habitantes (total ?y))
 (test (neq ?x ?y))
 =>
-(assert (SembraryHornear 1))
+(assert (Sembrar 1))
+(assert (Hornear 1))
 (retract ?contador)
 (assert (Contador (+ ?x 1))))
 
@@ -814,7 +961,7 @@
 (Habitantes (total ?y))
 (test (neq ?x ?y))
 =>
-(assert (ObtenerCerdos 1)) ;Mirar cuando se acabe la regla
+(assert (ObtenerCerdos 1)) 
 (retract ?contador)
 (assert (Contador (+ ?x 1))))
 
@@ -828,11 +975,12 @@
 (Habitantes (total ?y))
 (test (neq ?x ?y))
 =>
-(assert (SembraryHornear 1)) ;Mirar cuando se acabe la regla
+(assert (Sembrar 1))
+(assert (Hornear 1))
 (retract ?contador)
 (assert (Contador (+ ?x 1))))
 
-;Sin acabar, falta hacer la regla de la accion
+
 (defrule Turno11Vacas
 (declare (salience 30))
 (InfoJuego (turno ?turno) (fase ?fase))
@@ -845,11 +993,11 @@
 (test (eq "MercadoBovino" ?nombre))
 (test (not (< ?cantidad 2)))
 =>
-(assert (ObtenerVacas 1)) ;Mirar cuando se acabe la regla
+(assert (ObtenerVacas 1))
 (retract ?contador)
 (assert (Contador (+ ?x 1))))
 
-;Sin acabar, falta hacer la regla de la accion
+
 (defrule Turno11Hortaliza
 (declare (salience 20))
 (InfoJuego (turno ?turno) (fase ?fase))
@@ -900,13 +1048,13 @@
 (test (neq ?x ?y))
 (object (is-a Accion) (nombre ?nombre) (disponible ?disponible))
 (test (eq "FamiliaPrecipitada" ?nombre))
-(test (eq ?disponible True)
+(test (eq ?disponible True))
 =>
 (assert (Precipitada 1))
 (retract ?contador)
 (assert (Contador (+ ?x 1))))
 
-;Sin acabar, falta hacer la regla de la accion
+
 (defrule Turno12ArarySEmbrar
 (declare (salience 20))
 (InfoJuego (turno ?turno) (fase ?fase))
@@ -916,7 +1064,8 @@
 (Habitantes (total ?y))
 (test (neq ?x ?y))
 =>
-(assert (ArarySembrar 1)) ;Mirar cuando se termine la regla 
+(assert (Labranza 1))
+(assert (Sembrar 1))
 (retract ?contador)
 (assert (Contador (+ ?x 1))))
 
@@ -958,13 +1107,13 @@
 (test (eq ?y 4))
 (object (is-a Accion) (nombre ?nombre) (disponible ?disponible))
 (test (eq "FamiliaPrecipitada" ?nombre))
-(test (eq ?disponible True)
+(test (eq ?disponible True))
 =>
 (assert (Precipitada 1))
 (retract ?contador)
 (assert (Contador (+ ?x 1))))
 
-;Sin acabar, falta hacer la regla de la accion
+
 (defrule Turno13SembraryHornear
 (declare (salience 10))
 (InfoJuego (turno ?turno) (fase ?fase))
@@ -974,12 +1123,12 @@
 (Habitantes (total ?y))
 (test (neq ?x ?y))
 =>
-(assert (SembraryHornear 1)) ;Mirar cuando acabemos la regla
+(assert (Sembrar 1))
+(assert (Hornear 1))
 (retract ?contador)
 (assert (Contador (+ ?x 1))))
 
 ;Turno 14
-;Sin acabar, falta hacer la regla de la accion
 (defrule Turno14Ovejas
 (declare (salience 30))
 (InfoJuego (turno ?turno) (fase ?fase))
@@ -989,11 +1138,10 @@
 (Habitantes (total ?y))
 (test (neq ?x ?y))
 =>
-(assert (ObtenerOvejas 1)) ;Mirar cuando se acabe la regla
+(assert (ObtenerOvejas 1)) 
 (retract ?contador)
 (assert (Contador (+ ?x 1))))
 
-;Sin acabar, falta hacer la regla de la accion
 (defrule Turno14Vacas
 (declare (salience 30))
 (InfoJuego (turno ?turno) (fase ?fase))
@@ -1003,11 +1151,10 @@
 (Habitantes (total ?y))
 (test (neq ?x ?y))
 =>
-(assert (ObtenerVacas 1)) ;Mirar cuando se acabe la regla
+(assert (ObtenerVacas 1)) ;
 (retract ?contador)
 (assert (Contador (+ ?x 1))))
 
-;Sin acabar, falta hacer la regla de la accion
 (defrule Turno14Cerdos
 (declare (salience 30))
 (InfoJuego (turno ?turno) (fase ?fase))
@@ -1017,7 +1164,7 @@
 (Habitantes (total ?y))
 (test (neq ?x ?y))
 =>
-(assert (ObtenerCerdos 1)) ;Mirar cuando se acabe la regla
+(assert (ObtenerCerdos 1)) 
 (retract ?contador)
 (assert (Contador (+ ?x 1))))
 
@@ -1034,7 +1181,6 @@
 (retract ?contador)
 (assert (Contador (+ ?x 1))))
 
-;Sin acabar, falta hacer la regla de la accion
 (defrule Turno14ArarySembrar
 (declare (salience 30))
 (InfoJuego (turno ?turno) (fase ?fase))
@@ -1044,6 +1190,45 @@
 (Habitantes (total ?y))
 (test (neq ?x ?y))
 =>
-(assert (ArarySembrar 1)) ;Mirar cuando se acabe la regla
+(assert (Labranza 1))
+(assert (Sembrar 1))
 (retract ?contador)
 (assert (Contador (+ ?x 1))))
+
+;Regla para saber cuando acaba la fase tres
+(defrule FinFase3
+(not (and  (ObtenerMadera ?) (ObtenerAdobe ?) (ObtenerJuncal ?) (ObtenerPiedra ?) (Labranza ?)
+(SemillasCereales ?) (SemillasHortalizas ?) (Jornalero ?) (Pesca ?) (AmpliarHabitacion ?) (Cocina ?) (Planificada ?) (Precipitada ?) (Vallas ?) (Hornear ?) (Sembrar ?) (Labranza ?) (ObtenerCerdos ?) (ObtenerVacas ?) (ObtenerOvejas ?) 
+)) ;Poner todos los hechos que falten
+?juego <- (InfoJuego (turno ?turno) (fase ?fase))
+(test (eq ?fase 3))
+?contador <- (Contador ?x)
+(Habitantes (total ?y))
+(test (eq ?x ?y))
+=>
+(modify ?juego (fase (+ ?fase 1)))
+(retract ?contador)
+(assert (Contador 0)))
+
+;Regla para reestablecer los valores de las acciones para el siguiente turno
+(defrule ValorUtilizado
+(declare (salience 90))
+?juego <- (InfoJuego (turno ?turno) (fase ?fase))
+(test (eq ?fase 4))
+?accion <- (object (is-a Accion) (disponible ?disponible) (utilizado ?utilizado))
+(test (eq ?utilizado True))
+=>
+(modify-instance ?accion (utilizado False)))
+
+;Regla para cambiar de turno si no es turno de Cosecha y por lo tanto no hay fase 4
+(defrule TurnodeNoCosecha
+(declare (salience 70))
+?habitantes <-(Habitantes (total ?tot) (nacidos ?nac))
+(not (and (InfoJuego (turno ?turno) (fase ?fase))
+(test (eq ?fase 4))
+(Cosecha ?x)
+(test (eq ?turno ?x))))
+?juego <- (InfoJuego (turno ?turno) (fase ?fase))
+=>
+(modify ?juego (turno (+ ?turno 1)) (fase 1))
+(modify ?habitantes (total (+ ?tot ?nac)) (nacidos (- ?nac ?nac))))

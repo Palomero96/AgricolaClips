@@ -1,18 +1,18 @@
 (deffacts Hechosiniciales
-(AccionDisponible (nombre "AdquisicionMayor") (turno 1))
-(AccionDisponible (nombre "ReformarCasa") (turno 2))
-(AccionDisponible (nombre "MercadoPorcino") (turno 3))
-(AccionDisponible (nombre "MercadoBovino") (turno 4))
-(AccionDisponible (nombre "Cultivo") (turno 5))
-(AccionDisponible (nombre "ReformasGranja") (turno 6))
-(AccionDisponible (nombre "MercadoOvino") (turno 7))
-(AccionDisponible (nombre "FamiliaPlanificada") (turno 8))
-(AccionDisponible (nombre "SemillasHortalizas") (turno 9))
-(AccionDisponible (nombre "CanteraOriental") (turno 10))
-(AccionDisponible (nombre "FamiliaPrecipitada") (turno 11))
-(AccionDisponible (nombre "Vallado") (turno 12))
-(AccionDisponible (nombre "CanteraOccidental") (turno 13))
-(AccionDisponible (nombre "Siembra") (turno 14))
+(AccionDisponible (nombre "MercadoOvino") (turno 1))		;periodo 1
+(AccionDisponible (nombre "AdquisicionMayor") (turno 2))	;periodo 1
+(AccionDisponible (nombre "Vallado") (turno 3))				;periodo 1
+(AccionDisponible (nombre "Siembra") (turno 4))				;periodo 1
+(AccionDisponible (nombre "ReformarCasa") (turno 5))		;periodo 2
+(AccionDisponible (nombre "CanteraOriental") (turno 6))		;periodo 2
+(AccionDisponible (nombre "FamiliaPlanificada") (turno 7))	;periodo 2
+(AccionDisponible (nombre "MercadoPorcino") (turno 8))		;periodo 3
+(AccionDisponible (nombre "SemillasHortalizas") (turno 9))	;periodo 3
+(AccionDisponible (nombre "MercadoBovino") (turno 10))		;periodo 4
+(AccionDisponible (nombre "CanteraOccidental") (turno 11))	;periodo 4
+(AccionDisponible (nombre "Cultivo") (turno 12)				;periodo 5
+(AccionDisponible (nombre "FamiliaPrecipitada") (turno 13))	;periodo 5
+(AccionDisponible (nombre "ReformasGranja") (turno 14))		;periodo 6
 (InfoJuego (turno 1) (fase 1))
 (Vacios 13)
 (Habitantes (total 2) (nacidos 0))

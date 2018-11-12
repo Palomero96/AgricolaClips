@@ -44,6 +44,10 @@
 (type INTEGER)
 (default 0)
 (create-accessor read-write))
+(slot recogido
+(type SYMBOL)
+(allowed-values True False)
+(default False))
 )
 
 ;Clase para guardar toda la informacion acerca de las habitaciones
@@ -133,7 +137,6 @@
 (slot fase
 (type INTEGER))
 )
-
 ;Plantilla para saber cuando estaran disponibles las acciones
 (deftemplate AccionDisponible
 (slot nombre
@@ -148,4 +151,34 @@
 (type INTEGER))
 (slot nacidos
 (type INTEGER))
+)
+
+;Plantilla para saber cuando hay que colocar animales
+(deftemplate AnimalColocar
+(slot tipo
+(type STRING)
+(allowed-strings "Oveja" "Cerdo" "Vaca"))
+(slot cantidad
+(type INTEGER)
+(default 0))
+)
+
+;Plantilla para saber cuando hay que vender animales
+(deftemplate AnimalVender
+(slot tipo
+(type STRING)
+(allowed-strings "Oveja" "Cerdo" "Vaca"))
+(slot cantidad
+(type INTEGER)
+(default 0))
+)
+
+;Plantilla para saber cuando hay que sembrar Cereal
+(deftemplate ObjetoSembrar
+(slot tipo
+(type STRING)
+(allowed-strings "Cereal" "Hortaliza"))
+(slot cantidad
+(type INTEGER)
+(default 0))
 )
