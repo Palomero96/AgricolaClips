@@ -1,0 +1,191 @@
+Turno 1, Fase 1
+Nueva AccionDisponible: MercadoOvino
+
+Turno 1, Fase 2
+Fin de Fase de Reabastecimiento de Materias Primas
+
+Turno 1, Fase 3
+Nuevo Campo Labrado
+Realizamos la accion Jornalero y obtenemos 2 comidas.
+Turno 2, Fase 1
+Nueva AccionDisponible: AdquisicionMayor
+
+Turno 2, Fase 2
+Fin de Fase de Reabastecimiento de Materias Primas
+
+Turno 2, Fase 3
+Realizamos la accion SemillasCereales y obtenemos 1 cereal.
+Realizamos la accion Jornalero y obtenemos 2 comidas.
+Turno 3, Fase 1
+Nueva AccionDisponible: Vallado
+
+Turno 3, Fase 2
+Fin de Fase de Reabastecimiento de Materias Primas
+
+Turno 3, Fase 3
+Realizamos la accion Bosque y obtenemos 6 maderas.
+Realizamos la accion Juncal y obtenemos 3 juncos.
+Turno 4, Fase 1
+Nueva AccionDisponible: Siembra
+
+Turno 4, Fase 2
+Fin de Fase de Reabastecimiento de Materias Primas
+
+Turno 4, Fase 3
+Realizamos la accion Pesca y obtenemos 4 comidas.
+Gastamos 5 maderas y 2 juncos y creamos una nueva Habitacion.
+
+Turno 4, Fase 4
+Les damos de comer a los habitantes correctamente. Les damos 6 comidas.
+Turno 5, Fase 1
+Nueva AccionDisponible: ReformarCasa
+
+Turno 5, Fase 2
+Fin de Fase de Reabastecimiento de Materias Primas
+
+Turno 5, Fase 3
+Realizamos la accion Mina y obtenemos 5 adobes.
+Gastamos 4 adobes y adquirimos la Cocina.
+Turno 6, Fase 1
+Nueva AccionDisponible: CanteraOriental
+
+Turno 6, Fase 2
+Fin de Fase de Reabastecimiento de Materias Primas
+
+Turno 6, Fase 3
+Realizamos la accion Bosque y obtenemos 6 maderas.
+Realizamos la accion SemillasCereales y obtenemos 1 cereal.
+Turno 7, Fase 1
+Nueva AccionDisponible: FamiliaPlanificada
+
+Turno 7, Fase 2
+Fin de Fase de Reabastecimiento de Materias Primas
+
+Turno 7, Fase 3
+Ampliamos la familia de manera planificada 
+Obtenemos 7 ovejas.
+Vendemos 7 ovejas.
+
+Turno 7, Fase 4
+Les damos de comer a los habitantes correctamente. Les damos 7 comidas.
+Turno 8, Fase 1
+Nueva AccionDisponible: MercadoPorcino
+
+Turno 8, Fase 2
+Fin de Fase de Reabastecimiento de Materias Primas
+
+Turno 8, Fase 3
+Realizamos la accion SemillasCereales y obtenemos 1 cereal.
+Realizamos la accion Pesca y obtenemos 4 comidas.
+Nuevo Campo Labrado
+Turno 9, Fase 1
+Nueva AccionDisponible: SemillasHortalizas
+
+Turno 9, Fase 2
+Fin de Fase de Reabastecimiento de Materias Primas
+
+Turno 9, Fase 3
+Realizamos la accion Bosque y obtenemos 6 maderas.
+Horneamos 2 cereales.
+Sembranos un cereal en un campo.
+Realizamos la accion SemillasHortalizas y obtenemos 1 hortaliza.
+
+Turno 9, Fase 4
+Les damos de comer a los habitantes correctamente. Les damos 9 comidas.
+Recogemos cereal de la cosecha.
+Turno 10, Fase 1
+Nueva AccionDisponible: MercadoBovino
+
+Turno 10, Fase 2
+Fin de Fase de Reabastecimiento de Materias Primas
+
+Turno 10, Fase 3
+Realizamos la accion SemillasCereales y obtenemos 1 cereal.
+Creamos un nuevo Espacio para animales
+Creamos un nuevo Espacio para animales
+Nuevo Campo Labrado
+Turno 11, Fase 1
+Nueva AccionDisponible: CanteraOccidental
+
+Turno 11, Fase 2
+Fin de Fase de Reabastecimiento de Materias Primas
+
+Turno 11, Fase 3
+Sembranos un cereal en un campo.
+Obtenemos 2 vacas.
+Colocamos 2 Vaca en un Espacio para animales.
+Horneamos 0 cereales.
+Obtenemos 4 cerdos.
+Vendemos 2 cerdos.
+Colocamos 2 Cerdo en un Espacio para animales.
+
+Turno 11, Fase 4
+Les damos de comer a los habitantes correctamente. Les damos 9 comidas.
+Recogemos cereal de la cosecha.
+Recogemos cereal de la cosecha.
+Recogemos cerdo de la cosecha.
+Recogemos vaca de la cosecha.
+Vendemos 1 vacas.
+Vendemos 1 cerdos.
+Turno 12, Fase 1
+Nueva AccionDisponible: Cultivo
+
+Turno 12, Fase 2
+Fin de Fase de Reabastecimiento de Materias Primas
+
+Turno 12, Fase 3
+Realizamos la accion SemillasCereales y obtenemos 1 cereal.
+Nuevo Campo Labrado
+Sembranos un cereal en un campo.
+Realizamos la accion SemillasHortalizas y obtenemos 1 hortaliza.
+Turno 13, Fase 1
+Nueva AccionDisponible: FamiliaPrecipitada
+
+Turno 13, Fase 2
+Fin de Fase de Reabastecimiento de Materias Primas
+
+Turno 13, Fase 3
+Realizamos la accion SemillasCereales y obtenemos 1 cereal.
+Ampliamos la familia de manera precipitada
+Realizamos la accion SemillasHortalizas y obtenemos 1 hortaliza.
+
+Turno 13, Fase 4
+Les damos de comer a los habitantes correctamente. Les damos 10 comidas.
+Recogemos vaca de la cosecha.
+Recogemos cerdo de la cosecha.
+Recogemos cereal de la cosecha.
+Recogemos cereal de la cosecha.
+Recogemos cereal de la cosecha.
+Vendemos 1 cerdos.
+Vendemos 1 vacas.
+Turno 14, Fase 1
+Nueva AccionDisponible: ReformasGranja
+
+Turno 14, Fase 2
+Fin de Fase de Reabastecimiento de Materias Primas
+
+Turno 14, Fase 3
+Obtenemos 3 cerdos.
+No hay espacio suficiente para guardarlos y vendemos 2 Cerdo.
+Vendemos 2 cerdos.
+Vendemos 1 cerdos.
+Realizamos la accion Pesca y obtenemos 6 comidas.
+Obtenemos 3 vacas.
+No hay espacio suficiente para guardarlos y vendemos 2 Vaca.
+Vendemos 2 vacas.
+Vendemos 1 vacas.
+Obtenemos 14 ovejas.
+No hay espacio suficiente para guardarlos y vendemos 2 Oveja.
+Vendemos 2 ovejas.
+Vendemos 12 ovejas.
+
+Turno 14, Fase 4
+Les damos de comer a los habitantes correctamente. Les damos 12 comidas.
+Recogemos cerdo de la cosecha.
+Recogemos cereal de la cosecha.
+Recogemos cereal de la cosecha.
+Recogemos vaca de la cosecha.
+Vendemos 1 vacas.
+Vendemos 1 cerdos.
+
+Fin del juego.
