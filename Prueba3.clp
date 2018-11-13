@@ -10,7 +10,7 @@
 (AccionDisponible (nombre "SemillasHortalizas") (turno 9))	;periodo 3
 (AccionDisponible (nombre "MercadoBovino") (turno 10))		;periodo 4
 (AccionDisponible (nombre "CanteraOccidental") (turno 11))	;periodo 4
-(AccionDisponible (nombre "Cultivo") (turno 12)				;periodo 5
+(AccionDisponible (nombre "Cultivo") (turno 12)	)			;periodo 5
 (AccionDisponible (nombre "FamiliaPrecipitada") (turno 13))	;periodo 5
 (AccionDisponible (nombre "ReformasGranja") (turno 14))		;periodo 6
 (InfoJuego (turno 1) (fase 1))
