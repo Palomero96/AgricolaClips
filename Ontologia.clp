@@ -172,13 +172,3 @@
 (type INTEGER)
 (default 0))
 )
-
-;Plantilla para saber cuando hay que sembrar Cereal
-(deftemplate ObjetoSembrar
-(slot tipo
-(type STRING)
-(allowed-strings "Cereal" "Hortaliza"))
-(slot cantidad
-(type INTEGER)
-(default 0))
-)

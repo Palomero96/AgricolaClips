@@ -1,18 +1,13 @@
-;Regla para Comprar la Cocina
-(defrule Cocina
-?borrar <- (Cocina ?)
-?adobe <- (object (is-a Almacenado) (tipo ?tipo) (cantidad ?canti))
-(test (eq ?tipo "Adobe"))
-?cocina <- (object (is-a AdquisicionMayor) (adquirido ?adquirido) (adobe ?coste))
-(test (not (< ?canti ?coste)))
-
-(test (eq False ?adquirido))
-?accion <- (object (is-a Accion) (nombre ?nombre) (disponible ?disponible) (utilizado ?utilizado) (cantidad ?cantidad))
+;Regla para comprobar que se han recolocado todos
+(defrule FinRecolocar2
+(not (and (object (is-a Accion) (nombre ?nombreA) (disponible ?disponible) (cantidad ?cantidad) (recolocar ?recolocar) (recolocado ?recolocado) (acumulable ?acumulado))
+(test (> ?recolocar 0))
+(test (eq ?cantidad 0))
 (test (eq ?disponible True))
-(test (eq ?utilizado False))
-(test (eq ?nombre "AdquisicionMayor"))
+(test (eq ?recolocado False))
+(test (eq ?acumulado False))))
+?info <- (InfoJuego (turno ?y) (fase ?x))
+?a <- (object (is-a Accion) (nombre ?nombre) (disponible ?disponible) (cantidad ?cantidad) (recolocar ?recolocar) (recolocado ?recolocado))
+(test (eq ?x 2))
 =>
-(retract ?borrar)
-(modify-instance ?adobe (cantidad (- ?canti ?coste)))
-(modify-instance ?cocina (adquirido True))
-)
+(modify ?info (fase (+ ?x 1))))

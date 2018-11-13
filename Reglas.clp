@@ -3,7 +3,7 @@
 (declare (salience 100))
 =>
 (set-strategy random)
-(dribble-on "dribble.txt")
+;(dribble-on "dribble.txt")
 )
 
 ;Regla para habilitar la nueva accion correspondiente en cada ronda
@@ -21,8 +21,8 @@
 
 ;Reglas para colocar nuevos recursos y animales
 (defrule Recolocar
+(declare (salience 40))
 (InfoJuego (turno ?y) (fase ?x))
-(test (neq ?y 1))
 (test (eq ?x 2))
 ?a <-(object (is-a Accion) (nombre ?nombreA) (disponible ?disponible) (cantidad ?cantidad) (recolocar ?recolocar) (recolocado ?recolocado) (acumulable ?acumulado))
 (test (> ?recolocar 0))
@@ -32,9 +32,10 @@
 =>
 (modify-instance ?a (cantidad (+ ?cantidad ?recolocar)) (recolocado True))
 )
+
 (defrule Recolocar2
+(declare (salience 40))
 (InfoJuego (turno ?y) (fase ?x))
-(test (neq ?y 1))
 (test (eq ?x 2))
 ?a <-(object (is-a Accion) (nombre ?nombreA) (disponible ?disponible) (cantidad ?cantidad) (recolocar ?recolocar) (recolocado ?recolocado) (acumulable ?acumulado))
 (test (> ?recolocar 0))
@@ -43,22 +44,16 @@
 (test (eq ?recolocado False))
 (test (eq ?acumulado False))
 =>
-(modify-instance ?a (cantidad (+ ?cantidad ?recolocar)) (recolocado True)))
+(modify-instance ?a (cantidad ?recolocar) (recolocado True)))
 
-;Regla para comprobar que se han recolocado todos
+;Regla el final de FinRecolocar. Nota: Sabemos que lo podemos hacer con un (not (and )) pero no hemos sido capaces de que funcione en determinados casos, por eso lo hemos puesto con salience
 (defrule FinRecolocar
-(not (and (InfoJuego (turno ?y) (fase ?x))
-(test (neq ?y 1))
-(test (eq ?x 2))
-(object (is-a Accion) (nombre ?nombreA) (disponible ?disponible) (cantidad ?cantidad) (recolocar ?recolocar) (recolocado ?recolocado))
-(test (> ?recolocar 0))
-(test (eq ?disponible True))
-(test (eq ?recolocado False))))
 ?info <- (InfoJuego (turno ?y) (fase ?x))
-?a <- (object (is-a Accion) (nombre ?nombre) (disponible ?disponible) (cantidad ?cantidad) (recolocar ?recolocar) (recolocado ?recolocado))
 (test (eq ?x 2))
 =>
 (modify ?info (fase (+ ?x 1))))
+
+
 
 ;Regla para cuando acabe de recolocar ponga los valores de recolocado a False 
 (defrule ValoresRecolocado
@@ -76,42 +71,36 @@
 ?borrar <- (ObtenerMadera ?)
 ?almacenado <- (object (is-a Almacenado) (tipo ?tipo) (cantidad ?canti))
 (test (eq ?tipo "Madera"))
-?accion <- (object (is-a Accion) (nombre ?nombreA) (disponible ?disponible) (utilizado ?utilizado) (cantidad ?cantidad))
-(test (eq ?disponible True))
-(test (eq ?utilizado False))
+?accion <- (object (is-a Accion) (nombre ?nombreA) (cantidad ?cantidad))
 (test (eq ?nombreA "Bosque"))
 =>
 (retract ?borrar)
 (modify-instance ?almacenado (cantidad (+ ?canti ?cantidad)))
-(modify-instance ?accion (utilizado True) (cantidad 0)))
+(modify-instance ?accion (cantidad 0)))
 
 ;Regla para la accion de recoger adobe
 (defrule ObtenerAdobe
 ?borrar <- (ObteneAdobe ?)
 ?almacenado <- (object (is-a Almacenado) (tipo ?tipo) (cantidad ?canti))
 (test (eq ?tipo "Adobe"))
-?accion <- (object (is-a Accion) (nombre ?nombreA) (disponible ?disponible) (utilizado ?utilizado) (cantidad ?cantidad))
-(test (eq ?disponible True))
-(test (eq ?utilizado False))
+?accion <- (object (is-a Accion) (nombre ?nombreA) (cantidad ?cantidad))
 (test (eq ?nombreA "Mina"))
 =>
 (retract ?borrar)
 (modify-instance ?almacenado (cantidad (+ ?canti ?cantidad)))
-(modify-instance ?accion (utilizado True) (cantidad 0)))
+(modify-instance ?accion (cantidad 0)))
 
 ;Regla para la accion de recoger juncal
 (defrule ObtenerJuncal
-?borrar <- (ObteneJuncal ?)
+?borrar <- (ObtenerJuncal ?)
 ?almacenado <- (object (is-a Almacenado) (tipo ?tipo) (cantidad ?canti))
-(test (eq ?tipo "Juncal"))
-?accion <- (object (is-a Accion) (nombre ?nombreA) (disponible ?disponible) (utilizado ?utilizado) (cantidad ?cantidad))
-(test (eq ?disponible True))
-(test (eq ?utilizado False))
+(test (eq ?tipo "Junco"))
+?accion <- (object (is-a Accion) (nombre ?nombreA) (cantidad ?cantidad))
 (test (eq ?nombreA "Juncal"))
 =>
 (retract ?borrar)
 (modify-instance ?almacenado (cantidad (+ ?canti ?cantidad)))
-(modify-instance ?accion (utilizado True) (cantidad 0)))
+(modify-instance ?accion (cantidad 0)))
 
 ;Regla para la accion de recoger piedra de una de las canteras (no la usamos)
 ;Como no la usamos solo vamos a crear una de las dos reglas
@@ -120,29 +109,22 @@
 ?almacenado <- (object (is-a Almacenado) (tipo ?tipo) (cantidad ?canti))
 (test (eq ?tipo Piedra))
 ?accion <- (object (is-a Accion) (nombre ?nombreA) (disponible ?disponible) (utilizado ?utilizado) (cantidad ?cantidad))
-(test (eq ?disponible True))
-(test (eq ?utilizado False))
 (test (eq ?nombreA "CanteraOriental"))
 =>
 (retract ?borrar)
 (modify-instance ?almacenado (cantidad (+ ?canti ?cantidad)))
-(modify-instance ?accion (utilizado True) (cantidad 0)))
+(modify-instance ?accion (cantidad 0)))
 
 ;Regla para la accion de labrar un campo
 (defrule Labranza
 ?borrar <- (Labranza ?)
 ?espacios <- (Vacios ?x)
 (test (neq ?x 0))
-?accion <- (object (is-a Accion) (nombre ?nombreA) (disponible ?disponible) (utilizado ?utilizado) (cantidad ?cantidad))
-(test (eq ?disponible True))
-(test (eq ?utilizado False))
-(test (eq ?nombreA "Labranza"))
 =>
 (retract ?borrar)
 (retract ?espacios)
 (assert (Vacios (- ?x 1)))
-(modify-instance ?accion (utilizado True))
-(make-instance ?x of EspacioCampo))
+(make-instance of EspacioCampo))
 
 ;Regla para recoger cereales
 (defrule SemillasCereales
@@ -150,8 +132,6 @@
 ?almacenado <- (object (is-a Almacenado) (tipo ?tipo) (cantidad ?canti))
 (test (eq ?tipo "Cereal"))
 ?accion <- (object (is-a Accion) (nombre ?nombre) (disponible ?disponible) (utilizado ?utilizado) (cantidad ?cantidad))
-(test (eq ?disponible True))
-(test (eq ?utilizado False))
 (test (eq ?nombre "SemillasCereales"))
 =>
 (retract ?borrar)
@@ -178,8 +158,6 @@
 ?almacenado <- (object (is-a Almacenado) (tipo ?tipo) (cantidad ?canti))
 (test (eq ?tipo "Comida"))
 ?accion <- (object (is-a Accion) (nombre ?nombre) (disponible ?disponible) (utilizado ?utilizado) (cantidad ?cantidad))
-(test (eq ?disponible True))
-(test (eq ?utilizado False))
 (test (eq ?nombre "Jornalero"))
 =>
 (retract ?borrar)
@@ -192,8 +170,6 @@
 ?almacenado <- (object (is-a Almacenado) (tipo ?tipo) (cantidad ?canti))
 (test (eq ?tipo "Comida"))
 ?accion <- (object (is-a Accion) (nombre ?nombre) (disponible ?disponible) (utilizado ?utilizado) (cantidad ?cantidad))
-(test (eq ?disponible True))
-(test (eq ?utilizado False))
 (test (eq ?nombre "Pesca"))
 =>
 (retract ?borrar)
@@ -203,16 +179,12 @@
 ;Regla para ampliar el numero de habitaciones en una
 (defrule AmpliarHabitacion
 ?borrar <- (AmpliarHabitacion ?)
-?accion <- (object (is-a Accion) (nombre ?nombre) (disponible ?disponible) (utilizado ?utilizado) (cantidad ?cantidad))
-(test (eq ?disponible True))
-(test (eq ?utilizado False))
-(test (eq ?nombre "AmpliacionGranja"))
 ?madera <- (object (is-a Almacenado) (tipo ?tipo) (cantidad ?cantim))
 (test (eq ?tipo "Madera"))
-?juncal <- (object (is-a Almacenado) (tipo ?tipo) (cantidad ?cantij))
-(test (eq ?tipo "Juncal"))
-(test (not (< ?cantim 5)))
-(test (not (< ?cantij 2)))
+?juncal <- (object (is-a Almacenado) (tipo ?tipob) (cantidad ?cantij))
+(test (eq ?tipob "Junco"))
+(test (>= ?cantim 5))
+(test (>= ?cantij 2))
 ?espacios <- (Vacios ?x)
 (test (neq ?x 0))
 =>
@@ -221,8 +193,7 @@
 (retract ?espacios)
 (retract ?borrar)
 (assert (Vacios (- ?x 1)))
-(modify-instance ?accion (utilizado True))
-(make-instance ?x of EspacioHabitacion))
+(make-instance of EspacioHabitacion))
 
 ;Regla para Comprar la Cocina
 (defrule Cocina
@@ -291,7 +262,7 @@
 (assert (Vacios (- ?x 1)))
 (modify-instance ?accion (utilizado True))
 (modify-instance ?madera (cantidad (- ?cantim 4)))
-(make-instance ?x of EspacioAnimales (tamanio 1) (vallas 4) (habilitado True) (capacidad 2)))
+(make-instance of EspacioAnimales (tamanio 1) (vallas 4) (habilitado True) (capacidad 2)))
 
 ;Regla para la accion de obtener ovejas
 (defrule MercadoOvino
@@ -377,7 +348,7 @@
 =>
 (retract ?animalVender)
 (retract ?borrar)
-(modify-instance ?almacenado (cantidad (+ ?canti (* 4 ?cantidad)))));No estoy seguro de esto
+(modify-instance ?almacenado (cantidad (+ ?canti (* 2 ?cantidad)))));No estoy seguro de esto
 
 ;Regla para venderAnimales
 (defrule VenderCerdos
@@ -421,10 +392,11 @@
 ?borrar <- (Sembrar ?)
 ?espacioCampo <-(object (is-a EspacioCampo) (cantidad ?cantidad))
 (test (eq ?cantidad 0))
-?objetoSembrar <- (ObjetoSembrar (tipo ?tipo) (cantidad ?cantidad))
-(test (not (< ?cantidad 1)))
+?almacenado <-(object (is-a Almacenado) (tipo ?tipoAlmacenado) (cantidad ?canti))
+(test (eq ?tipoAlmacenado "Cereal"))
+(test (not (< ?canti 1)))
 =>
-(retract ?objetoSembrar)
+(modify-instance ?almacenado (cantidad (- 1 ?canti)))
 (retract ?borrar)
 (modify-instance ?espacioCampo (tipo "Cereal") (cantidad 3)))
 
@@ -441,7 +413,7 @@
 =>
 (retract ?borrar)
 (modify-instance ?almacenadoCereal (cantidad (- ?cantiCereal ?x)))
-(modify-instance ?almacenado (cantidad (+ ?canti (* 2 ?x)))));
+(modify-instance ?almacenado (cantidad (+ ?canti (* 2 ?x)))))
 
 ;Reglas auxiliares para decidir que hacer en cada turno
 ;Turno 1
@@ -452,11 +424,21 @@
 (test (eq ?fase 3))
 ?contador <- (Contador ?x)
 (Habitantes (total ?y))
-(test (eq 2 ?y))
+(test (neq ?x ?y))
+?accion <- (object (is-a Accion) (nombre ?nombre) (disponible ?disponible) (utilizado ?utilizado))
+(test (eq ?disponible True))
+(test (eq ?utilizado False))
+(test (eq ?nombre "Jornalero"))
+?accionB <- (object (is-a Accion) (nombre ?nombreB) (disponible ?disponibleB) (utilizado ?utilizadoB))
+(test (eq ?disponibleB True))
+(test (eq ?utilizadoB False))
+(test (eq ?nombreB "Labranza"))
 =>
 (assert (Jornalero 1))
 (assert (Labranza 1))
 (retract ?contador)
+(modify-instance ?accion (utilizado True))
+(modify-instance ?accionB (utilizado True))
 (assert (Contador (+ ?x 2))))
 
 ;Turno 2
@@ -468,8 +450,13 @@
 ?contador <- (Contador ?x)
 (Habitantes (total ?y))
 (test (neq ?x ?y))
+?accionB <- (object (is-a Accion) (nombre ?nombreB) (disponible ?disponibleB) (utilizado ?utilizadoB))
+(test (eq ?disponibleB True))
+(test (eq ?utilizadoB False))
+(test (eq ?nombreB "SemillasCereales"))
 =>
-(assert (SemillaCereales 1))
+(assert (SemillasCereales 1))
+(modify-instance ?accionB (utilizado True))
 (retract ?contador)
 (assert (Contador (+ ?x 1))))
 
@@ -483,9 +470,11 @@
 (test (neq ?x ?y))
 ?accion <- (object (is-a Accion) (nombre ?nombre) (disponible ?disponible) (utilizado ?utilizado) (cantidad ?cantidad))
 (test (eq ?disponible True))
+(test (eq ?utilizado False))
 (test (eq ?nombre "Siembra"))
 =>
-(assert (Sembrar 1)) ;OJO AL NOMBRE QUE LE DAREMOS DESPUES EN LA REGLA
+(modify-instance ?accion (utilizado True))
+(assert (Sembrar 1))
 (retract ?contador)
 (assert (Contador (+ ?x 1))))
 
@@ -497,7 +486,12 @@
 ?contador <- (Contador ?x)
 (Habitantes (total ?y))
 (test (neq ?x ?y))
+?accion <- (object (is-a Accion) (nombre ?nombre) (disponible ?disponible) (utilizado ?utilizado))
+(test (eq ?disponible True))
+(test (eq ?utilizado False))
+(test (eq ?nombre "Jornalero"))
 =>
+(modify-instance ?accion (utilizado True))
 (assert (Jornalero 1))
 (retract ?contador)
 (assert (Contador (+ ?x 1))))
@@ -510,8 +504,18 @@
 (test (eq ?fase 3))
 ?contador <- (Contador ?x)
 (Habitantes (total ?y))
-(test (eq 2 ?y))
+(test (neq ?x ?y))
+?accion <- (object (is-a Accion) (nombre ?nombre) (disponible ?disponible) (utilizado ?utilizado))
+(test (eq ?disponible True))
+(test (eq ?utilizado False))
+(test (eq ?nombre "Bosque"))
+?accionb <- (object (is-a Accion) (nombre ?nombreb) (disponible ?disponibleb) (utilizado ?utilizadob))
+(test (eq ?disponibleb True))
+(test (eq ?utilizadob False))
+(test (eq ?nombreb "Juncal"))
 =>
+(modify-instance ?accion (utilizado True))
+(modify-instance ?accionb (utilizado True))
 (assert (ObtenerMadera 1))
 (assert (ObtenerJuncal 1))
 (retract ?contador)
@@ -525,8 +529,18 @@
 (test (eq ?fase 3))
 ?contador <- (Contador ?x)
 (Habitantes (total ?y))
-(test (eq 2 ?y))
+(test (neq ?x ?y))
+?accion <- (object (is-a Accion) (nombre ?nombre) (disponible ?disponible) (utilizado ?utilizado))
+(test (eq ?disponible True))
+(test (eq ?utilizado False))
+(test (eq ?nombre "Pesca"))
+?accionb <- (object (is-a Accion) (nombre ?nombreb) (disponible ?disponibleb) (utilizado ?utilizadob))
+(test (eq ?disponibleb True))
+(test (eq ?utilizadob False))
+(test (eq ?nombreb "AmpliacionGranja"))
 =>
+(modify-instance ?accion (utilizado True))
+(modify-instance ?accionb (utilizado True))
 (assert (Pesca 1))
 (assert (AmpliarHabitacion 1))
 (retract ?contador)
@@ -1197,9 +1211,24 @@
 
 ;Regla para saber cuando acaba la fase tres
 (defrule FinFase3
-(not (and  (ObtenerMadera ?) (ObtenerAdobe ?) (ObtenerJuncal ?) (ObtenerPiedra ?) (Labranza ?)
-(SemillasCereales ?) (SemillasHortalizas ?) (Jornalero ?) (Pesca ?) (AmpliarHabitacion ?) (Cocina ?) (Planificada ?) (Precipitada ?) (Vallas ?) (Hornear ?) (Sembrar ?) (Labranza ?) (ObtenerCerdos ?) (ObtenerVacas ?) (ObtenerOvejas ?) 
-)) ;Poner todos los hechos que falten
+(not (Jornalero ?))
+(not (Labranza ?))
+(not (ObtenerMadera ?))
+(not (ObtenerAdobe ?))
+(not (ObtenerJuncal ?))
+(not (ObtenerPiedra ?))
+(not (SemillasCereales ?))
+(not (SemillasHortalizas ?))
+(not (Pesca ?))
+(not (AmpliarHabitacion ?))
+(not (Cocina ?))
+(not (Planificada ?))
+(not (Vallas ?))
+(not (Sembrar ?))
+(not (Hornear ?))
+(not (ObtenerCerdos ?))
+(not (ObtenerVacas ?))
+(not (ObtenerOvejas ?))
 ?juego <- (InfoJuego (turno ?turno) (fase ?fase))
 (test (eq ?fase 3))
 ?contador <- (Contador ?x)
@@ -1225,10 +1254,10 @@
 (declare (salience 70))
 ?habitantes <-(Habitantes (total ?tot) (nacidos ?nac))
 (not (and (InfoJuego (turno ?turno) (fase ?fase))
-(test (eq ?fase 4))
 (Cosecha ?x)
 (test (eq ?turno ?x))))
 ?juego <- (InfoJuego (turno ?turno) (fase ?fase))
+(test (eq ?fase 4))
 =>
 (modify ?juego (turno (+ ?turno 1)) (fase 1))
 (modify ?habitantes (total (+ ?tot ?nac)) (nacidos (- ?nac ?nac))))

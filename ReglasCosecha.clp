@@ -142,6 +142,7 @@
 ?habitantes <-(Habitantes (total ?tot) (nacidos ?nac))
 ?infoJuego <- (InfoJuego (turno ?turno) (fase ?fase))
 (not (and (OvejaCosecha ?) (CerdoCosecha ?) (VacaCosecha ?) (CerealCosecha ?)))
+(test (eq ?fase 4))
 =>
 (modify ?infoJuego (turno (+ ?turno 1)) (fase 1))
 (modify ?habitantes (total (+ ?tot ?nac)) (nacidos (- ?nac ?nac)))
