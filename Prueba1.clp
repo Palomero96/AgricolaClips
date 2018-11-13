@@ -66,6 +66,6 @@
 
 
 (definstances EspacioHabitacion
-(of EspacioHabitacion)
-(of EspacioHabitacion)
+(of EspacioHabitacion (habitantes 1))
+(of EspacioHabitacion (habitantes 1))
 )

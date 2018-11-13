@@ -5,8 +5,9 @@
 (Habitantes (total ?y) (nacidos ?z))
 ?almacenado <- (object (is-a Almacenado) (tipo ?tipo) (cantidad ?cantidad))
 (test (eq ?tipo "Comida"))
-(test (< (+ (* 3 (- ?y ?z)) (* 1 ?z)) ?cantidad))
+(test (<= (+ (* 3 (- ?y ?z)) (* 1 ?z)) ?cantidad))
 =>
+(assert (ComidaHecha 1))
 (assert (OvejaCosecha 1))
 (assert (CerdoCosecha 1))
 (assert (VacaCosecha 1))
@@ -128,8 +129,7 @@
 =>
 (retract ?borrar)
 (modify-instance ?almacenado (cantidad (+ ?cantidadAlmacenada 1)))
-(modify-instance ?espacioCampo (cantidad (- ?canti 1)))
-(assert (VenderAnimal 1)))
+(modify-instance ?espacioCampo (cantidad (- ?canti 1))))
 
 (defrule NoRecogerCerealCosecha
 (declare (salience 30))
@@ -139,16 +139,19 @@
 (retract ?borrar))
 
 (defrule FinCosecha
+?comida <- (ComidaHecha ?)
 ?habitantes <-(Habitantes (total ?tot) (nacidos ?nac))
 ?infoJuego <- (InfoJuego (turno ?turno) (fase ?fase))
 (not (and (OvejaCosecha ?) (CerdoCosecha ?) (VacaCosecha ?) (CerealCosecha ?)))
 (test (eq ?fase 4))
 =>
+(retract ?comida)
 (modify ?infoJuego (turno (+ ?turno 1)) (fase 1))
-(modify ?habitantes (total (+ ?tot ?nac)) (nacidos (- ?nac ?nac)))
+(modify ?habitantes (nacidos (- ?nac ?nac)))
 )
 
 (defrule SinComida
+(not (ComidaHecha ?))
 ?fallos <- (Fallos ?f)
 ?habitantes <-(Habitantes (total ?tot) (nacidos ?nac))
 ?almacenado <- (object (is-a Almacenado) (tipo ?tipoAlmacenado) (cantidad ?cantidadAlmacenada))
