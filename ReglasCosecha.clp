@@ -38,7 +38,6 @@
 (test (eq ?tipo "Oveja"))
 =>
 (assert (AnimalVender (tipo "Oveja") (cantidad 2)))
-(assert (VenderAnimal 1))
 (modify-instance ?espacioAnimales (ocupacion 0) (animal "Ninguno")))
 
 (defrule VenderCerdosParaComer
@@ -50,7 +49,6 @@
 (test (eq ?tipo "Cerdo"))
 =>
 (assert (AnimalVender (tipo "Cerdo") (cantidad 2)))
-(assert (VenderAnimal 1))
 (modify-instance ?espacioAnimales (ocupacion 0) (animal "Ninguno"))
 )
 
@@ -63,7 +61,6 @@
 (test (eq ?tipo "Vaca"))
 =>
 (assert (AnimalVender (tipo "Vaca") (cantidad 2)))
-(assert (VenderAnimal 1))
 (modify-instance ?espacioAnimales (ocupacion 0) (animal "Ninguno"))
 )
 
@@ -74,14 +71,13 @@
 (test (eq ?tipo "Oveja"))
 =>
 (retract ?borrar)
-(assert (AnimalVender (tipo "Oveja") (cantidad 1)))
-(assert (VenderAnimal 1)))
+(assert (AnimalVender (tipo "Oveja") (cantidad 1))))
 
 (defrule NoOvejaCosecha
 (declare (salience 30))
 ?borrar <- (OvejaCosecha ?x)
 (not (and (object (is-a EspacioAnimales) (animal ?tipo))
-(test (eq ?tipo "Cerdo"))))
+(test (eq ?tipo "Oveja"))))
 =>
 (retract ?borrar))
 
@@ -92,8 +88,7 @@
 (test (eq ?tipo "Cerdo"))
 =>
 (retract ?borrar)
-(assert (AnimalVender (tipo "Cerdo") (cantidad 1)))
-(assert (VenderAnimal 1)))
+(assert (AnimalVender (tipo "Cerdo") (cantidad 1))))
 
 (defrule NoCerdoCosecha
 (declare (salience 30))
@@ -110,8 +105,7 @@
 (test (eq ?tipo "Vaca"))
 =>
 (retract ?borrar)
-(assert (AnimalVender (tipo "Vaca") (cantidad 1)))
-(assert (VenderAnimal 1)))
+(assert (AnimalVender (tipo "Vaca") (cantidad 1))))
 
 (defrule NoVacaCosecha
 (declare (salience 30))
@@ -137,6 +131,7 @@
 (modify-instance ?espacioCampo (cantidad (- ?canti 1)) (recogido True)))
 
 (defrule NoCereal
+(declare (salience 40))
 ?borrar <- (CerealCosecha ?x)
 (not (and (object (is-a EspacioCampo) (tipo ?tipo) (cantidad ?canti) (recogido ?recogido))
 (test (< 0 ?canti))
@@ -148,14 +143,25 @@
 (retract ?borrar)
 )
 
-;Regla para saber cuando se acaba la cosecha
-(defrule FinCosecha
+;Regla para saber cuando se acaba la cosecha si les hemos dado de comer
+(defrule FinCosechaComida
 ?comida <- (ComidaHecha ?)
 ?habitantes <-(Habitantes (total ?tot) (nacidos ?nac))
 ?infoJuego <- (InfoJuego (turno ?turno) (fase ?fase))
-(not (and (OvejaCosecha ?) (CerdoCosecha ?) (VacaCosecha ?)))
+(not (and (OvejaCosecha ?) (CerdoCosecha ?) (VacaCosecha ?) (CerealCosecha ?)))
 (test (eq ?fase 4))
-
+=>
+(retract ?comida)
+(modify ?infoJuego (turno (+ ?turno 1)) (fase 1))
+(modify ?habitantes (nacidos (- ?nac ?nac)))
+)
+;Regla para saber cuando se acaba la cosecha si hemos fallado
+(defrule FinCosechaSinComida
+?comida <- (SinComida ?)
+?habitantes <-(Habitantes (total ?tot) (nacidos ?nac))
+?infoJuego <- (InfoJuego (turno ?turno) (fase ?fase))
+(not (and (OvejaCosecha ?) (CerdoCosecha ?) (VacaCosecha ?) (CerealCosecha ?)))
+(test (eq ?fase 4))
 =>
 (retract ?comida)
 (modify ?infoJuego (turno (+ ?turno 1)) (fase 1))
@@ -165,6 +171,7 @@
 ;Regla para el caso de no tener comida
 (defrule SinComida
 (not (ComidaHecha ?))
+(not (SinComida ?))
 ?fallos <- (Fallos ?f)
 ?habitantes <-(Habitantes (total ?tot) (nacidos ?nac))
 ?almacenado <- (object (is-a Almacenado) (tipo ?tipoAlmacenado) (cantidad ?cantidadAlmacenada))
@@ -178,6 +185,7 @@
 (assert (CerdoCosecha 1))
 (assert (VacaCosecha 1))
 (assert (CerealCosecha 1))
+(assert (SinComida 1))
 (retract ?fallos)
 (assert (Fallos (+ (/ (- (+ (* 3 (- ?tot ?nac)) (* 1 ?nac)) ?cantidadAlmacenada) ?tot) ?f)))
 )

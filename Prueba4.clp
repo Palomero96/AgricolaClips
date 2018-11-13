@@ -22,7 +22,8 @@
 (Cosecha 9)
 (Cosecha 11)
 (Cosecha 13)
-(Cosecha 14))
+(Cosecha 14)
+(Fallos 0))
 
 
 (definstances Acciones

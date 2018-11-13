@@ -254,9 +254,7 @@
 (modify-instance ?accion (cantidad 0))
 (retract ?borrar)
 (assert (AnimalColocar (tipo "Oveja") (cantidad 2)))
-(assert (AnimalVender (tipo "Oveja") (cantidad (- ?cantidad 2))))
-(assert (ColocarAnimal 1))
-(assert (VenderAnimal 1)))
+(assert (AnimalVender (tipo "Oveja") (cantidad (- ?cantidad 2)))))
 
 (defrule MercadoOvinoTurno7
 (InfoJuego (turno ?turno) (fase ?fase))
@@ -267,8 +265,7 @@
 
 =>
 (retract ?borrar)
-(assert (AnimalVender (tipo "Oveja") (cantidad ?cantidad)))
-(assert (VenderAnimal 1)))
+(assert (AnimalVender (tipo "Oveja") (cantidad ?cantidad))))
 
 ;Regla para la accion de obtener cerdos
 (defrule MercadoPorcino
@@ -279,9 +276,7 @@
 (modify-instance ?accion (cantidad 0))
 (retract ?borrar)
 (assert (AnimalColocar (tipo "Cerdo") (cantidad 2)))
-(assert (AnimalVender (tipo "Cerdo") (cantidad (- ?cantidad 2))))
-(assert (ColocarAnimal 1))
-(assert (VenderAnimal 1)))
+(assert (AnimalVender (tipo "Cerdo") (cantidad (- ?cantidad 2)))))
 
 ;Regla para la accion de obtener vacas
 (defrule MercadoBovino
@@ -292,13 +287,10 @@
 (modify-instance ?accion (cantidad 0))
 (retract ?borrar)
 (assert (AnimalColocar (tipo "Vaca") (cantidad 2)))
-(assert (AnimalVender(tipo "Vaca") (cantidad (- ?cantidad 2))))
-(assert (ColocarAnimal 1))
-(assert (VenderAnimal 1)))
+(assert (AnimalVender(tipo "Vaca") (cantidad (- ?cantidad 2)))))
 
 ;Regla para colocarAnimales
 (defrule ColocarAnimales
-?borrar <- (ColocarAnimal ?)
 ?espacioAnimales <-(object (is-a EspacioAnimales) (habilitado ?habilitado) (ocupacion ?ocupacion))
 (test (eq ?habilitado True))
 (test (eq ?ocupacion 0))
@@ -306,13 +298,11 @@
 (test (not (< ?cantidad 2)))
 =>
 (retract ?animalColocar)
-(retract ?borrar)
 (modify-instance ?espacioAnimales (habilitado False) (ocupacion 2) (animal ?tipo)))
 
 ;Regla para vender Ovejas
 (defrule VenderOvejas
 (declare (salience 10))
-?borrar <- (VenderAnimal ?)
 ?cocina <- (object (is-a AdquisicionMayor) (tipo ?tipoCocina) (adquirido ?adquirido))
 (test (eq ?tipoCocina "Cocina"))
 (test (eq ?adquirido True))
@@ -323,13 +313,11 @@
 (test (eq ?tipoAlmacenado "Comida"))
 =>
 (retract ?animalVender)
-(retract ?borrar)
 (modify-instance ?almacenado (cantidad (+ ?canti (* 2 ?cantidad)))))
 
 ;Regla para venderAnimales
 (defrule VenderCerdos
 (declare (salience 10))
-?borrar <- (VenderAnimal ?)
 ?cocina <- (object (is-a AdquisicionMayor) (tipo ?tipoCocina) (adquirido ?adquirido))
 (test (eq ?tipoCocina "Cocina"))
 (test (eq ?adquirido True))
@@ -340,13 +328,11 @@
 (test (eq ?tipoAlmacenado "Comida"))
 =>
 (retract ?animalVender)
-(retract ?borrar)
 (modify-instance ?almacenado (cantidad (+ ?canti (* 3 ?cantidad))))); No estoy seguro de esto
 
 ;Regla para vender Vacas
 (defrule VenderVacas
 (declare (salience 10))
-?borrar <- (VenderAnimal ?)
 ?cocina <- (object (is-a AdquisicionMayor) (tipo ?tipoCocina) (adquirido ?adquirido))
 (test (eq ?tipoCocina "Cocina"))
 (test (eq ?adquirido True))
@@ -357,7 +343,6 @@
 (test (eq ?tipoAlmacenado "Comida"))
 =>
 (retract ?animalVender)
-(retract ?borrar)
 (modify-instance ?almacenado (cantidad (+ ?canti (* 4 ?cantidad))))); No estoy seguro de esto
 
 
@@ -388,6 +373,17 @@
 (retract ?borrar)
 (modify-instance ?almacenadoCereal (cantidad 1))
 (modify-instance ?almacenado (cantidad (+ ?canti (* 2 (- ?cantiCereal 1))))))
+
+;Regla para el caso de que no podemos colocar los animales en un espacio
+(defrule NoEspacioAnimales
+(declare (salience 90))
+?borrar <- (AnimalColocar (tipo ?tipo) (cantidad ?cantidad))
+(not (and (object (is-a EspacioAnimales) (ocupacion ?ocupacion))
+(test (eq 0 ?ocupacion))))
+=>
+(assert (AnimalVender (tipo ?tipo) (cantidad ?cantidad)))
+(retract ?borrar)
+)
 
 ;Reglas auxiliares para decidir que hacer en cada turno
 ;Turno 1
@@ -1244,7 +1240,7 @@
 (assert (Contador (+ ?x 1))))
 
 (defrule Turno13SemillasHortalizas
-(declare (salience 30))
+(declare (salience 20))
 (InfoJuego (turno ?turno) (fase ?fase))
 (test (eq ?turno 13))
 (test (eq ?fase 3))
@@ -1262,14 +1258,14 @@
 (assert (Contador (+ ?x 1))))
 
 (defrule Turno13Precipitada
-(declare (salience 20))
+(declare (salience 30))
 (InfoJuego (turno ?turno) (fase ?fase))
 (test (eq ?turno 13))
 (test (eq ?fase 3))
 ?contador <- (Contador ?x)
 (Habitantes (total ?y) (nacidos ?nac))
 (test (neq ?x (- ?y ?nac)))
-(test (eq ?y 4))
+(test (<= ?y 4))
 ?accion <- (object (is-a Accion) (nombre ?nombre) (disponible ?disponible) (utilizado ?utilizado))
 (test (eq "FamiliaPrecipitada" ?nombre))
 (test (eq ?disponible True))
