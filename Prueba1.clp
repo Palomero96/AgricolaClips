@@ -41,7 +41,7 @@
 (of Accion (nombre "MercadoPorcino") (disponible False) (cantidad 0) (recolocar 1))
 (of Accion (nombre "MercadoBovino") (disponible False) (cantidad 0) (recolocar 1))
 (of Accion (nombre "Cultivo") (disponible False))
-(of Accion (nombre "ReformarGranja") (disponible False) (cantidad 0) (recolocar 1))
+(of Accion (nombre "ReformasGranja") (disponible False) (cantidad 0) (recolocar 1))
 (of Accion (nombre "MercadoOvino") (disponible False) (cantidad 0) (recolocar 1))
 (of Accion (nombre "FamiliaPlanificada") (disponible False))
 (of Accion (nombre "SemillasHortalizas") (disponible False) (cantidad 0) (recolocar 1) (acumulable False))

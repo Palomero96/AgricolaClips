@@ -1,4 +1,4 @@
-;Regla para establecer la estrategia y el comando 
+;Regla para establecer la estrategia y el comando para escribir en un archivo
 (defrule inicio
 (declare (salience 100))
 =>
@@ -17,6 +17,7 @@
 =>
 (modify-instance ?a (disponible True))
 (modify ?info (fase (+ ?x 1)))
+
 )
 
 ;Reglas para colocar nuevos recursos y animales
@@ -144,13 +145,11 @@
 ?almacenado <- (object (is-a Almacenado) (tipo ?tipo) (cantidad ?canti))
 (test (eq ?tipo "Hortaliza"))
 ?accion <- (object (is-a Accion) (nombre ?nombre) (disponible ?disponible) (utilizado ?utilizado) (cantidad ?cantidad))
-(test (eq ?disponible True))
-(test (eq ?utilizado False))
 (test (eq ?nombre "SemillasHortalizas"))
 =>
 (retract ?borrar)
 (modify-instance ?almacenado (cantidad (+ ?canti ?cantidad)))
-(modify-instance ?accion (utilizado True) (cantidad 0)))
+(modify-instance ?accion (cantidad 0)))
 
 ;Regla para recoger la comida del Jornalero
 (defrule Jornalero
@@ -371,13 +370,13 @@
 (test (eq ?tipoAlmacenado "Cereal"))
 (test (not (< ?canti 1)))
 =>
-(modify-instance ?almacenado (cantidad (- 1 ?canti)))
+(modify-instance ?almacenado (cantidad (- ?canti 1)))
 (retract ?borrar)
 (modify-instance ?espacioCampo (tipo "Cereal") (cantidad 3)))
 
 ;Regla para hornear
 (defrule Hornear
-?borrar <- (Hornear ?x)
+?borrar <- (Hornear ?)
 ?cocina <- (object (is-a AdquisicionMayor) (tipo ?tipoCocina) (adquirido ?adquirido))
 (test (eq ?tipoCocina "Cocina"))
 (test (eq ?adquirido True))
@@ -387,8 +386,8 @@
 (test (eq ?tipoCereal "Cereal"))
 =>
 (retract ?borrar)
-(modify-instance ?almacenadoCereal (cantidad (- ?cantiCereal ?x)))
-(modify-instance ?almacenado (cantidad (+ ?canti (* 2 ?x)))))
+(modify-instance ?almacenadoCereal (cantidad 1))
+(modify-instance ?almacenado (cantidad (+ ?canti (* 2 (- ?cantiCereal 1))))))
 
 ;Reglas auxiliares para decidir que hacer en cada turno
 ;Turno 1
@@ -661,7 +660,7 @@
 (assert (Contador (+ ?x 1))))
 
 (defrule Turno6Sembrado
-(declare (salience 30))
+(declare (salience 35))
 (InfoJuego (turno ?turno) (fase ?fase))
 (test (eq ?turno 6))
 (test (eq ?fase 3))
@@ -769,8 +768,8 @@
 (Habitantes (total ?y) (nacidos ?nac))
 (test (neq ?x (- ?y ?nac)))
 (test (eq ?y 3))
-(object (is-a EspacioCampo) (tipo ?tipo))
-(test (neq ?tipo "Ninguno"))
+(not (and (object (is-a EspacioCampo) (tipo ?tipo))
+(test (eq ?tipo "Ninguno"))))
 ?accion <- (object (is-a Accion) (nombre ?nombreb) (disponible ?disponibleb) (utilizado ?utilizadob) (cantidad ?cantidad))
 (test (eq ?disponibleb True))
 (test (eq ?utilizadob False))
@@ -953,7 +952,7 @@
 ?accion <- (object (is-a Accion) (nombre ?nombre) (disponible ?disponible) (utilizado ?utilizado) (cantidad ?cantidad))
 (test (eq ?disponible True))
 (test (eq ?utilizado False))
-(test (eq ?nombre "Labranza"))
+(test (eq ?nombre "Pesca"))
 =>
 (assert (Pesca 1))
 (modify-instance ?accion (utilizado True))
@@ -1103,7 +1102,7 @@
 ?accion <- (object (is-a Accion) (nombre ?nombre) (disponible ?disponible) (utilizado ?utilizado) (cantidad ?cantidad))
 (test (eq ?disponible True))
 (test (eq ?utilizado False))
-(test (eq ?nombre "MercadoPorcino"))
+(test (eq ?nombre "Siembra"))
 =>
 (assert (Sembrar 1))
 (assert (Hornear 1))
@@ -1180,7 +1179,7 @@
 ?accion <- (object (is-a Accion) (nombre ?nombre) (disponible ?disponible) (utilizado ?utilizado) (cantidad ?cantidad))
 (test (eq ?disponible True))
 (test (eq ?utilizado False))
-(test (eq ?nombre "SemillasCereales"))
+(test (eq ?nombre "SemillasHortalizas"))
 =>
 (assert (SemillasHortalizas 1))
 (modify-instance ?accion (utilizado True))
@@ -1393,6 +1392,52 @@
 (retract ?contador)
 (assert (Contador (+ ?x 1))))
 
+;Reglas de relleno por si son necesarias
+(defrule JornaleroExtra
+(InfoJuego (turno ?turno) (fase ?fase))
+(test (eq ?fase 3))
+?contador <- (Contador ?x)
+(Habitantes (total ?y) (nacidos ?nac))
+(test (neq ?x (- ?y ?nac)))
+?accion <- (object (is-a Accion) (nombre ?nombre) (disponible ?disponible) (utilizado ?utilizado))
+(test (eq "Jornalero" ?nombre))
+(test (eq ?disponible True))
+(test (eq ?utilizado False))
+=>
+(assert (Jornalero 1)) 
+(retract ?contador)
+(assert (Contador (+ ?x 1))))
+
+(defrule HortalizasExtra
+(InfoJuego (turno ?turno) (fase ?fase))
+(test (eq ?fase 3))
+?contador <- (Contador ?x)
+(Habitantes (total ?y) (nacidos ?nac))
+(test (neq ?x (- ?y ?nac)))
+?accion <- (object (is-a Accion) (nombre ?nombre) (disponible ?disponible) (utilizado ?utilizado))
+(test (eq "SemillasHortalizas" ?nombre))
+(test (eq ?disponible True))
+(test (eq ?utilizado False))
+=>
+(assert (SemillasHortalizas 1)) 
+(retract ?contador)
+(assert (Contador (+ ?x 1))))
+
+(defrule SemillasCerealesExtra
+(InfoJuego (turno ?turno) (fase ?fase))
+(test (eq ?fase 3))
+?contador <- (Contador ?x)
+(Habitantes (total ?y) (nacidos ?nac))
+(test (neq ?x (- ?y ?nac)))
+?accion <- (object (is-a Accion) (nombre ?nombre) (disponible ?disponible) (utilizado ?utilizado))
+(test (eq "SemillasCereales" ?nombre))
+(test (eq ?disponible True))
+(test (eq ?utilizado False))
+=>
+(assert (SemillasCereales 1)) 
+(retract ?contador)
+(assert (Contador (+ ?x 1))))
+
 ;Regla para saber cuando acaba la fase tres
 (defrule FinFase3
 (not (Jornalero ?))
@@ -1445,3 +1490,12 @@
 =>
 (modify ?juego (turno (+ ?turno 1)) (fase 1))
 (modify ?habitantes (nacidos (- ?nac ?nac))))
+
+;Regla para terminar la ejecucion del programa
+(defrule Acabar
+(InfoJuego (turno ?turno) (fase ?fase))
+(test (eq ?turno 15))
+=>
+(dribble-off)
+(halt)
+)

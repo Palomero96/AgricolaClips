@@ -13151,3 +13151,5623 @@ Defining defrule: Turno8Labranza =j=j=j+j
 Defining defrule: Turno8Pesca =j=j=j+j
 Defining defrule: Turno9Madera +j+j+j+j
 Defining defrule: Turno9Hortaliza =j=j=j+j
+Defining defrule: Turno9SembraryHornear =j=j=j+j
+Defining defrule: Turno10Vallas +j+j+j+j
+Defining defrule: Turno10Labranza =j=j=j+j
+Defining defrule: Turno10SemillasCereales =j=j=j+j
+Defining defrule: Turno11Cerdos +j+j+j+j
+Defining defrule: Turno11Sembraryhornear =j=j=j+j
+Defining defrule: Turno11Vacas =j=j=j+j
+Defining defrule: Turno11Hortaliza =j=j=j+j
+Defining defrule: Turno12SemillasCereales +j+j+j+j
+Defining defrule: Turno12SemillasHortalizas =j=j=j+j
+Defining defrule: Turno12Precipitada =j=j=j+j
+Defining defrule: Turno12ArarySEmbrar =j=j=j+j
+Defining defrule: Turno13SemillasCereales +j+j+j+j
+Defining defrule: Turno13SemillasHortalizas =j=j=j+j
+Defining defrule: Turno13Precipitada =j=j+j+j
+Defining defrule: Turno13SembraryHornear =j=j=j+j
+Defining defrule: Turno14Ovejas +j+j+j+j
+Defining defrule: Turno14Vacas =j=j=j+j
+Defining defrule: Turno14Cerdos =j=j=j+j
+Defining defrule: Turno14Pesca =j=j=j+j
+Defining defrule: Turno14ArarySembrar =j=j=j+j
+Defining defrule: FinFase3 =j+j+j+j+j+j+j+j+j+j+j+j+j+j+j+j+j+j+j+j+j+j
+Defining defrule: ValorUtilizado +j+j
+Defining defrule: TurnodeNoCosecha +j+j+j+j+j
+TRUE
+CLIPS> (load "C:/Users/palom/Documents/GitHub/Agricola/ReglasCosecha.clp")
+Defining defrule: Cosecha =j+j+j
+Defining defrule: VenderHortalizasParaComer =j+j+j
+Defining defrule: VenderOvejasParaComer =j+j
+Defining defrule: VenderCerdosParaComer =j+j
+Defining defrule: VenderVacasParaComer =j+j
+Defining defrule: RecogerOvejaCosecha +j+j
+Defining defrule: NoRecogerOvejaCosecha =j
+Defining defrule: RecogerCerdoCosecha +j+j
+Defining defrule: NoRecogerCerdoCosecha =j
+Defining defrule: RecogerVacaCosecha +j+j
+Defining defrule: NoRecogerVacaCosecha =j
+Defining defrule: RecogerCereal +j+j+j
+Defining defrule: NoRecogerCerealCosecha =j
+Defining defrule: FinCosecha +j+j+j+j+j+j+j+j
+Defining defrule: SinComida =j+j+j+j+j+j+j+j+j
+TRUE
+CLIPS> (load "C:/Users/palom/Documents/GitHub/Agricola/Prueba1.clp")
+Defining deffacts: Hechosiniciales
+Defining definstances: Acciones
+Defining definstances: AdquisicionesMayores
+Defining definstances: RecursosIniciales
+Defining definstances: EspacioHabitacion
+TRUE
+CLIPS> (reset)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (clear)
+CLIPS> (load "C:/Users/palom/Documents/GitHub/Agricola/Ontologia.clp")
+Defining defclass: EspacioAnimales
+Defining defclass: EspacioCampo
+Defining defclass: EspacioHabitacion
+Defining defclass: AdquisicionMayor
+Defining defclass: Accion
+Defining defclass: Almacenado
+Defining deftemplate: InfoJuego
+Defining deftemplate: AccionDisponible
+Defining deftemplate: Habitantes
+Defining deftemplate: AnimalColocar
+Defining deftemplate: AnimalVender
+TRUE
+CLIPS> (load "C:/Users/palom/Documents/GitHub/Agricola/Reglas.clp")
+Defining defrule: inicio +j
+Defining defrule: AccionesRonda +j+j+j
+Defining defrule: Recolocar +j+j
+Defining defrule: Recolocar2 =j+j
+Defining defrule: FinRecolocar =j
+Defining defrule: ValoresRecolocado +j+j
+Defining defrule: ObtenerMadera +j+j+j
+Defining defrule: ObtenerAdobe +j+j+j
+Defining defrule: ObtenerJuncal +j+j+j
+Defining defrule: ObtenerPiedra +j+j+j
+Defining defrule: Labranza +j+j
+Defining defrule: SemillasCereales +j+j+j
+Defining defrule: SemillasHortalizas +j+j+j
+Defining defrule: Jornalero +j+j+j
+Defining defrule: Pesca +j+j+j
+Defining defrule: AmpliarHabitacion +j+j+j+j
+Defining defrule: Cocina +j+j+j
+Defining defrule: AmpliacionPlanificada +j+j+j
+Defining defrule: AmpliacionPrecipitada +j+j+j
+Defining defrule: Vallas +j+j+j
+Defining defrule: MercadoOvino +j+j+j
+Defining defrule: MercadoOvinoTurno7 +j+j+j
+Defining defrule: MercadoPorcino +j+j
+Defining defrule: MercadoBovino +j+j
+Defining defrule: ColocarAnimales +j+j+j
+Defining defrule: VenderOvejas +j+j+j+j
+Defining defrule: VenderCerdos =j=j+j+j
+Defining defrule: VenderVacas =j=j+j+j
+Defining defrule: Siembra +j+j+j
+Defining defrule: Hornear +j+j+j+j
+Defining defrule: Turno1 +j+j+j+j+j
+Defining defrule: Turno2Cereal +j+j+j+j
+Defining defrule: Turno2Siembra =j=j=j+j
+Defining defrule: Turno2Jornalero =j=j=j+j
+Defining defrule: Turno3 +j+j+j+j+j
+Defining defrule: Turno4 +j+j+j+j+j
+Defining defrule: Turno5Adobe +j+j+j+j
+Defining defrule: Turno5AmplacionFamilia =j=j=j+j+j
+Defining defrule: Turno5Cocina =j=j=j+j
+Defining defrule: Turno6Madera +j+j+j+j
+Defining defrule: Turno6Cocina =j=j=j+j+j
+Defining defrule: Turno6Ampliacion =j=j+j+j+j
+Defining defrule: Turno6Jornalero =j=j=j+j+j
+Defining defrule: Turno6Sembrado =j=j=j+j+j
+Defining defrule: Turno6SemillaCereal =j=j=j+j
+Defining defrule: Turno7Ovejas +j+j+j+j
+Defining defrule: Turno7Vallas =j=j+j+j
+Defining defrule: Turno7AmpliacionPlanificada =j=j+j+j+j
+Defining defrule: Turno7Labranza +j+j+j+j+j+j
+Defining defrule: Turno7Sembrar =j=j=j=j+j+j+j
+Defining defrule: Turno7SemillaCereal =j=j=j=j=j+j
+Defining defrule: Turno7Jornalero +j+j+j+j+j+j
+Defining defrule: Turno7Labranza2 =j=j=j=j+j+j
+Defining defrule: Turno7SemillaCereal2 =j=j=j=j+j+j
+Defining defrule: Turno8SemillaCereal +j+j+j+j
+Defining defrule: Turno8Labranza =j=j=j+j
+Defining defrule: Turno8Pesca =j=j=j+j
+Defining defrule: Turno9Madera +j+j+j+j
+Defining defrule: Turno9Hortaliza =j=j=j+j
+Defining defrule: Turno9SembraryHornear =j=j=j+j
+Defining defrule: Turno10Vallas +j+j+j+j
+Defining defrule: Turno10Labranza =j=j=j+j
+Defining defrule: Turno10SemillasCereales =j=j=j+j
+Defining defrule: Turno11Cerdos +j+j+j+j
+Defining defrule: Turno11Sembraryhornear =j=j=j+j
+Defining defrule: Turno11Vacas =j=j=j+j
+Defining defrule: Turno11Hortaliza =j=j=j+j
+Defining defrule: Turno12SemillasCereales +j+j+j+j
+Defining defrule: Turno12SemillasHortalizas =j=j=j+j
+Defining defrule: Turno12Precipitada =j=j=j+j
+Defining defrule: Turno12ArarySEmbrar =j=j=j+j
+Defining defrule: Turno13SemillasCereales +j+j+j+j
+Defining defrule: Turno13SemillasHortalizas =j=j=j+j
+Defining defrule: Turno13Precipitada =j=j+j+j
+Defining defrule: Turno13SembraryHornear =j=j=j+j
+Defining defrule: Turno14Ovejas +j+j+j+j
+Defining defrule: Turno14Vacas =j=j=j+j
+Defining defrule: Turno14Cerdos =j=j=j+j
+Defining defrule: Turno14Pesca =j=j=j+j
+Defining defrule: Turno14ArarySembrar =j=j=j+j
+Defining defrule: FinFase3 =j+j+j+j+j+j+j+j+j+j+j+j+j+j+j+j+j+j+j+j+j+j
+Defining defrule: ValorUtilizado +j+j
+Defining defrule: TurnodeNoCosecha +j+j+j+j+j
+TRUE
+CLIPS> (load "C:/Users/palom/Documents/GitHub/Agricola/Reglas.clp")
+
+[CSTRCPSR1] WARNING: Redefining defrule: inicio =j
+
+[CSTRCPSR1] WARNING: Redefining defrule: AccionesRonda +j+j+j
+
+[CSTRCPSR1] WARNING: Redefining defrule: Recolocar =j+j
+
+[CSTRCPSR1] WARNING: Redefining defrule: Recolocar2 =j+j
+
+[CSTRCPSR1] WARNING: Redefining defrule: FinRecolocar =j
+
+[CSTRCPSR1] WARNING: Redefining defrule: ValoresRecolocado +j+j
+
+[CSTRCPSR1] WARNING: Redefining defrule: ObtenerMadera +j+j+j
+
+[CSTRCPSR1] WARNING: Redefining defrule: ObtenerAdobe +j+j+j
+
+[CSTRCPSR1] WARNING: Redefining defrule: ObtenerJuncal +j+j+j
+
+[CSTRCPSR1] WARNING: Redefining defrule: ObtenerPiedra +j+j+j
+
+[CSTRCPSR1] WARNING: Redefining defrule: Labranza +j+j
+
+[CSTRCPSR1] WARNING: Redefining defrule: SemillasCereales +j+j+j
+
+[CSTRCPSR1] WARNING: Redefining defrule: SemillasHortalizas +j+j+j
+
+[CSTRCPSR1] WARNING: Redefining defrule: Jornalero +j+j+j
+
+[CSTRCPSR1] WARNING: Redefining defrule: Pesca +j+j+j
+
+[CSTRCPSR1] WARNING: Redefining defrule: AmpliarHabitacion +j+j+j+j
+
+[CSTRCPSR1] WARNING: Redefining defrule: Cocina +j+j+j
+
+[CSTRCPSR1] WARNING: Redefining defrule: AmpliacionPlanificada +j+j+j
+
+[CSTRCPSR1] WARNING: Redefining defrule: AmpliacionPrecipitada +j+j+j
+
+[CSTRCPSR1] WARNING: Redefining defrule: Vallas +j+j+j
+
+[CSTRCPSR1] WARNING: Redefining defrule: MercadoOvino +j+j+j
+
+[CSTRCPSR1] WARNING: Redefining defrule: MercadoOvinoTurno7 +j+j+j
+
+[CSTRCPSR1] WARNING: Redefining defrule: MercadoPorcino +j+j
+
+[CSTRCPSR1] WARNING: Redefining defrule: MercadoBovino +j+j
+
+[CSTRCPSR1] WARNING: Redefining defrule: ColocarAnimales +j+j+j
+
+[CSTRCPSR1] WARNING: Redefining defrule: VenderOvejas =j=j+j+j
+
+[CSTRCPSR1] WARNING: Redefining defrule: VenderCerdos =j=j+j+j
+
+[CSTRCPSR1] WARNING: Redefining defrule: VenderVacas =j=j+j+j
+
+[CSTRCPSR1] WARNING: Redefining defrule: Siembra +j+j+j
+
+[CSTRCPSR1] WARNING: Redefining defrule: Hornear +j+j+j+j
+
+[CSTRCPSR1] WARNING: Redefining defrule: Turno1 +j+j+j+j+j
+
+[CSTRCPSR1] WARNING: Redefining defrule: Turno2Cereal =j=j=j+j
+
+[CSTRCPSR1] WARNING: Redefining defrule: Turno2Siembra =j=j=j+j
+
+[CSTRCPSR1] WARNING: Redefining defrule: Turno2Jornalero =j=j=j+j
+
+[CSTRCPSR1] WARNING: Redefining defrule: Turno3 +j+j+j+j+j
+
+[CSTRCPSR1] WARNING: Redefining defrule: Turno4 +j+j+j+j+j
+
+[CSTRCPSR1] WARNING: Redefining defrule: Turno5Adobe =j=j=j+j
+
+[CSTRCPSR1] WARNING: Redefining defrule: Turno5AmplacionFamilia =j=j=j+j+j
+
+[CSTRCPSR1] WARNING: Redefining defrule: Turno5Cocina =j=j=j+j
+
+[CSTRCPSR1] WARNING: Redefining defrule: Turno6Madera =j=j=j+j
+
+[CSTRCPSR1] WARNING: Redefining defrule: Turno6Cocina =j=j=j+j+j
+
+[CSTRCPSR1] WARNING: Redefining defrule: Turno6Ampliacion =j=j+j+j+j
+
+[CSTRCPSR1] WARNING: Redefining defrule: Turno6Jornalero =j=j=j+j+j
+
+[CSTRCPSR1] WARNING: Redefining defrule: Turno6Sembrado =j=j=j+j+j
+
+[CSTRCPSR1] WARNING: Redefining defrule: Turno6SemillaCereal =j=j=j+j
+
+[CSTRCPSR1] WARNING: Redefining defrule: Turno7Ovejas =j=j+j+j
+
+[CSTRCPSR1] WARNING: Redefining defrule: Turno7Vallas =j=j+j+j
+
+[CSTRCPSR1] WARNING: Redefining defrule: Turno7AmpliacionPlanificada =j=j+j+j+j
+
+[CSTRCPSR1] WARNING: Redefining defrule: Turno7Labranza =j=j=j=j+j+j
+
+[CSTRCPSR1] WARNING: Redefining defrule: Turno7Sembrar =j=j=j=j=j+j+j
+
+[CSTRCPSR1] WARNING: Redefining defrule: Turno7SemillaCereal =j=j=j=j=j+j
+
+[CSTRCPSR1] WARNING: Redefining defrule: Turno7Jornalero =j=j=j=j+j+j
+
+[CSTRCPSR1] WARNING: Redefining defrule: Turno7Labranza2 =j=j=j=j+j+j
+
+[CSTRCPSR1] WARNING: Redefining defrule: Turno7SemillaCereal2 =j=j=j=j+j+j
+
+[CSTRCPSR1] WARNING: Redefining defrule: Turno8SemillaCereal =j=j=j+j
+
+[CSTRCPSR1] WARNING: Redefining defrule: Turno8Labranza =j=j=j+j
+
+[CSTRCPSR1] WARNING: Redefining defrule: Turno8Pesca =j=j=j+j
+
+[CSTRCPSR1] WARNING: Redefining defrule: Turno9Madera =j=j=j+j
+
+[CSTRCPSR1] WARNING: Redefining defrule: Turno9Hortaliza =j=j=j+j
+
+[CSTRCPSR1] WARNING: Redefining defrule: Turno9SembraryHornear =j=j=j+j
+
+[CSTRCPSR1] WARNING: Redefining defrule: Turno10Vallas =j=j=j+j
+
+[CSTRCPSR1] WARNING: Redefining defrule: Turno10Labranza =j=j=j+j
+
+[CSTRCPSR1] WARNING: Redefining defrule: Turno10SemillasCereales =j=j=j+j
+
+[CSTRCPSR1] WARNING: Redefining defrule: Turno11Cerdos =j=j=j+j
+
+[CSTRCPSR1] WARNING: Redefining defrule: Turno11Sembraryhornear =j=j=j+j
+
+[CSTRCPSR1] WARNING: Redefining defrule: Turno11Vacas =j=j=j+j
+
+[CSTRCPSR1] WARNING: Redefining defrule: Turno11Hortaliza =j=j=j+j
+
+[CSTRCPSR1] WARNING: Redefining defrule: Turno12SemillasCereales =j=j=j+j
+
+[CSTRCPSR1] WARNING: Redefining defrule: Turno12SemillasHortalizas =j=j=j+j
+
+[CSTRCPSR1] WARNING: Redefining defrule: Turno12Precipitada =j=j=j+j
+
+[CSTRCPSR1] WARNING: Redefining defrule: Turno12ArarySEmbrar =j=j=j+j
+
+[CSTRCPSR1] WARNING: Redefining defrule: Turno13SemillasCereales =j=j=j+j
+
+[CSTRCPSR1] WARNING: Redefining defrule: Turno13SemillasHortalizas =j=j=j+j
+
+[CSTRCPSR1] WARNING: Redefining defrule: Turno13Precipitada =j=j+j+j
+
+[CSTRCPSR1] WARNING: Redefining defrule: Turno13SembraryHornear =j=j=j+j
+
+[CSTRCPSR1] WARNING: Redefining defrule: Turno14Ovejas =j=j=j+j
+
+[CSTRCPSR1] WARNING: Redefining defrule: Turno14Vacas =j=j=j+j
+
+[CSTRCPSR1] WARNING: Redefining defrule: Turno14Cerdos =j=j=j+j
+
+[CSTRCPSR1] WARNING: Redefining defrule: Turno14Pesca =j=j=j+j
+
+[CSTRCPSR1] WARNING: Redefining defrule: Turno14ArarySembrar =j=j=j+j
+
+[CSTRCPSR1] WARNING: Redefining defrule: FinFase3 =j+j+j+j+j+j+j+j+j+j+j+j+j+j+j+j+j+j+j+j+j+j
+
+[CSTRCPSR1] WARNING: Redefining defrule: ValorUtilizado +j+j
+
+[CSTRCPSR1] WARNING: Redefining defrule: TurnodeNoCosecha +j+j+j+j+j
+TRUE
+CLIPS> (load "C:/Users/palom/Documents/GitHub/Agricola/ReglasCosecha.clp")
+Defining defrule: Cosecha =j+j+j
+Defining defrule: VenderHortalizasParaComer =j+j+j
+Defining defrule: VenderOvejasParaComer =j+j
+Defining defrule: VenderCerdosParaComer =j+j
+Defining defrule: VenderVacasParaComer =j+j
+Defining defrule: RecogerOvejaCosecha +j+j
+Defining defrule: NoRecogerOvejaCosecha =j
+Defining defrule: RecogerCerdoCosecha +j+j
+Defining defrule: NoRecogerCerdoCosecha =j
+Defining defrule: RecogerVacaCosecha +j+j
+Defining defrule: NoRecogerVacaCosecha =j
+Defining defrule: RecogerCereal +j+j+j
+Defining defrule: NoRecogerCerealCosecha =j
+Defining defrule: FinCosecha +j+j+j+j+j+j+j+j
+Defining defrule: SinComida =j+j+j+j+j+j+j+j+j
+TRUE
+CLIPS> (load "C:/Users/palom/Documents/GitHub/Agricola/Prueba1.clp")
+Defining deffacts: Hechosiniciales
+Defining definstances: Acciones
+Defining definstances: AdquisicionesMayores
+Defining definstances: RecursosIniciales
+Defining definstances: EspacioHabitacion
+TRUE
+CLIPS> (reset)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+(run 1)
+CLIPS> CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (reset9
+(run 1)
+CLIPS> (reset)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+(run 1)
+CLIPS> CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (reset)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+(run 1)
+CLIPS> CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+(run 1)
+CLIPS> CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (reset)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (clear)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (load "C:/Users/palom/Documents/GitHub/Agricola/Ontologia.clp")
+Defining defclass: EspacioAnimales
+Defining defclass: EspacioCampo
+Defining defclass: EspacioHabitacion
+Defining defclass: AdquisicionMayor
+Defining defclass: Accion
+Defining defclass: Almacenado
+Defining deftemplate: InfoJuego
+Defining deftemplate: AccionDisponible
+Defining deftemplate: Habitantes
+Defining deftemplate: AnimalColocar
+Defining deftemplate: AnimalVender
+TRUE
+CLIPS> (load "C:/Users/palom/Documents/GitHub/Agricola/Reglas.clp")
+Defining defrule: inicio +j
+Defining defrule: AccionesRonda +j+j+j
+Defining defrule: Recolocar +j+j
+Defining defrule: Recolocar2 =j+j
+Defining defrule: FinRecolocar =j
+Defining defrule: ValoresRecolocado +j+j
+Defining defrule: ObtenerMadera +j+j+j
+Defining defrule: ObtenerAdobe +j+j+j
+Defining defrule: ObtenerJuncal +j+j+j
+Defining defrule: ObtenerPiedra +j+j+j
+Defining defrule: Labranza +j+j
+Defining defrule: SemillasCereales +j+j+j
+Defining defrule: SemillasHortalizas +j+j+j
+Defining defrule: Jornalero +j+j+j
+Defining defrule: Pesca +j+j+j
+Defining defrule: AmpliarHabitacion +j+j+j+j
+Defining defrule: Cocina +j+j+j
+Defining defrule: AmpliacionPlanificada +j+j+j
+Defining defrule: AmpliacionPrecipitada +j+j+j
+Defining defrule: Vallas +j+j+j
+Defining defrule: MercadoOvino +j+j+j
+Defining defrule: MercadoOvinoTurno7 +j+j+j
+Defining defrule: MercadoPorcino +j+j
+Defining defrule: MercadoBovino +j+j
+Defining defrule: ColocarAnimales +j+j+j
+Defining defrule: VenderOvejas +j+j+j+j
+Defining defrule: VenderCerdos =j=j+j+j
+Defining defrule: VenderVacas =j=j+j+j
+Defining defrule: Siembra +j+j+j
+Defining defrule: Hornear +j+j+j+j
+Defining defrule: Turno1 +j+j+j+j+j
+Defining defrule: Turno2Cereal +j+j+j+j
+Defining defrule: Turno2Siembra =j=j=j+j
+Defining defrule: Turno2Jornalero =j=j=j+j
+Defining defrule: Turno3 +j+j+j+j+j
+Defining defrule: Turno4 +j+j+j+j+j
+Defining defrule: Turno5Adobe +j+j+j+j
+Defining defrule: Turno5AmplacionFamilia =j=j=j+j+j
+Defining defrule: Turno5Cocina =j=j=j+j
+Defining defrule: Turno6Madera +j+j+j+j
+Defining defrule: Turno6Cocina =j=j=j+j+j
+Defining defrule: Turno6Ampliacion =j=j+j+j+j
+Defining defrule: Turno6Jornalero =j=j=j+j+j
+Defining defrule: Turno6Sembrado =j=j=j+j+j
+Defining defrule: Turno6SemillaCereal =j=j=j+j
+Defining defrule: Turno7Ovejas +j+j+j+j
+Defining defrule: Turno7Vallas =j=j+j+j
+Defining defrule: Turno7AmpliacionPlanificada =j=j+j+j+j
+Defining defrule: Turno7Labranza +j+j+j+j+j+j
+Defining defrule: Turno7Sembrar =j=j=j=j+j+j+j
+Defining defrule: Turno7SemillaCereal =j=j=j=j=j+j
+Defining defrule: Turno7Jornalero +j+j+j+j+j+j
+Defining defrule: Turno7Labranza2 =j=j=j=j+j+j
+Defining defrule: Turno7SemillaCereal2 =j=j=j=j+j+j
+Defining defrule: Turno8SemillaCereal +j+j+j+j
+Defining defrule: Turno8Labranza =j=j=j+j
+Defining defrule: Turno8Pesca =j=j=j+j
+Defining defrule: Turno9Madera +j+j+j+j
+Defining defrule: Turno9Hortaliza =j=j=j+j
+Defining defrule: Turno9SembraryHornear =j=j=j+j
+Defining defrule: Turno10Vallas +j+j+j+j
+Defining defrule: Turno10Labranza =j=j=j+j
+Defining defrule: Turno10SemillasCereales =j=j=j+j
+Defining defrule: Turno11Cerdos +j+j+j+j
+Defining defrule: Turno11Sembraryhornear =j=j=j+j
+Defining defrule: Turno11Vacas =j=j=j+j
+Defining defrule: Turno11Hortaliza =j=j=j+j
+Defining defrule: Turno12SemillasCereales +j+j+j+j
+Defining defrule: Turno12SemillasHortalizas =j=j=j+j
+Defining defrule: Turno12Precipitada =j=j=j+j
+Defining defrule: Turno12ArarySEmbrar =j=j=j+j
+Defining defrule: Turno13SemillasCereales +j+j+j+j
+Defining defrule: Turno13SemillasHortalizas =j=j=j+j
+Defining defrule: Turno13Precipitada =j=j+j+j
+Defining defrule: Turno13SembraryHornear =j=j=j+j
+Defining defrule: Turno14Ovejas +j+j+j+j
+Defining defrule: Turno14Vacas =j=j=j+j
+Defining defrule: Turno14Cerdos =j=j=j+j
+Defining defrule: Turno14Pesca =j=j=j+j
+Defining defrule: Turno14ArarySembrar =j=j=j+j
+Defining defrule: FinFase3 =j+j+j+j+j+j+j+j+j+j+j+j+j+j+j+j+j+j+j+j+j+j
+Defining defrule: ValorUtilizado +j+j
+Defining defrule: TurnodeNoCosecha +j+j+j+j+j
+TRUE
+CLIPS> (load "C:/Users/palom/Documents/GitHub/Agricola/ReglasCosecha.clp")
+Defining defrule: Cosecha =j+j+j
+Defining defrule: VenderHortalizasParaComer =j+j+j
+Defining defrule: VenderOvejasParaComer =j+j
+Defining defrule: VenderCerdosParaComer =j+j
+Defining defrule: VenderVacasParaComer =j+j
+Defining defrule: RecogerOvejaCosecha +j+j
+Defining defrule: NoRecogerOvejaCosecha =j
+Defining defrule: RecogerCerdoCosecha +j+j
+Defining defrule: NoRecogerCerdoCosecha =j
+Defining defrule: RecogerVacaCosecha +j+j
+Defining defrule: NoRecogerVacaCosecha =j
+Defining defrule: RecogerCereal +j+j+j
+Defining defrule: NoRecogerCerealCosecha =j
+Defining defrule: FinCosecha +j+j+j+j+j+j+j+j
+Defining defrule: SinComida =j+j+j+j+j+j+j+j+j
+TRUE
+CLIPS> (load "C:/Users/palom/Documents/GitHub/Agricola/Prueba1.clp")
+Defining deffacts: Hechosiniciales
+Defining definstances: Acciones
+Defining definstances: AdquisicionesMayores
+Defining definstances: RecursosIniciales
+Defining definstances: EspacioHabitacion
+TRUE
+CLIPS> (reset)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+(run 1)
+CLIPS> CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (clear)
+CLIPS> (load "C:/Users/palom/Documents/GitHub/Agricola/Ontologia.clp")
+Defining defclass: EspacioAnimales
+Defining defclass: EspacioCampo
+Defining defclass: EspacioHabitacion
+Defining defclass: AdquisicionMayor
+Defining defclass: Accion
+Defining defclass: Almacenado
+Defining deftemplate: InfoJuego
+Defining deftemplate: AccionDisponible
+Defining deftemplate: Habitantes
+Defining deftemplate: AnimalColocar
+Defining deftemplate: AnimalVender
+TRUE
+CLIPS> (load "C:/Users/palom/Documents/GitHub/Agricola/Reglas.clp")
+Defining defrule: inicio +j
+Defining defrule: AccionesRonda +j+j+j
+Defining defrule: Recolocar +j+j
+Defining defrule: Recolocar2 =j+j
+Defining defrule: FinRecolocar =j
+Defining defrule: ValoresRecolocado +j+j
+Defining defrule: ObtenerMadera +j+j+j
+Defining defrule: ObtenerAdobe +j+j+j
+Defining defrule: ObtenerJuncal +j+j+j
+Defining defrule: ObtenerPiedra +j+j+j
+Defining defrule: Labranza +j+j
+Defining defrule: SemillasCereales +j+j+j
+Defining defrule: SemillasHortalizas +j+j+j
+Defining defrule: Jornalero +j+j+j
+Defining defrule: Pesca +j+j+j
+Defining defrule: AmpliarHabitacion +j+j+j+j
+Defining defrule: Cocina +j+j+j
+Defining defrule: AmpliacionPlanificada +j+j+j
+Defining defrule: AmpliacionPrecipitada +j+j+j
+Defining defrule: Vallas +j+j+j
+Defining defrule: MercadoOvino +j+j+j
+Defining defrule: MercadoOvinoTurno7 +j+j+j
+Defining defrule: MercadoPorcino +j+j
+Defining defrule: MercadoBovino +j+j
+Defining defrule: ColocarAnimales +j+j+j
+Defining defrule: VenderOvejas +j+j+j+j
+Defining defrule: VenderCerdos =j=j+j+j
+Defining defrule: VenderVacas =j=j+j+j
+Defining defrule: Siembra +j+j+j
+Defining defrule: Hornear +j+j+j+j
+Defining defrule: Turno1 +j+j+j+j+j
+Defining defrule: Turno2Cereal +j+j+j+j
+Defining defrule: Turno2Siembra =j=j=j+j
+Defining defrule: Turno2Jornalero =j=j=j+j
+Defining defrule: Turno3 +j+j+j+j+j
+Defining defrule: Turno4 +j+j+j+j+j
+Defining defrule: Turno5Adobe +j+j+j+j
+Defining defrule: Turno5AmplacionFamilia =j=j=j+j+j
+Defining defrule: Turno5Cocina =j=j=j+j
+Defining defrule: Turno6Madera +j+j+j+j
+Defining defrule: Turno6Cocina =j=j=j+j+j
+Defining defrule: Turno6Ampliacion =j=j+j+j+j
+Defining defrule: Turno6Jornalero =j=j=j+j+j
+Defining defrule: Turno6Sembrado =j=j=j+j+j
+Defining defrule: Turno6SemillaCereal =j=j=j+j
+Defining defrule: Turno7Ovejas +j+j+j+j
+Defining defrule: Turno7Vallas =j=j+j+j
+Defining defrule: Turno7AmpliacionPlanificada =j=j+j+j+j
+Defining defrule: Turno7Labranza +j+j+j+j+j+j+j
+Defining defrule: Turno7Sembrar =j=j=j=j+j+j+j
+Defining defrule: Turno7SemillaCereal =j=j=j=j=j+j
+Defining defrule: Turno7Jornalero +j+j+j+j+j+j
+Defining defrule: Turno7Labranza2 =j=j=j=j+j+j
+Defining defrule: Turno7SemillaCereal2 =j=j=j=j+j+j
+Defining defrule: Turno8SemillaCereal +j+j+j+j
+Defining defrule: Turno8Labranza =j=j=j+j
+Defining defrule: Turno8Pesca =j=j=j+j
+Defining defrule: Turno9Madera +j+j+j+j
+Defining defrule: Turno9Hortaliza =j=j=j+j
+Defining defrule: Turno9SembraryHornear =j=j=j+j
+Defining defrule: Turno10Vallas +j+j+j+j
+Defining defrule: Turno10Labranza =j=j=j+j
+Defining defrule: Turno10SemillasCereales =j=j=j+j
+Defining defrule: Turno11Cerdos +j+j+j+j
+Defining defrule: Turno11Sembraryhornear =j=j=j+j
+Defining defrule: Turno11Vacas =j=j=j+j
+Defining defrule: Turno11Hortaliza =j=j=j+j
+Defining defrule: Turno12SemillasCereales +j+j+j+j
+Defining defrule: Turno12SemillasHortalizas =j=j=j+j
+Defining defrule: Turno12Precipitada =j=j=j+j
+Defining defrule: Turno12ArarySEmbrar =j=j=j+j
+Defining defrule: Turno13SemillasCereales +j+j+j+j
+Defining defrule: Turno13SemillasHortalizas =j=j=j+j
+Defining defrule: Turno13Precipitada =j=j+j+j
+Defining defrule: Turno13SembraryHornear =j=j=j+j
+Defining defrule: Turno14Ovejas +j+j+j+j
+Defining defrule: Turno14Vacas =j=j=j+j
+Defining defrule: Turno14Cerdos =j=j=j+j
+Defining defrule: Turno14Pesca =j=j=j+j
+Defining defrule: Turno14ArarySembrar =j=j=j+j
+Defining defrule: FinFase3 =j+j+j+j+j+j+j+j+j+j+j+j+j+j+j+j+j+j+j+j+j+j
+Defining defrule: ValorUtilizado +j+j
+Defining defrule: TurnodeNoCosecha +j+j+j+j+j
+Defining defrule: Acabar [ARGACCES4] Function dribble-off expected exactly 0 argument(s)
+
+ERROR:
+(defrule MAIN::Acabar
+   (InfoJuego (turno ?turno) (fase ?fase))
+   (test (eq ?turno 15))
+   =>
+   (dribble-off "dribble.txt")
+FALSE
+CLIPS> (clear)
+CLIPS> (load "C:/Users/palom/Documents/GitHub/Agricola/Ontologia.clp")
+Defining defclass: EspacioAnimales
+Defining defclass: EspacioCampo
+Defining defclass: EspacioHabitacion
+Defining defclass: AdquisicionMayor
+Defining defclass: Accion
+Defining defclass: Almacenado
+Defining deftemplate: InfoJuego
+Defining deftemplate: AccionDisponible
+Defining deftemplate: Habitantes
+Defining deftemplate: AnimalColocar
+Defining deftemplate: AnimalVender
+TRUE
+CLIPS> (load "C:/Users/palom/Documents/GitHub/Agricola/Reglas.clp")
+Defining defrule: inicio +j
+Defining defrule: AccionesRonda +j+j+j
+Defining defrule: Recolocar +j+j
+Defining defrule: Recolocar2 =j+j
+Defining defrule: FinRecolocar =j
+Defining defrule: ValoresRecolocado +j+j
+Defining defrule: ObtenerMadera +j+j+j
+Defining defrule: ObtenerAdobe +j+j+j
+Defining defrule: ObtenerJuncal +j+j+j
+Defining defrule: ObtenerPiedra +j+j+j
+Defining defrule: Labranza +j+j
+Defining defrule: SemillasCereales +j+j+j
+Defining defrule: SemillasHortalizas +j+j+j
+Defining defrule: Jornalero +j+j+j
+Defining defrule: Pesca +j+j+j
+Defining defrule: AmpliarHabitacion +j+j+j+j
+Defining defrule: Cocina +j+j+j
+Defining defrule: AmpliacionPlanificada +j+j+j
+Defining defrule: AmpliacionPrecipitada +j+j+j
+Defining defrule: Vallas +j+j+j
+Defining defrule: MercadoOvino +j+j+j
+Defining defrule: MercadoOvinoTurno7 +j+j+j
+Defining defrule: MercadoPorcino +j+j
+Defining defrule: MercadoBovino +j+j
+Defining defrule: ColocarAnimales +j+j+j
+Defining defrule: VenderOvejas +j+j+j+j
+Defining defrule: VenderCerdos =j=j+j+j
+Defining defrule: VenderVacas =j=j+j+j
+Defining defrule: Siembra +j+j+j
+Defining defrule: Hornear +j+j+j+j
+Defining defrule: Turno1 +j+j+j+j+j
+Defining defrule: Turno2Cereal +j+j+j+j
+Defining defrule: Turno2Siembra =j=j=j+j
+Defining defrule: Turno2Jornalero =j=j=j+j
+Defining defrule: Turno3 +j+j+j+j+j
+Defining defrule: Turno4 +j+j+j+j+j
+Defining defrule: Turno5Adobe +j+j+j+j
+Defining defrule: Turno5AmplacionFamilia =j=j=j+j+j
+Defining defrule: Turno5Cocina =j=j=j+j
+Defining defrule: Turno6Madera +j+j+j+j
+Defining defrule: Turno6Cocina =j=j=j+j+j
+Defining defrule: Turno6Ampliacion =j=j+j+j+j
+Defining defrule: Turno6Jornalero =j=j=j+j+j
+Defining defrule: Turno6Sembrado =j=j=j+j+j
+Defining defrule: Turno6SemillaCereal =j=j=j+j
+Defining defrule: Turno7Ovejas +j+j+j+j
+Defining defrule: Turno7Vallas =j=j+j+j
+Defining defrule: Turno7AmpliacionPlanificada =j=j+j+j+j
+Defining defrule: Turno7Labranza +j+j+j+j+j+j+j
+Defining defrule: Turno7Sembrar =j=j=j=j+j+j+j
+Defining defrule: Turno7SemillaCereal =j=j=j=j=j+j
+Defining defrule: Turno7Jornalero +j+j+j+j+j+j
+Defining defrule: Turno7Labranza2 =j=j=j=j+j+j
+Defining defrule: Turno7SemillaCereal2 =j=j=j=j+j+j
+Defining defrule: Turno8SemillaCereal +j+j+j+j
+Defining defrule: Turno8Labranza =j=j=j+j
+Defining defrule: Turno8Pesca =j=j=j+j
+Defining defrule: Turno9Madera +j+j+j+j
+Defining defrule: Turno9Hortaliza =j=j=j+j
+Defining defrule: Turno9SembraryHornear =j=j=j+j
+Defining defrule: Turno10Vallas +j+j+j+j
+Defining defrule: Turno10Labranza =j=j=j+j
+Defining defrule: Turno10SemillasCereales =j=j=j+j
+Defining defrule: Turno11Cerdos +j+j+j+j
+Defining defrule: Turno11Sembraryhornear =j=j=j+j
+Defining defrule: Turno11Vacas =j=j=j+j
+Defining defrule: Turno11Hortaliza =j=j=j+j
+Defining defrule: Turno12SemillasCereales +j+j+j+j
+Defining defrule: Turno12SemillasHortalizas =j=j=j+j
+Defining defrule: Turno12Precipitada =j=j=j+j
+Defining defrule: Turno12ArarySEmbrar =j=j=j+j
+Defining defrule: Turno13SemillasCereales +j+j+j+j
+Defining defrule: Turno13SemillasHortalizas =j=j=j+j
+Defining defrule: Turno13Precipitada =j=j+j+j
+Defining defrule: Turno13SembraryHornear =j=j=j+j
+Defining defrule: Turno14Ovejas +j+j+j+j
+Defining defrule: Turno14Vacas =j=j=j+j
+Defining defrule: Turno14Cerdos =j=j=j+j
+Defining defrule: Turno14Pesca =j=j=j+j
+Defining defrule: Turno14ArarySembrar =j=j=j+j
+Defining defrule: FinFase3 =j+j+j+j+j+j+j+j+j+j+j+j+j+j+j+j+j+j+j+j+j+j
+Defining defrule: ValorUtilizado +j+j
+Defining defrule: TurnodeNoCosecha +j+j+j+j+j
+Defining defrule: Acabar +j
+TRUE
+CLIPS> (load "C:/Users/palom/Documents/GitHub/Agricola/ReglasCosecha.clp")
+Defining defrule: Cosecha =j+j+j
+Defining defrule: VenderHortalizasParaComer =j+j+j
+Defining defrule: VenderOvejasParaComer =j+j
+Defining defrule: VenderCerdosParaComer =j+j
+Defining defrule: VenderVacasParaComer =j+j
+Defining defrule: RecogerOvejaCosecha +j+j
+Defining defrule: NoRecogerOvejaCosecha =j
+Defining defrule: RecogerCerdoCosecha +j+j
+Defining defrule: NoRecogerCerdoCosecha =j
+Defining defrule: RecogerVacaCosecha +j+j
+Defining defrule: NoRecogerVacaCosecha =j
+Defining defrule: RecogerCereal +j+j+j
+Defining defrule: NoRecogerCerealCosecha =j
+Defining defrule: FinCosecha +j+j+j+j+j+j+j+j
+Defining defrule: SinComida =j+j+j+j+j+j+j+j+j
+TRUE
+CLIPS> (load "C:/Users/palom/Documents/GitHub/Agricola/Prueba1.clp")
+Defining deffacts: Hechosiniciales
+Defining definstances: Acciones
+Defining definstances: AdquisicionesMayores
+Defining definstances: RecursosIniciales
+Defining definstances: EspacioHabitacion
+TRUE
+CLIPS> (reset)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+(run 1)
+CLIPS> CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (clear)
+CLIPS> (load "C:/Users/palom/Documents/GitHub/Agricola/Ontologia.clp")
+Defining defclass: EspacioAnimales
+Defining defclass: EspacioCampo
+Defining defclass: EspacioHabitacion
+Defining defclass: AdquisicionMayor
+Defining defclass: Accion
+Defining defclass: Almacenado
+Defining deftemplate: InfoJuego
+Defining deftemplate: AccionDisponible
+Defining deftemplate: Habitantes
+Defining deftemplate: AnimalColocar
+Defining deftemplate: AnimalVender
+TRUE
+CLIPS> (load "C:/Users/palom/Documents/GitHub/Agricola/Reglas.clp")
+Defining defrule: inicio +j
+Defining defrule: AccionesRonda +j+j+j
+Defining defrule: Recolocar +j+j
+Defining defrule: Recolocar2 =j+j
+Defining defrule: FinRecolocar =j
+Defining defrule: ValoresRecolocado +j+j
+Defining defrule: ObtenerMadera +j+j+j
+Defining defrule: ObtenerAdobe +j+j+j
+Defining defrule: ObtenerJuncal +j+j+j
+Defining defrule: ObtenerPiedra +j+j+j
+Defining defrule: Labranza +j+j
+Defining defrule: SemillasCereales +j+j+j
+Defining defrule: SemillasHortalizas +j+j+j
+Defining defrule: Jornalero +j+j+j
+Defining defrule: Pesca +j+j+j
+Defining defrule: AmpliarHabitacion +j+j+j+j
+Defining defrule: Cocina +j+j+j
+Defining defrule: AmpliacionPlanificada +j+j+j
+Defining defrule: AmpliacionPrecipitada +j+j+j
+Defining defrule: Vallas +j+j+j
+Defining defrule: MercadoOvino +j+j+j
+Defining defrule: MercadoOvinoTurno7 +j+j+j
+Defining defrule: MercadoPorcino +j+j
+Defining defrule: MercadoBovino +j+j
+Defining defrule: ColocarAnimales +j+j+j
+Defining defrule: VenderOvejas +j+j+j+j
+Defining defrule: VenderCerdos =j=j+j+j
+Defining defrule: VenderVacas =j=j+j+j
+Defining defrule: Siembra +j+j+j
+Defining defrule: Hornear +j+j+j+j
+Defining defrule: Turno1 +j+j+j+j+j
+Defining defrule: Turno2Cereal +j+j+j+j
+Defining defrule: Turno2Siembra =j=j=j+j
+Defining defrule: Turno2Jornalero =j=j=j+j
+Defining defrule: Turno3 +j+j+j+j+j
+Defining defrule: Turno4 +j+j+j+j+j
+Defining defrule: Turno5Adobe +j+j+j+j
+Defining defrule: Turno5AmplacionFamilia =j=j=j+j+j
+Defining defrule: Turno5Cocina =j=j=j+j
+Defining defrule: Turno6Madera +j+j+j+j
+Defining defrule: Turno6Cocina =j=j=j+j+j
+Defining defrule: Turno6Ampliacion =j=j+j+j+j
+Defining defrule: Turno6Jornalero =j=j=j+j+j
+Defining defrule: Turno6Sembrado =j=j=j+j+j
+Defining defrule: Turno6SemillaCereal =j=j=j+j
+Defining defrule: Turno7Ovejas +j+j+j+j
+Defining defrule: Turno7Vallas =j=j+j+j
+Defining defrule: Turno7AmpliacionPlanificada =j=j+j+j+j
+Defining defrule: Turno7Labranza +j+j+j+j+j+j+j
+Defining defrule: Turno7Sembrar =j=j=j=j+j+j+j
+Defining defrule: Turno7SemillaCereal =j=j=j=j=j+j
+Defining defrule: Turno7Jornalero +j+j+j+j+j+j
+Defining defrule: Turno7Labranza2 =j=j=j=j+j+j
+Defining defrule: Turno7SemillaCereal2 =j=j=j=j+j+j
+Defining defrule: Turno8SemillaCereal +j+j+j+j
+Defining defrule: Turno8Labranza =j=j=j+j
+Defining defrule: Turno8Pesca =j=j=j+j
+Defining defrule: Turno9Madera +j+j+j+j
+Defining defrule: Turno9Hortaliza =j=j=j+j
+Defining defrule: Turno9SembraryHornear =j=j=j+j
+Defining defrule: Turno10Vallas +j+j+j+j
+Defining defrule: Turno10Labranza =j=j=j+j
+Defining defrule: Turno10SemillasCereales =j=j=j+j
+Defining defrule: Turno11Cerdos +j+j+j+j
+Defining defrule: Turno11Sembraryhornear =j=j=j+j
+Defining defrule: Turno11Vacas =j=j=j+j
+Defining defrule: Turno11Hortaliza =j=j=j+j
+Defining defrule: Turno12SemillasCereales +j+j+j+j
+Defining defrule: Turno12SemillasHortalizas =j=j=j+j
+Defining defrule: Turno12Precipitada =j=j=j+j
+Defining defrule: Turno12ArarySEmbrar =j=j=j+j
+Defining defrule: Turno13SemillasCereales +j+j+j+j
+Defining defrule: Turno13SemillasHortalizas =j=j=j+j
+Defining defrule: Turno13Precipitada =j=j+j+j
+Defining defrule: Turno13SembraryHornear =j=j=j+j
+Defining defrule: Turno14Ovejas +j+j+j+j
+Defining defrule: Turno14Vacas =j=j=j+j
+Defining defrule: Turno14Cerdos =j=j=j+j
+Defining defrule: Turno14Pesca =j=j=j+j
+Defining defrule: Turno14ArarySembrar =j=j=j+j
+Defining defrule: FinFase3 =j+j+j+j+j+j+j+j+j+j+j+j+j+j+j+j+j+j+j+j+j+j
+Defining defrule: ValorUtilizado +j+j
+Defining defrule: TurnodeNoCosecha +j+j+j+j+j
+Defining defrule: Acabar +j
+TRUE
+CLIPS> (load "C:/Users/palom/Documents/GitHub/Agricola/ReglasCosecha.clp")
+Defining defrule: Cosecha =j+j+j
+Defining defrule: VenderHortalizasParaComer =j+j+j
+Defining defrule: VenderOvejasParaComer =j+j
+Defining defrule: VenderCerdosParaComer =j+j
+Defining defrule: VenderVacasParaComer =j+j
+Defining defrule: RecogerOvejaCosecha +j+j
+Defining defrule: NoRecogerOvejaCosecha =j
+Defining defrule: RecogerCerdoCosecha +j+j
+Defining defrule: NoRecogerCerdoCosecha =j
+Defining defrule: RecogerVacaCosecha +j+j
+Defining defrule: NoRecogerVacaCosecha =j
+Defining defrule: RecogerCereal +j+j+j
+Defining defrule: NoRecogerCerealCosecha =j
+Defining defrule: FinCosecha +j+j+j+j+j+j+j+j
+Defining defrule: SinComida =j+j+j+j+j+j+j+j+j
+TRUE
+CLIPS> (load "C:/Users/palom/Documents/GitHub/Agricola/Prueba1.clp")
+Defining deffacts: Hechosiniciales
+Defining definstances: Acciones
+Defining definstances: AdquisicionesMayores
+Defining definstances: RecursosIniciales
+Defining definstances: EspacioHabitacion
+TRUE
+CLIPS> (reset)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+(run 1)
+CLIPS> CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (clear)
+CLIPS> (load "C:/Users/palom/Documents/GitHub/Agricola/Ontologia.clp")
+Defining defclass: EspacioAnimales
+Defining defclass: EspacioCampo
+Defining defclass: EspacioHabitacion
+Defining defclass: AdquisicionMayor
+Defining defclass: Accion
+Defining defclass: Almacenado
+Defining deftemplate: InfoJuego
+Defining deftemplate: AccionDisponible
+Defining deftemplate: Habitantes
+Defining deftemplate: AnimalColocar
+Defining deftemplate: AnimalVender
+TRUE
+CLIPS> (load "C:/Users/palom/Documents/GitHub/Agricola/Reglas.clp")
+Defining defrule: inicio +j
+Defining defrule: AccionesRonda +j+j+j
+Defining defrule: Recolocar +j+j
+Defining defrule: Recolocar2 =j+j
+Defining defrule: FinRecolocar =j
+Defining defrule: ValoresRecolocado +j+j
+Defining defrule: ObtenerMadera +j+j+j
+Defining defrule: ObtenerAdobe +j+j+j
+Defining defrule: ObtenerJuncal +j+j+j
+Defining defrule: ObtenerPiedra +j+j+j
+Defining defrule: Labranza +j+j
+Defining defrule: SemillasCereales +j+j+j
+Defining defrule: SemillasHortalizas +j+j+j
+Defining defrule: Jornalero +j+j+j
+Defining defrule: Pesca +j+j+j
+Defining defrule: AmpliarHabitacion +j+j+j+j
+Defining defrule: Cocina +j+j+j
+Defining defrule: AmpliacionPlanificada +j+j+j
+Defining defrule: AmpliacionPrecipitada +j+j+j
+Defining defrule: Vallas +j+j+j
+Defining defrule: MercadoOvino +j+j+j
+Defining defrule: MercadoOvinoTurno7 +j+j+j
+Defining defrule: MercadoPorcino +j+j
+Defining defrule: MercadoBovino +j+j
+Defining defrule: ColocarAnimales +j+j+j
+Defining defrule: VenderOvejas +j+j+j+j
+Defining defrule: VenderCerdos =j=j+j+j
+Defining defrule: VenderVacas =j=j+j+j
+Defining defrule: Siembra +j+j+j
+Defining defrule: Hornear +j+j+j+j
+Defining defrule: Turno1 +j+j+j+j+j
+Defining defrule: Turno2Cereal +j+j+j+j
+Defining defrule: Turno2Siembra =j=j=j+j
+Defining defrule: Turno2Jornalero =j=j=j+j
+Defining defrule: Turno3 +j+j+j+j+j
+Defining defrule: Turno4 +j+j+j+j+j
+Defining defrule: Turno5Adobe +j+j+j+j
+Defining defrule: Turno5AmplacionFamilia =j=j=j+j+j
+Defining defrule: Turno5Cocina =j=j=j+j
+Defining defrule: Turno6Madera +j+j+j+j
+Defining defrule: Turno6Cocina =j=j=j+j+j
+Defining defrule: Turno6Ampliacion =j=j+j+j+j
+Defining defrule: Turno6Jornalero =j=j=j+j+j
+Defining defrule: Turno6Sembrado =j=j=j+j+j
+Defining defrule: Turno6SemillaCereal =j=j=j+j
+Defining defrule: Turno7Ovejas +j+j+j+j
+Defining defrule: Turno7Vallas =j=j+j+j
+Defining defrule: Turno7AmpliacionPlanificada =j=j+j+j+j
+Defining defrule: Turno7Labranza +j+j+j+j+j+j+j
+Defining defrule: Turno7Sembrar =j=j=j=j+j+j+j
+Defining defrule: Turno7SemillaCereal =j=j=j=j=j+j
+Defining defrule: Turno7Jornalero +j+j+j+j+j+j
+Defining defrule: Turno7Labranza2 =j=j=j=j+j+j
+Defining defrule: Turno7SemillaCereal2 =j=j=j=j+j+j
+Defining defrule: Turno8SemillaCereal +j+j+j+j
+Defining defrule: Turno8Labranza =j=j=j+j
+Defining defrule: Turno8Pesca =j=j=j+j
+Defining defrule: Turno9Madera +j+j+j+j
+Defining defrule: Turno9Hortaliza =j=j=j+j
+Defining defrule: Turno9SembraryHornear =j=j=j+j
+Defining defrule: Turno10Vallas +j+j+j+j
+Defining defrule: Turno10Labranza =j=j=j+j
+Defining defrule: Turno10SemillasCereales =j=j=j+j
+Defining defrule: Turno11Cerdos +j+j+j+j
+Defining defrule: Turno11Sembraryhornear =j=j=j+j
+Defining defrule: Turno11Vacas =j=j=j+j
+Defining defrule: Turno11Hortaliza =j=j=j+j
+Defining defrule: Turno12SemillasCereales +j+j+j+j
+Defining defrule: Turno12SemillasHortalizas =j=j=j+j
+Defining defrule: Turno12Precipitada =j=j=j+j
+Defining defrule: Turno12ArarySEmbrar =j=j=j+j
+Defining defrule: Turno13SemillasCereales +j+j+j+j
+Defining defrule: Turno13SemillasHortalizas =j=j=j+j
+Defining defrule: Turno13Precipitada =j=j+j+j
+Defining defrule: Turno13SembraryHornear =j=j=j+j
+Defining defrule: Turno14Ovejas +j+j+j+j
+Defining defrule: Turno14Vacas =j=j=j+j
+Defining defrule: Turno14Cerdos =j=j=j+j
+Defining defrule: Turno14Pesca =j=j=j+j
+Defining defrule: Turno14ArarySembrar =j=j=j+j
+Defining defrule: FinFase3 =j+j+j+j+j+j+j+j+j+j+j+j+j+j+j+j+j+j+j+j+j+j
+Defining defrule: ValorUtilizado +j+j
+Defining defrule: TurnodeNoCosecha +j+j+j+j+j
+Defining defrule: Acabar +j
+TRUE
+CLIPS> (load "C:/Users/palom/Documents/GitHub/Agricola/ReglasCosecha.clp")
+Defining defrule: Cosecha =j+j+j
+Defining defrule: VenderHortalizasParaComer =j+j+j
+Defining defrule: VenderOvejasParaComer =j+j
+Defining defrule: VenderCerdosParaComer =j+j
+Defining defrule: VenderVacasParaComer =j+j
+Defining defrule: RecogerOvejaCosecha +j+j
+Defining defrule: NoRecogerOvejaCosecha =j
+Defining defrule: RecogerCerdoCosecha +j+j
+Defining defrule: NoRecogerCerdoCosecha =j
+Defining defrule: RecogerVacaCosecha +j+j
+Defining defrule: NoRecogerVacaCosecha =j
+Defining defrule: RecogerCereal +j+j+j
+Defining defrule: NoRecogerCerealCosecha =j
+Defining defrule: FinCosecha +j+j+j+j+j+j+j+j
+Defining defrule: SinComida =j+j+j+j+j+j+j+j+j
+TRUE
+CLIPS> (load "C:/Users/palom/Documents/GitHub/Agricola/Prueba1.clp")
+Defining deffacts: Hechosiniciales
+Defining definstances: Acciones
+Defining definstances: AdquisicionesMayores
+Defining definstances: RecursosIniciales
+Defining definstances: EspacioHabitacion
+TRUE
+CLIPS> (reset)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (clear)
+CLIPS> (load "C:/Users/palom/Documents/GitHub/Agricola/Ontologia.clp")
+Defining defclass: EspacioAnimales
+Defining defclass: EspacioCampo
+Defining defclass: EspacioHabitacion
+Defining defclass: AdquisicionMayor
+Defining defclass: Accion
+Defining defclass: Almacenado
+Defining deftemplate: InfoJuego
+Defining deftemplate: AccionDisponible
+Defining deftemplate: Habitantes
+Defining deftemplate: AnimalColocar
+Defining deftemplate: AnimalVender
+TRUE
+CLIPS> (load "C:/Users/palom/Documents/GitHub/Agricola/Reglas.clp")
+Defining defrule: inicio +j
+Defining defrule: AccionesRonda +j+j+j
+Defining defrule: Recolocar +j+j
+Defining defrule: Recolocar2 =j+j
+Defining defrule: FinRecolocar =j
+Defining defrule: ValoresRecolocado +j+j
+Defining defrule: ObtenerMadera +j+j+j
+Defining defrule: ObtenerAdobe +j+j+j
+Defining defrule: ObtenerJuncal +j+j+j
+Defining defrule: ObtenerPiedra +j+j+j
+Defining defrule: Labranza +j+j
+Defining defrule: SemillasCereales +j+j+j
+Defining defrule: SemillasHortalizas +j+j+j
+Defining defrule: Jornalero +j+j+j
+Defining defrule: Pesca +j+j+j
+Defining defrule: AmpliarHabitacion +j+j+j+j
+Defining defrule: Cocina +j+j+j
+Defining defrule: AmpliacionPlanificada +j+j+j
+Defining defrule: AmpliacionPrecipitada +j+j+j
+Defining defrule: Vallas +j+j+j
+Defining defrule: MercadoOvino +j+j+j
+Defining defrule: MercadoOvinoTurno7 +j+j+j
+Defining defrule: MercadoPorcino +j+j
+Defining defrule: MercadoBovino +j+j
+Defining defrule: ColocarAnimales +j+j+j
+Defining defrule: VenderOvejas +j+j+j+j
+Defining defrule: VenderCerdos =j=j+j+j
+Defining defrule: VenderVacas =j=j+j+j
+Defining defrule: Siembra +j+j+j
+Defining defrule: Hornear +j+j+j+j
+Defining defrule: Turno1 +j+j+j+j+j
+Defining defrule: Turno2Cereal +j+j+j+j
+Defining defrule: Turno2Siembra =j=j=j+j
+Defining defrule: Turno2Jornalero =j=j=j+j
+Defining defrule: Turno3 +j+j+j+j+j
+Defining defrule: Turno4 +j+j+j+j+j
+Defining defrule: Turno5Adobe +j+j+j+j
+Defining defrule: Turno5AmplacionFamilia =j=j=j+j+j
+Defining defrule: Turno5Cocina =j=j=j+j
+Defining defrule: Turno6Madera +j+j+j+j
+Defining defrule: Turno6Cocina =j=j=j+j+j
+Defining defrule: Turno6Ampliacion =j=j+j+j+j
+Defining defrule: Turno6Jornalero =j=j=j+j+j
+Defining defrule: Turno6Sembrado =j=j=j+j+j
+Defining defrule: Turno6SemillaCereal =j=j=j+j
+Defining defrule: Turno7Ovejas +j+j+j+j
+Defining defrule: Turno7Vallas =j=j+j+j
+Defining defrule: Turno7AmpliacionPlanificada =j=j+j+j+j
+Defining defrule: Turno7Labranza +j+j+j+j+j+j+j
+Defining defrule: Turno7Sembrar =j=j=j=j+j+j+j
+Defining defrule: Turno7SemillaCereal =j=j=j=j=j+j
+Defining defrule: Turno7Jornalero +j+j+j+j+j+j
+Defining defrule: Turno7Labranza2 =j=j=j=j+j+j
+Defining defrule: Turno7SemillaCereal2 =j=j=j=j+j+j
+Defining defrule: Turno8SemillaCereal +j+j+j+j
+Defining defrule: Turno8Labranza =j=j=j+j
+Defining defrule: Turno8Pesca =j=j=j+j
+Defining defrule: Turno9Madera +j+j+j+j
+Defining defrule: Turno9Hortaliza =j=j=j+j
+Defining defrule: Turno9SembraryHornear =j=j=j+j
+Defining defrule: Turno10Vallas +j+j+j+j
+Defining defrule: Turno10Labranza =j=j=j+j
+Defining defrule: Turno10SemillasCereales =j=j=j+j
+Defining defrule: Turno11Cerdos +j+j+j+j
+Defining defrule: Turno11Sembraryhornear =j=j=j+j
+Defining defrule: Turno11Vacas =j=j=j+j
+Defining defrule: Turno11Hortaliza =j=j=j+j
+Defining defrule: Turno12SemillasCereales +j+j+j+j
+Defining defrule: Turno12SemillasHortalizas =j=j=j+j
+Defining defrule: Turno12Precipitada =j=j=j+j
+Defining defrule: Turno12ArarySEmbrar =j=j=j+j
+Defining defrule: Turno13SemillasCereales +j+j+j+j
+Defining defrule: Turno13SemillasHortalizas =j=j=j+j
+Defining defrule: Turno13Precipitada =j=j+j+j
+Defining defrule: Turno13SembraryHornear =j=j=j+j
+Defining defrule: Turno14Ovejas +j+j+j+j
+Defining defrule: Turno14Vacas =j=j=j+j
+Defining defrule: Turno14Cerdos =j=j=j+j
+Defining defrule: Turno14Pesca =j=j=j+j
+Defining defrule: Turno14ArarySembrar =j=j=j+j
+Defining defrule: FinFase3 =j+j+j+j+j+j+j+j+j+j+j+j+j+j+j+j+j+j+j+j+j+j
+Defining defrule: ValorUtilizado +j+j
+Defining defrule: TurnodeNoCosecha +j+j+j+j+j
+Defining defrule: Acabar +j
+TRUE
+CLIPS> (load "C:/Users/palom/Documents/GitHub/Agricola/ReglasCosecha.clp")
+Defining defrule: Cosecha =j+j+j
+Defining defrule: VenderHortalizasParaComer =j+j+j
+Defining defrule: VenderOvejasParaComer =j+j
+Defining defrule: VenderCerdosParaComer =j+j
+Defining defrule: VenderVacasParaComer =j+j
+Defining defrule: RecogerOvejaCosecha +j+j
+Defining defrule: NoRecogerOvejaCosecha =j
+Defining defrule: RecogerCerdoCosecha +j+j
+Defining defrule: NoRecogerCerdoCosecha =j
+Defining defrule: RecogerVacaCosecha +j+j
+Defining defrule: NoRecogerVacaCosecha =j
+Defining defrule: RecogerCereal +j+j+j
+Defining defrule: NoRecogerCerealCosecha =j
+Defining defrule: FinCosecha +j+j+j+j+j+j+j+j
+Defining defrule: SinComida =j+j+j+j+j+j+j+j+j
+TRUE
+CLIPS> (load "C:/Users/palom/Documents/GitHub/Agricola/Prueba1.clp")
+Defining deffacts: Hechosiniciales
+Defining definstances: Acciones
+Defining definstances: AdquisicionesMayores
+Defining definstances: RecursosIniciales
+Defining definstances: EspacioHabitacion
+TRUE
+CLIPS> (reset)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (clear)
+CLIPS> (load "C:/Users/palom/Documents/GitHub/Agricola/Ontologia.clp")
+Defining defclass: EspacioAnimales
+Defining defclass: EspacioCampo
+Defining defclass: EspacioHabitacion
+Defining defclass: AdquisicionMayor
+Defining defclass: Accion
+Defining defclass: Almacenado
+Defining deftemplate: InfoJuego
+Defining deftemplate: AccionDisponible
+Defining deftemplate: Habitantes
+Defining deftemplate: AnimalColocar
+Defining deftemplate: AnimalVender
+TRUE
+CLIPS> (load "C:/Users/palom/Documents/GitHub/Agricola/Reglas.clp")
+Defining defrule: inicio +j
+Defining defrule: AccionesRonda +j+j+j
+Defining defrule: Recolocar +j+j
+Defining defrule: Recolocar2 =j+j
+Defining defrule: FinRecolocar =j
+Defining defrule: ValoresRecolocado +j+j
+Defining defrule: ObtenerMadera +j+j+j
+Defining defrule: ObtenerAdobe +j+j+j
+Defining defrule: ObtenerJuncal +j+j+j
+Defining defrule: ObtenerPiedra +j+j+j
+Defining defrule: Labranza +j+j
+Defining defrule: SemillasCereales +j+j+j
+Defining defrule: SemillasHortalizas +j+j+j
+Defining defrule: Jornalero +j+j+j
+Defining defrule: Pesca +j+j+j
+Defining defrule: AmpliarHabitacion +j+j+j+j
+Defining defrule: Cocina +j+j+j
+Defining defrule: AmpliacionPlanificada +j+j+j
+Defining defrule: AmpliacionPrecipitada +j+j+j
+Defining defrule: Vallas +j+j+j
+Defining defrule: MercadoOvino +j+j+j
+Defining defrule: MercadoOvinoTurno7 +j+j+j
+Defining defrule: MercadoPorcino +j+j
+Defining defrule: MercadoBovino +j+j
+Defining defrule: ColocarAnimales +j+j+j
+Defining defrule: VenderOvejas +j+j+j+j
+Defining defrule: VenderCerdos =j=j+j+j
+Defining defrule: VenderVacas =j=j+j+j
+Defining defrule: Siembra +j+j+j
+Defining defrule: Hornear +j+j+j+j
+Defining defrule: Turno1 +j+j+j+j+j
+Defining defrule: Turno2Cereal +j+j+j+j
+Defining defrule: Turno2Siembra =j=j=j+j
+Defining defrule: Turno2Jornalero =j=j=j+j
+Defining defrule: Turno3 +j+j+j+j+j
+Defining defrule: Turno4 +j+j+j+j+j
+Defining defrule: Turno5Adobe +j+j+j+j
+Defining defrule: Turno5AmplacionFamilia =j=j=j+j+j
+Defining defrule: Turno5Cocina =j=j=j+j
+Defining defrule: Turno6Madera +j+j+j+j
+Defining defrule: Turno6Cocina =j=j=j+j+j
+Defining defrule: Turno6Ampliacion =j=j+j+j+j
+Defining defrule: Turno6Jornalero =j=j=j+j+j
+Defining defrule: Turno6Sembrado =j=j=j+j+j
+Defining defrule: Turno6SemillaCereal =j=j=j+j
+Defining defrule: Turno7Ovejas +j+j+j+j
+Defining defrule: Turno7Vallas =j=j+j+j
+Defining defrule: Turno7AmpliacionPlanificada =j=j+j+j+j
+Defining defrule: Turno7Labranza +j+j+j+j+j+j+j
+Defining defrule: Turno7Sembrar =j=j=j=j+j+j+j
+Defining defrule: Turno7SemillaCereal =j=j=j=j=j+j
+Defining defrule: Turno7Jornalero +j+j+j+j+j+j
+Defining defrule: Turno7Labranza2 =j=j=j=j+j+j
+Defining defrule: Turno7SemillaCereal2 =j=j=j=j+j+j
+Defining defrule: Turno8SemillaCereal +j+j+j+j
+Defining defrule: Turno8Labranza =j=j=j+j
+Defining defrule: Turno8Pesca =j=j=j+j
+Defining defrule: Turno9Madera +j+j+j+j
+Defining defrule: Turno9Hortaliza =j=j=j+j
+Defining defrule: Turno9SembraryHornear =j=j=j+j
+Defining defrule: Turno10Vallas +j+j+j+j
+Defining defrule: Turno10Labranza =j=j=j+j
+Defining defrule: Turno10SemillasCereales =j=j=j+j
+Defining defrule: Turno11Cerdos +j+j+j+j
+Defining defrule: Turno11Sembraryhornear =j=j=j+j
+Defining defrule: Turno11Vacas =j=j=j+j
+Defining defrule: Turno11Hortaliza =j=j=j+j
+Defining defrule: Turno12SemillasCereales +j+j+j+j
+Defining defrule: Turno12SemillasHortalizas =j=j=j+j
+Defining defrule: Turno12Precipitada =j=j=j+j
+Defining defrule: Turno12ArarySEmbrar =j=j=j+j
+Defining defrule: Turno13SemillasCereales +j+j+j+j
+Defining defrule: Turno13SemillasHortalizas =j=j=j+j
+Defining defrule: Turno13Precipitada =j=j+j+j
+Defining defrule: Turno13SembraryHornear =j=j=j+j
+Defining defrule: Turno14Ovejas +j+j+j+j
+Defining defrule: Turno14Vacas =j=j=j+j
+Defining defrule: Turno14Cerdos =j=j=j+j
+Defining defrule: Turno14Pesca =j=j=j+j
+Defining defrule: Turno14ArarySembrar =j=j=j+j
+Defining defrule: FinFase3 =j+j+j+j+j+j+j+j+j+j+j+j+j+j+j+j+j+j+j+j+j+j
+Defining defrule: ValorUtilizado +j+j
+Defining defrule: TurnodeNoCosecha +j+j+j+j+j
+Defining defrule: Acabar +j
+TRUE
+CLIPS> (load "C:/Users/palom/Documents/GitHub/Agricola/ReglasCosecha.clp")
+Defining defrule: Cosecha =j+j+j+j+j
+Defining defrule: VenderHortalizasParaComer =j=j=j+j+j
+Defining defrule: VenderOvejasParaComer =j=j=j+j
+Defining defrule: VenderCerdosParaComer =j=j=j+j
+Defining defrule: VenderVacasParaComer =j=j=j+j
+Defining defrule: RecogerOvejaCosecha +j+j
+Defining defrule: NoRecogerOvejaCosecha =j
+Defining defrule: RecogerCerdoCosecha +j+j
+Defining defrule: NoRecogerCerdoCosecha =j
+Defining defrule: RecogerVacaCosecha +j+j
+Defining defrule: NoRecogerVacaCosecha =j
+Defining defrule: RecogerCereal +j+j+j
+Defining defrule: NoRecogerCerealCosecha =j
+Defining defrule: FinCosecha +j+j+j+j+j+j+j+j
+Defining defrule: SinComida =j=j+j+j+j+j+j+j+j
+TRUE
+CLIPS> (load "C:/Users/palom/Documents/GitHub/Agricola/Prueba1.clp")
+Defining deffacts: Hechosiniciales
+Defining definstances: Acciones
+Defining definstances: AdquisicionesMayores
+Defining definstances: RecursosIniciales
+Defining definstances: EspacioHabitacion
+TRUE
+CLIPS> (reset)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run)
+CLIPS> <(run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (reset)
+CLIPS> (run 150)
+CLIPS> (run 1)
+CLIPS> (run 50)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (clear)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (load "C:/Users/palom/Documents/GitHub/Agricola/Ontologia.clp")
+Defining defclass: EspacioAnimales
+Defining defclass: EspacioCampo
+Defining defclass: EspacioHabitacion
+Defining defclass: AdquisicionMayor
+Defining defclass: Accion
+Defining defclass: Almacenado
+Defining deftemplate: InfoJuego
+Defining deftemplate: AccionDisponible
+Defining deftemplate: Habitantes
+Defining deftemplate: AnimalColocar
+Defining deftemplate: AnimalVender
+TRUE
+CLIPS> (load "C:/Users/palom/Documents/GitHub/Agricola/Reglas.clp")
+Defining defrule: inicio +j
+Defining defrule: AccionesRonda +j+j+j
+Defining defrule: Recolocar +j+j
+Defining defrule: Recolocar2 =j+j
+Defining defrule: FinRecolocar =j
+Defining defrule: ValoresRecolocado +j+j
+Defining defrule: ObtenerMadera +j+j+j
+Defining defrule: ObtenerAdobe +j+j+j
+Defining defrule: ObtenerJuncal +j+j+j
+Defining defrule: ObtenerPiedra +j+j+j
+Defining defrule: Labranza +j+j
+Defining defrule: SemillasCereales +j+j+j
+Defining defrule: SemillasHortalizas +j+j+j
+Defining defrule: Jornalero +j+j+j
+Defining defrule: Pesca +j+j+j
+Defining defrule: AmpliarHabitacion +j+j+j+j
+Defining defrule: Cocina +j+j+j
+Defining defrule: AmpliacionPlanificada +j+j+j
+Defining defrule: AmpliacionPrecipitada +j+j+j
+Defining defrule: Vallas +j+j+j
+Defining defrule: MercadoOvino +j+j+j
+Defining defrule: MercadoOvinoTurno7 +j+j+j
+Defining defrule: MercadoPorcino +j+j
+Defining defrule: MercadoBovino +j+j
+Defining defrule: ColocarAnimales +j+j+j
+Defining defrule: VenderOvejas +j+j+j+j
+Defining defrule: VenderCerdos =j=j+j+j
+Defining defrule: VenderVacas =j=j+j+j
+Defining defrule: Siembra +j+j+j
+Defining defrule: Hornear +j+j+j+j
+Defining defrule: Turno1 +j+j+j+j+j
+Defining defrule: Turno2Cereal +j+j+j+j
+Defining defrule: Turno2Siembra =j=j=j+j
+Defining defrule: Turno2Jornalero =j=j=j+j
+Defining defrule: Turno3 +j+j+j+j+j
+Defining defrule: Turno4 +j+j+j+j+j
+Defining defrule: Turno5Adobe +j+j+j+j
+Defining defrule: Turno5AmplacionFamilia =j=j=j+j+j
+Defining defrule: Turno5Cocina =j=j=j+j
+Defining defrule: Turno6Madera +j+j+j+j
+Defining defrule: Turno6Cocina =j=j=j+j+j
+Defining defrule: Turno6Ampliacion =j=j+j+j+j
+Defining defrule: Turno6Jornalero =j=j=j+j+j
+Defining defrule: Turno6Sembrado =j=j=j+j+j
+Defining defrule: Turno6SemillaCereal =j=j=j+j
+Defining defrule: Turno7Ovejas +j+j+j+j
+Defining defrule: Turno7Vallas =j=j+j+j
+Defining defrule: Turno7AmpliacionPlanificada =j=j+j+j+j
+Defining defrule: Turno7Labranza +j+j+j+j+j+j+j
+Defining defrule: Turno7Sembrar =j=j=j=j+j+j+j
+Defining defrule: Turno7SemillaCereal =j=j=j=j=j+j
+Defining defrule: Turno7Jornalero +j+j+j+j+j+j
+Defining defrule: Turno7Labranza2 =j=j=j=j+j+j
+Defining defrule: Turno7SemillaCereal2 =j=j=j=j+j+j
+Defining defrule: Turno8SemillaCereal +j+j+j+j
+Defining defrule: Turno8Labranza =j=j=j+j
+Defining defrule: Turno8Pesca =j=j=j+j
+Defining defrule: Turno9Madera +j+j+j+j
+Defining defrule: Turno9Hortaliza =j=j=j+j
+Defining defrule: Turno9SembraryHornear =j=j=j+j
+Defining defrule: Turno10Vallas +j+j+j+j
+Defining defrule: Turno10Labranza =j=j=j+j
+Defining defrule: Turno10SemillasCereales =j=j=j+j
+Defining defrule: Turno11Cerdos +j+j+j+j
+Defining defrule: Turno11Sembraryhornear =j=j=j+j
+Defining defrule: Turno11Vacas =j=j=j+j
+Defining defrule: Turno11Hortaliza =j=j=j+j
+Defining defrule: Turno12SemillasCereales +j+j+j+j
+Defining defrule: Turno12SemillasHortalizas =j=j=j+j
+Defining defrule: Turno12Precipitada =j=j=j+j
+Defining defrule: Turno12ArarySEmbrar =j=j=j+j
+Defining defrule: Turno13SemillasCereales +j+j+j+j
+Defining defrule: Turno13SemillasHortalizas =j=j=j+j
+Defining defrule: Turno13Precipitada =j=j+j+j
+Defining defrule: Turno13SembraryHornear =j=j=j+j
+Defining defrule: Turno14Ovejas +j+j+j+j
+Defining defrule: Turno14Vacas =j=j=j+j
+Defining defrule: Turno14Cerdos =j=j=j+j
+Defining defrule: Turno14Pesca =j=j=j+j
+Defining defrule: Turno14ArarySembrar =j=j=j+j
+Defining defrule: FinFase3 =j+j+j+j+j+j+j+j+j+j+j+j+j+j+j+j+j+j+j+j+j+j
+Defining defrule: ValorUtilizado +j+j
+Defining defrule: TurnodeNoCosecha +j+j+j+j+j
+Defining defrule: Acabar +j
+TRUE
+CLIPS> (load "C:/Users/palom/Documents/GitHub/Agricola/ReglasCosecha.clp")
+Defining defrule: Cosecha =j+j+j+j+j
+Defining defrule: VenderHortalizasParaComer =j=j=j+j+j
+Defining defrule: VenderOvejasParaComer =j=j=j+j
+Defining defrule: VenderCerdosParaComer =j=j=j+j
+Defining defrule: VenderVacasParaComer =j=j=j+j
+Defining defrule: RecogerOvejaCosecha +j+j
+Defining defrule: NoRecogerOvejaCosecha =j
+Defining defrule: RecogerCerdoCosecha +j+j
+Defining defrule: NoRecogerCerdoCosecha =j
+Defining defrule: RecogerVacaCosecha +j+j
+Defining defrule: NoRecogerVacaCosecha =j
+Defining defrule: RecogerCereal +j+j+j
+Defining defrule: NoRecogerCerealCosecha =j
+Defining defrule: FinCosecha +j+j+j+j+j+j+j+j
+Defining defrule: SinComida =j=j+j+j+j+j+j+j+j
+TRUE
+CLIPS> (load "C:/Users/palom/Documents/GitHub/Agricola/Prueba1.clp")
+Defining deffacts: Hechosiniciales
+Defining definstances: Acciones
+Defining definstances: AdquisicionesMayores
+Defining definstances: RecursosIniciales
+Defining definstances: EspacioHabitacion
+TRUE
+CLIPS> (load "C:/Users/palom/Documents/GitHub/Agricola/Prueba1.clp")
+
+[CSTRCPSR1] WARNING: Redefining deffacts: Hechosiniciales
+
+[CSTRCPSR1] WARNING: Redefining definstances: Acciones
+
+[CSTRCPSR1] WARNING: Redefining definstances: AdquisicionesMayores
+
+[CSTRCPSR1] WARNING: Redefining definstances: RecursosIniciales
+
+[CSTRCPSR1] WARNING: Redefining definstances: EspacioHabitacion
+TRUE
+CLIPS> (reset)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (clear)
+CLIPS> (load "C:/Users/palom/Documents/GitHub/Agricola/Ontologia.clp")
+Defining defclass: EspacioAnimales
+Defining defclass: EspacioCampo
+Defining defclass: EspacioHabitacion
+Defining defclass: AdquisicionMayor
+Defining defclass: Accion
+Defining defclass: Almacenado
+Defining deftemplate: InfoJuego
+Defining deftemplate: AccionDisponible
+Defining deftemplate: Habitantes
+Defining deftemplate: AnimalColocar
+Defining deftemplate: AnimalVender
+TRUE
+CLIPS> (load "C:/Users/palom/Documents/GitHub/Agricola/Reglas.clp")
+Defining defrule: inicio +j
+Defining defrule: AccionesRonda +j+j+j
+Defining defrule: Recolocar +j+j
+Defining defrule: Recolocar2 =j+j
+Defining defrule: FinRecolocar =j
+Defining defrule: ValoresRecolocado +j+j
+Defining defrule: ObtenerMadera +j+j+j
+Defining defrule: ObtenerAdobe +j+j+j
+Defining defrule: ObtenerJuncal +j+j+j
+Defining defrule: ObtenerPiedra +j+j+j
+Defining defrule: Labranza +j+j
+Defining defrule: SemillasCereales +j+j+j
+Defining defrule: SemillasHortalizas +j+j+j
+Defining defrule: Jornalero +j+j+j
+Defining defrule: Pesca +j+j+j
+Defining defrule: AmpliarHabitacion +j+j+j+j
+Defining defrule: Cocina +j+j+j
+Defining defrule: AmpliacionPlanificada +j+j+j
+Defining defrule: AmpliacionPrecipitada +j+j+j
+Defining defrule: Vallas +j+j+j
+Defining defrule: MercadoOvino +j+j+j
+Defining defrule: MercadoOvinoTurno7 +j+j+j
+Defining defrule: MercadoPorcino +j+j
+Defining defrule: MercadoBovino +j+j
+Defining defrule: ColocarAnimales +j+j+j
+Defining defrule: VenderOvejas +j+j+j+j
+Defining defrule: VenderCerdos =j=j+j+j
+Defining defrule: VenderVacas =j=j+j+j
+Defining defrule: Siembra +j+j+j
+Defining defrule: Hornear 
+[EXPRNPSR3] Missing function declaration for cantidad.
+
+ERROR:
+(defrule MAIN::Hornear
+   ?borrar <- (Hornear ?)
+   ?cocina <- (object (is-a AdquisicionMayor)
+           (tipo ?tipoCocina)
+           (adquirido ?adquirido))
+   (test (eq ?tipoCocina "Cocina"))
+   (test (eq ?adquirido True))
+   ?almacenado <- (object (is-a Almacenado)
+           (tipo ?tipoAlmacenado)
+           (cantidad ?canti))
+   (test (eq ?tipoAlmacenado "Comida"))
+   ?almacenadoCereal <- (object (is-a Almacenado)
+           (tipo ?tipoCereal)
+           (cantidad ?cantiCereal))
+   (test (eq ?tipoCereal "Cereal"))
+   =>
+   (retract ?borrar)
+   (modify-instance ?almacenadoCereal 
+      (cantidad 1)
+      (modify-instance ?almacenado (cantidad
+Defining defrule: Turno1 +j+j+j+j+j
+Defining defrule: Turno2Cereal +j+j+j+j
+Defining defrule: Turno2Siembra =j=j=j+j
+Defining defrule: Turno2Jornalero =j=j=j+j
+Defining defrule: Turno3 +j+j+j+j+j
+Defining defrule: Turno4 +j+j+j+j+j
+Defining defrule: Turno5Adobe +j+j+j+j
+Defining defrule: Turno5AmplacionFamilia =j=j=j+j+j
+Defining defrule: Turno5Cocina =j=j=j+j
+Defining defrule: Turno6Madera +j+j+j+j
+Defining defrule: Turno6Cocina =j=j=j+j+j
+Defining defrule: Turno6Ampliacion =j=j+j+j+j
+Defining defrule: Turno6Jornalero =j=j=j+j+j
+Defining defrule: Turno6Sembrado =j=j=j+j+j
+Defining defrule: Turno6SemillaCereal =j=j=j+j
+Defining defrule: Turno7Ovejas +j+j+j+j
+Defining defrule: Turno7Vallas =j=j+j+j
+Defining defrule: Turno7AmpliacionPlanificada =j=j+j+j+j
+Defining defrule: Turno7Labranza +j+j+j+j+j+j+j
+Defining defrule: Turno7Sembrar =j=j=j=j+j+j+j
+Defining defrule: Turno7SemillaCereal =j=j=j=j=j+j
+Defining defrule: Turno7Jornalero +j+j+j+j+j+j
+Defining defrule: Turno7Labranza2 =j=j=j=j+j+j
+Defining defrule: Turno7SemillaCereal2 =j=j=j=j+j+j
+Defining defrule: Turno8SemillaCereal +j+j+j+j
+Defining defrule: Turno8Labranza =j=j=j+j
+Defining defrule: Turno8Pesca =j=j=j+j
+Defining defrule: Turno9Madera +j+j+j+j
+Defining defrule: Turno9Hortaliza =j=j=j+j
+Defining defrule: Turno9SembraryHornear =j=j=j+j
+Defining defrule: Turno10Vallas +j+j+j+j
+Defining defrule: Turno10Labranza =j=j=j+j
+Defining defrule: Turno10SemillasCereales =j=j=j+j
+Defining defrule: Turno11Cerdos +j+j+j+j
+Defining defrule: Turno11Sembraryhornear =j=j=j+j
+Defining defrule: Turno11Vacas =j=j=j+j
+Defining defrule: Turno11Hortaliza =j=j=j+j
+Defining defrule: Turno12SemillasCereales +j+j+j+j
+Defining defrule: Turno12SemillasHortalizas =j=j=j+j
+Defining defrule: Turno12Precipitada =j=j=j+j
+Defining defrule: Turno12ArarySEmbrar =j=j=j+j
+Defining defrule: Turno13SemillasCereales +j+j+j+j
+Defining defrule: Turno13SemillasHortalizas =j=j=j+j
+Defining defrule: Turno13Precipitada =j=j+j+j
+Defining defrule: Turno13SembraryHornear =j=j=j+j
+Defining defrule: Turno14Ovejas +j+j+j+j
+Defining defrule: Turno14Vacas =j=j=j+j
+Defining defrule: Turno14Cerdos =j=j=j+j
+Defining defrule: Turno14Pesca =j=j=j+j
+Defining defrule: Turno14ArarySembrar =j=j=j+j
+Defining defrule: JornaleroExtra =j+j+j+j
+Defining defrule: HortalizasExtra =j=j=j+j
+Defining defrule: SemillasCerealesExtra =j=j=j+j
+Defining defrule: FinFase3 =j+j+j+j+j+j+j+j+j+j+j+j+j+j+j+j+j+j+j+j+j+j
+Defining defrule: ValorUtilizado +j+j
+Defining defrule: TurnodeNoCosecha +j+j+j+j+j
+Defining defrule: Acabar +j
+FALSE
+CLIPS> (clear)
+CLIPS> (load "C:/Users/palom/Documents/GitHub/Agricola/Ontologia.clp")
+Defining defclass: EspacioAnimales
+Defining defclass: EspacioCampo
+Defining defclass: EspacioHabitacion
+Defining defclass: AdquisicionMayor
+Defining defclass: Accion
+Defining defclass: Almacenado
+Defining deftemplate: InfoJuego
+Defining deftemplate: AccionDisponible
+Defining deftemplate: Habitantes
+Defining deftemplate: AnimalColocar
+Defining deftemplate: AnimalVender
+TRUE
+CLIPS> (load "C:/Users/palom/Documents/GitHub/Agricola/Reglas.clp")
+Defining defrule: inicio +j
+Defining defrule: AccionesRonda +j+j+j
+Defining defrule: Recolocar +j+j
+Defining defrule: Recolocar2 =j+j
+Defining defrule: FinRecolocar =j
+Defining defrule: ValoresRecolocado +j+j
+Defining defrule: ObtenerMadera +j+j+j
+Defining defrule: ObtenerAdobe +j+j+j
+Defining defrule: ObtenerJuncal +j+j+j
+Defining defrule: ObtenerPiedra +j+j+j
+Defining defrule: Labranza +j+j
+Defining defrule: SemillasCereales +j+j+j
+Defining defrule: SemillasHortalizas +j+j+j
+Defining defrule: Jornalero +j+j+j
+Defining defrule: Pesca +j+j+j
+Defining defrule: AmpliarHabitacion +j+j+j+j
+Defining defrule: Cocina +j+j+j
+Defining defrule: AmpliacionPlanificada +j+j+j
+Defining defrule: AmpliacionPrecipitada +j+j+j
+Defining defrule: Vallas +j+j+j
+Defining defrule: MercadoOvino +j+j+j
+Defining defrule: MercadoOvinoTurno7 +j+j+j
+Defining defrule: MercadoPorcino +j+j
+Defining defrule: MercadoBovino +j+j
+Defining defrule: ColocarAnimales +j+j+j
+Defining defrule: VenderOvejas +j+j+j+j
+Defining defrule: VenderCerdos =j=j+j+j
+Defining defrule: VenderVacas =j=j+j+j
+Defining defrule: Siembra +j+j+j
+Defining defrule: Hornear +j+j+j+j
+Defining defrule: Turno1 +j+j+j+j+j
+Defining defrule: Turno2Cereal +j+j+j+j
+Defining defrule: Turno2Siembra =j=j=j+j
+Defining defrule: Turno2Jornalero =j=j=j+j
+Defining defrule: Turno3 +j+j+j+j+j
+Defining defrule: Turno4 +j+j+j+j+j
+Defining defrule: Turno5Adobe +j+j+j+j
+Defining defrule: Turno5AmplacionFamilia =j=j=j+j+j
+Defining defrule: Turno5Cocina =j=j=j+j
+Defining defrule: Turno6Madera +j+j+j+j
+Defining defrule: Turno6Cocina =j=j=j+j+j
+Defining defrule: Turno6Ampliacion =j=j+j+j+j
+Defining defrule: Turno6Jornalero =j=j=j+j+j
+Defining defrule: Turno6Sembrado =j=j=j+j+j
+Defining defrule: Turno6SemillaCereal =j=j=j+j
+Defining defrule: Turno7Ovejas +j+j+j+j
+Defining defrule: Turno7Vallas =j=j+j+j
+Defining defrule: Turno7AmpliacionPlanificada =j=j+j+j+j
+Defining defrule: Turno7Labranza +j+j+j+j+j+j+j
+Defining defrule: Turno7Sembrar =j=j=j=j+j+j+j
+Defining defrule: Turno7SemillaCereal =j=j=j=j=j+j
+Defining defrule: Turno7Jornalero +j+j+j+j+j+j
+Defining defrule: Turno7Labranza2 =j=j=j=j+j+j
+Defining defrule: Turno7SemillaCereal2 =j=j=j=j+j+j
+Defining defrule: Turno8SemillaCereal +j+j+j+j
+Defining defrule: Turno8Labranza =j=j=j+j
+Defining defrule: Turno8Pesca =j=j=j+j
+Defining defrule: Turno9Madera +j+j+j+j
+Defining defrule: Turno9Hortaliza =j=j=j+j
+Defining defrule: Turno9SembraryHornear =j=j=j+j
+Defining defrule: Turno10Vallas +j+j+j+j
+Defining defrule: Turno10Labranza =j=j=j+j
+Defining defrule: Turno10SemillasCereales =j=j=j+j
+Defining defrule: Turno11Cerdos +j+j+j+j
+Defining defrule: Turno11Sembraryhornear =j=j=j+j
+Defining defrule: Turno11Vacas =j=j=j+j
+Defining defrule: Turno11Hortaliza =j=j=j+j
+Defining defrule: Turno12SemillasCereales +j+j+j+j
+Defining defrule: Turno12SemillasHortalizas =j=j=j+j
+Defining defrule: Turno12Precipitada =j=j=j+j
+Defining defrule: Turno12ArarySEmbrar =j=j=j+j
+Defining defrule: Turno13SemillasCereales +j+j+j+j
+Defining defrule: Turno13SemillasHortalizas =j=j=j+j
+Defining defrule: Turno13Precipitada =j=j+j+j
+Defining defrule: Turno13SembraryHornear =j=j=j+j
+Defining defrule: Turno14Ovejas +j+j+j+j
+Defining defrule: Turno14Vacas =j=j=j+j
+Defining defrule: Turno14Cerdos =j=j=j+j
+Defining defrule: Turno14Pesca =j=j=j+j
+Defining defrule: Turno14ArarySembrar =j=j=j+j
+Defining defrule: JornaleroExtra =j+j+j+j
+Defining defrule: HortalizasExtra =j=j=j+j
+Defining defrule: SemillasCerealesExtra =j=j=j+j
+Defining defrule: FinFase3 =j+j+j+j+j+j+j+j+j+j+j+j+j+j+j+j+j+j+j+j+j+j
+Defining defrule: ValorUtilizado +j+j
+Defining defrule: TurnodeNoCosecha +j+j+j+j+j
+Defining defrule: Acabar +j
+TRUE
+CLIPS> (load "C:/Users/palom/Documents/GitHub/Agricola/ReglasCosecha.clp")
+Defining defrule: Cosecha =j+j+j+j+j
+Defining defrule: VenderHortalizasParaComer =j=j=j+j+j
+Defining defrule: VenderOvejasParaComer =j=j=j+j
+Defining defrule: VenderCerdosParaComer =j=j=j+j
+Defining defrule: VenderVacasParaComer =j=j=j+j
+Defining defrule: RecogerOvejaCosecha +j+j
+Defining defrule: NoRecogerOvejaCosecha =j+j+j
+Defining defrule: RecogerCerdoCosecha +j+j
+Defining defrule: NoRecogerCerdoCosecha =j+j+j
+Defining defrule: RecogerVacaCosecha +j+j
+Defining defrule: NoRecogerVacaCosecha =j+j+j
+Defining defrule: RecogerCereal +j+j+j
+Defining defrule: FinCosecha +j+j+j+j+j+j+j
+Defining defrule: SinComida =j=j+j+j+j+j+j+j+j
+Defining defrule: ValorRecogido +j+j
+TRUE
+CLIPS> (load "C:/Users/palom/Documents/GitHub/Agricola/Ontologia.clp")
+
+[CSTRCPSR1] WARNING: Redefining defclass: EspacioAnimales
+[CLASSPSR3] EspacioAnimales class cannot be redefined while
+    outstanding references to it still exist.
+
+ERROR:
+(defclass MAIN::EspacioAnimales
+   (
+
+[CSTRCPSR1] WARNING: Redefining defclass: EspacioCampo
+[CLASSPSR3] EspacioCampo class cannot be redefined while
+    outstanding references to it still exist.
+
+ERROR:
+(defclass MAIN::EspacioCampo
+   (
+
+[CSTRCPSR1] WARNING: Redefining defclass: EspacioHabitacion
+[CLASSPSR3] EspacioHabitacion class cannot be redefined while
+    outstanding references to it still exist.
+
+ERROR:
+(defclass MAIN::EspacioHabitacion
+   (
+
+[CSTRCPSR1] WARNING: Redefining defclass: AdquisicionMayor
+[CLASSPSR3] AdquisicionMayor class cannot be redefined while
+    outstanding references to it still exist.
+
+ERROR:
+(defclass MAIN::AdquisicionMayor
+   (
+
+[CSTRCPSR1] WARNING: Redefining defclass: Accion
+[CLASSPSR3] Accion class cannot be redefined while
+    outstanding references to it still exist.
+
+ERROR:
+(defclass MAIN::Accion
+   (
+
+[CSTRCPSR1] WARNING: Redefining defclass: Almacenado
+[CLASSPSR3] Almacenado class cannot be redefined while
+    outstanding references to it still exist.
+
+ERROR:
+(defclass MAIN::Almacenado
+   (
+
+[CSTRCPSR4] Cannot redefine deftemplate InfoJuego while it is in use.
+
+ERROR:
+(deftemplate MAIN::InfoJuego
+
+[CSTRCPSR4] Cannot redefine deftemplate AccionDisponible while it is in use.
+
+ERROR:
+(deftemplate MAIN::AccionDisponible
+
+[CSTRCPSR4] Cannot redefine deftemplate Habitantes while it is in use.
+
+ERROR:
+(deftemplate MAIN::Habitantes
+
+[CSTRCPSR4] Cannot redefine deftemplate AnimalColocar while it is in use.
+
+ERROR:
+(deftemplate MAIN::AnimalColocar
+
+[CSTRCPSR4] Cannot redefine deftemplate AnimalVender while it is in use.
+
+ERROR:
+(deftemplate MAIN::AnimalVender
+FALSE
+CLIPS> (clear)
+CLIPS> (load "C:/Users/palom/Documents/GitHub/Agricola/Ontologia.clp")
+Defining defclass: EspacioAnimales
+Defining defclass: EspacioCampo
+Defining defclass: EspacioHabitacion
+Defining defclass: AdquisicionMayor
+Defining defclass: Accion
+Defining defclass: Almacenado
+Defining deftemplate: InfoJuego
+Defining deftemplate: AccionDisponible
+Defining deftemplate: Habitantes
+Defining deftemplate: AnimalColocar
+Defining deftemplate: AnimalVender
+TRUE
+CLIPS> (load "C:/Users/palom/Documents/GitHub/Agricola/Reglas.clp")
+Defining defrule: inicio +j
+Defining defrule: AccionesRonda +j+j+j
+Defining defrule: Recolocar +j+j
+Defining defrule: Recolocar2 =j+j
+Defining defrule: FinRecolocar =j
+Defining defrule: ValoresRecolocado +j+j
+Defining defrule: ObtenerMadera +j+j+j
+Defining defrule: ObtenerAdobe +j+j+j
+Defining defrule: ObtenerJuncal +j+j+j
+Defining defrule: ObtenerPiedra +j+j+j
+Defining defrule: Labranza +j+j
+Defining defrule: SemillasCereales +j+j+j
+Defining defrule: SemillasHortalizas +j+j+j
+Defining defrule: Jornalero +j+j+j
+Defining defrule: Pesca +j+j+j
+Defining defrule: AmpliarHabitacion +j+j+j+j
+Defining defrule: Cocina +j+j+j
+Defining defrule: AmpliacionPlanificada +j+j+j
+Defining defrule: AmpliacionPrecipitada +j+j+j
+Defining defrule: Vallas +j+j+j
+Defining defrule: MercadoOvino +j+j+j
+Defining defrule: MercadoOvinoTurno7 +j+j+j
+Defining defrule: MercadoPorcino +j+j
+Defining defrule: MercadoBovino +j+j
+Defining defrule: ColocarAnimales +j+j+j
+Defining defrule: VenderOvejas +j+j+j+j
+Defining defrule: VenderCerdos =j=j+j+j
+Defining defrule: VenderVacas =j=j+j+j
+Defining defrule: Siembra +j+j+j
+Defining defrule: Hornear +j+j+j+j
+Defining defrule: Turno1 +j+j+j+j+j
+Defining defrule: Turno2Cereal +j+j+j+j
+Defining defrule: Turno2Siembra =j=j=j+j
+Defining defrule: Turno2Jornalero =j=j=j+j
+Defining defrule: Turno3 +j+j+j+j+j
+Defining defrule: Turno4 +j+j+j+j+j
+Defining defrule: Turno5Adobe +j+j+j+j
+Defining defrule: Turno5AmplacionFamilia =j=j=j+j+j
+Defining defrule: Turno5Cocina =j=j=j+j
+Defining defrule: Turno6Madera +j+j+j+j
+Defining defrule: Turno6Cocina =j=j=j+j+j
+Defining defrule: Turno6Ampliacion =j=j+j+j+j
+Defining defrule: Turno6Jornalero =j=j=j+j+j
+Defining defrule: Turno6Sembrado =j=j=j+j+j
+Defining defrule: Turno6SemillaCereal =j=j=j+j
+Defining defrule: Turno7Ovejas +j+j+j+j
+Defining defrule: Turno7Vallas =j=j+j+j
+Defining defrule: Turno7AmpliacionPlanificada =j=j+j+j+j
+Defining defrule: Turno7Labranza +j+j+j+j+j+j+j
+Defining defrule: Turno7Sembrar =j=j=j=j+j+j+j
+Defining defrule: Turno7SemillaCereal =j=j=j=j=j+j
+Defining defrule: Turno7Jornalero +j+j+j+j+j+j
+Defining defrule: Turno7Labranza2 =j=j=j=j+j+j
+Defining defrule: Turno7SemillaCereal2 =j=j=j=j+j+j
+Defining defrule: Turno8SemillaCereal +j+j+j+j
+Defining defrule: Turno8Labranza =j=j=j+j
+Defining defrule: Turno8Pesca =j=j=j+j
+Defining defrule: Turno9Madera +j+j+j+j
+Defining defrule: Turno9Hortaliza =j=j=j+j
+Defining defrule: Turno9SembraryHornear =j=j=j+j
+Defining defrule: Turno10Vallas +j+j+j+j
+Defining defrule: Turno10Labranza =j=j=j+j
+Defining defrule: Turno10SemillasCereales =j=j=j+j
+Defining defrule: Turno11Cerdos +j+j+j+j
+Defining defrule: Turno11Sembraryhornear =j=j=j+j
+Defining defrule: Turno11Vacas =j=j=j+j
+Defining defrule: Turno11Hortaliza =j=j=j+j
+Defining defrule: Turno12SemillasCereales +j+j+j+j
+Defining defrule: Turno12SemillasHortalizas =j=j=j+j
+Defining defrule: Turno12Precipitada =j=j=j+j
+Defining defrule: Turno12ArarySEmbrar =j=j=j+j
+Defining defrule: Turno13SemillasCereales +j+j+j+j
+Defining defrule: Turno13SemillasHortalizas =j=j=j+j
+Defining defrule: Turno13Precipitada =j=j+j+j
+Defining defrule: Turno13SembraryHornear =j=j=j+j
+Defining defrule: Turno14Ovejas +j+j+j+j
+Defining defrule: Turno14Vacas =j=j=j+j
+Defining defrule: Turno14Cerdos =j=j=j+j
+Defining defrule: Turno14Pesca =j=j=j+j
+Defining defrule: Turno14ArarySembrar =j=j=j+j
+Defining defrule: JornaleroExtra =j+j+j+j
+Defining defrule: HortalizasExtra =j=j=j+j
+Defining defrule: SemillasCerealesExtra =j=j=j+j
+Defining defrule: FinFase3 =j+j+j+j+j+j+j+j+j+j+j+j+j+j+j+j+j+j+j+j+j+j
+Defining defrule: ValorUtilizado +j+j
+Defining defrule: TurnodeNoCosecha +j+j+j+j+j
+Defining defrule: Acabar +j
+TRUE
+CLIPS> (load "C:/Users/palom/Documents/GitHub/Agricola/ReglasCosecha.clp")
+Defining defrule: Cosecha =j+j+j+j+j
+Defining defrule: VenderHortalizasParaComer =j=j=j+j+j
+Defining defrule: VenderOvejasParaComer =j=j=j+j
+Defining defrule: VenderCerdosParaComer =j=j=j+j
+Defining defrule: VenderVacasParaComer =j=j=j+j
+Defining defrule: RecogerOvejaCosecha +j+j
+Defining defrule: NoRecogerOvejaCosecha =j+j+j
+Defining defrule: RecogerCerdoCosecha +j+j
+Defining defrule: NoRecogerCerdoCosecha =j+j+j
+Defining defrule: RecogerVacaCosecha +j+j
+Defining defrule: NoRecogerVacaCosecha =j+j+j
+Defining defrule: RecogerCereal +j+j+j
+Defining defrule: FinCosecha +j+j+j+j+j+j+j
+Defining defrule: SinComida =j=j+j+j+j+j+j+j+j
+Defining defrule: ValorRecogido +j+j
+TRUE
+CLIPS> (load "C:/Users/palom/Documents/GitHub/Agricola/Prueba1.clp")
+Defining deffacts: Hechosiniciales
+Defining definstances: Acciones
+Defining definstances: AdquisicionesMayores
+Defining definstances: RecursosIniciales
+Defining definstances: EspacioHabitacion
+TRUE
+CLIPS> (reset)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (clear)
+CLIPS> (load "C:/Users/palom/Documents/GitHub/Agricola/Ontologia.clp")
+Defining defclass: EspacioAnimales
+Defining defclass: EspacioCampo
+Defining defclass: EspacioHabitacion
+Defining defclass: AdquisicionMayor
+Defining defclass: Accion
+Defining defclass: Almacenado
+Defining deftemplate: InfoJuego
+Defining deftemplate: AccionDisponible
+Defining deftemplate: Habitantes
+Defining deftemplate: AnimalColocar
+Defining deftemplate: AnimalVender
+TRUE
+CLIPS> (load "C:/Users/palom/Documents/GitHub/Agricola/Reglas.clp")
+Defining defrule: inicio +j
+Defining defrule: AccionesRonda +j+j+j
+Defining defrule: Recolocar +j+j
+Defining defrule: Recolocar2 =j+j
+Defining defrule: FinRecolocar =j
+Defining defrule: ValoresRecolocado +j+j
+Defining defrule: ObtenerMadera +j+j+j
+Defining defrule: ObtenerAdobe +j+j+j
+Defining defrule: ObtenerJuncal +j+j+j
+Defining defrule: ObtenerPiedra +j+j+j
+Defining defrule: Labranza +j+j
+Defining defrule: SemillasCereales +j+j+j
+Defining defrule: SemillasHortalizas +j+j+j
+Defining defrule: Jornalero +j+j+j
+Defining defrule: Pesca +j+j+j
+Defining defrule: AmpliarHabitacion +j+j+j+j
+Defining defrule: Cocina +j+j+j
+Defining defrule: AmpliacionPlanificada +j+j+j
+Defining defrule: AmpliacionPrecipitada +j+j+j
+Defining defrule: Vallas +j+j+j
+Defining defrule: MercadoOvino +j+j+j
+Defining defrule: MercadoOvinoTurno7 +j+j+j
+Defining defrule: MercadoPorcino +j+j
+Defining defrule: MercadoBovino +j+j
+Defining defrule: ColocarAnimales +j+j+j
+Defining defrule: VenderOvejas +j+j+j+j
+Defining defrule: VenderCerdos =j=j+j+j
+Defining defrule: VenderVacas =j=j+j+j
+Defining defrule: Siembra +j+j+j
+Defining defrule: Hornear +j+j+j+j
+Defining defrule: Turno1 +j+j+j+j+j
+Defining defrule: Turno2Cereal +j+j+j+j
+Defining defrule: Turno2Siembra =j=j=j+j
+Defining defrule: Turno2Jornalero =j=j=j+j
+Defining defrule: Turno3 +j+j+j+j+j
+Defining defrule: Turno4 +j+j+j+j+j
+Defining defrule: Turno5Adobe +j+j+j+j
+Defining defrule: Turno5AmplacionFamilia =j=j=j+j+j
+Defining defrule: Turno5Cocina =j=j=j+j
+Defining defrule: Turno6Madera +j+j+j+j
+Defining defrule: Turno6Cocina =j=j=j+j+j
+Defining defrule: Turno6Ampliacion =j=j+j+j+j
+Defining defrule: Turno6Jornalero =j=j=j+j+j
+Defining defrule: Turno6Sembrado =j=j=j+j+j
+Defining defrule: Turno6SemillaCereal =j=j=j+j
+Defining defrule: Turno7Ovejas +j+j+j+j
+Defining defrule: Turno7Vallas =j=j+j+j
+Defining defrule: Turno7AmpliacionPlanificada =j=j+j+j+j
+Defining defrule: Turno7Labranza +j+j+j+j+j+j+j
+Defining defrule: Turno7Sembrar =j=j=j=j+j+j+j
+Defining defrule: Turno7SemillaCereal =j=j=j=j=j+j
+Defining defrule: Turno7Jornalero +j+j+j+j+j+j
+Defining defrule: Turno7Labranza2 =j=j=j=j+j+j
+Defining defrule: Turno7SemillaCereal2 =j=j=j=j+j+j
+Defining defrule: Turno8SemillaCereal +j+j+j+j
+Defining defrule: Turno8Labranza =j=j=j+j
+Defining defrule: Turno8Pesca =j=j=j+j
+Defining defrule: Turno9Madera +j+j+j+j
+Defining defrule: Turno9Hortaliza =j=j=j+j
+Defining defrule: Turno9SembraryHornear =j=j=j+j
+Defining defrule: Turno10Vallas +j+j+j+j
+Defining defrule: Turno10Labranza =j=j=j+j
+Defining defrule: Turno10SemillasCereales =j=j=j+j
+Defining defrule: Turno11Cerdos +j+j+j+j
+Defining defrule: Turno11Sembraryhornear =j=j=j+j
+Defining defrule: Turno11Vacas =j=j=j+j
+Defining defrule: Turno11Hortaliza =j=j=j+j
+Defining defrule: Turno12SemillasCereales +j+j+j+j
+Defining defrule: Turno12SemillasHortalizas =j=j=j+j
+Defining defrule: Turno12Precipitada =j=j=j+j
+Defining defrule: Turno12ArarySEmbrar =j=j=j+j
+Defining defrule: Turno13SemillasCereales +j+j+j+j
+Defining defrule: Turno13SemillasHortalizas =j=j=j+j
+Defining defrule: Turno13Precipitada =j=j+j+j
+Defining defrule: Turno13SembraryHornear =j=j=j+j
+Defining defrule: Turno14Ovejas +j+j+j+j
+Defining defrule: Turno14Vacas =j=j=j+j
+Defining defrule: Turno14Cerdos =j=j=j+j
+Defining defrule: Turno14Pesca =j=j=j+j
+Defining defrule: Turno14ArarySembrar =j=j=j+j
+Defining defrule: JornaleroExtra =j+j+j+j
+Defining defrule: HortalizasExtra =j=j=j+j
+Defining defrule: SemillasCerealesExtra =j=j=j+j
+Defining defrule: FinFase3 =j+j+j+j+j+j+j+j+j+j+j+j+j+j+j+j+j+j+j+j+j+j
+Defining defrule: ValorUtilizado +j+j
+Defining defrule: TurnodeNoCosecha +j+j+j+j+j
+Defining defrule: Acabar +j
+TRUE
+CLIPS> (load "C:/Users/palom/Documents/GitHub/Agricola/ReglasCosecha.clp")
+Defining defrule: Cosecha =j+j+j+j+j
+Defining defrule: VenderHortalizasParaComer =j=j=j+j+j
+Defining defrule: VenderOvejasParaComer =j=j=j+j
+Defining defrule: VenderCerdosParaComer =j=j=j+j
+Defining defrule: VenderVacasParaComer =j=j=j+j
+Defining defrule: RecogerOvejaCosecha +j+j
+Defining defrule: NoRecogerOvejaCosecha =j+j+j
+Defining defrule: RecogerCerdoCosecha +j+j
+Defining defrule: NoRecogerCerdoCosecha =j+j+j
+Defining defrule: RecogerVacaCosecha +j+j
+Defining defrule: NoRecogerVacaCosecha =j+j+j
+Defining defrule: RecogerCereal +j+j+j
+Defining defrule: FinCosecha +j+j+j+j+j+j+j
+Defining defrule: SinComida =j=j+j+j+j+j+j+j+j
+Defining defrule: ValorRecogido +j+j
+TRUE
+CLIPS> (load "C:/Users/palom/Documents/GitHub/Agricola/Prueba1.clp")
+Defining deffacts: Hechosiniciales
+Defining definstances: Acciones
+Defining definstances: AdquisicionesMayores
+Defining definstances: RecursosIniciales
+Defining definstances: EspacioHabitacion
+TRUE
+CLIPS> (clear)
+CLIPS> (load "C:/Users/palom/Documents/GitHub/Agricola/Ontologia.clp")
+Defining defclass: EspacioAnimales
+Defining defclass: EspacioCampo
+Defining defclass: EspacioHabitacion
+Defining defclass: AdquisicionMayor
+Defining defclass: Accion
+Defining defclass: Almacenado
+Defining deftemplate: InfoJuego
+Defining deftemplate: AccionDisponible
+Defining deftemplate: Habitantes
+Defining deftemplate: AnimalColocar
+Defining deftemplate: AnimalVender
+TRUE
+CLIPS> (load "C:/Users/palom/Documents/GitHub/Agricola/Reglas.clp")
+Defining defrule: inicio +j
+Defining defrule: AccionesRonda +j+j+j
+Defining defrule: Recolocar +j+j
+Defining defrule: Recolocar2 =j+j
+Defining defrule: FinRecolocar =j
+Defining defrule: ValoresRecolocado +j+j
+Defining defrule: ObtenerMadera +j+j+j
+Defining defrule: ObtenerAdobe +j+j+j
+Defining defrule: ObtenerJuncal +j+j+j
+Defining defrule: ObtenerPiedra +j+j+j
+Defining defrule: Labranza +j+j
+Defining defrule: SemillasCereales +j+j+j
+Defining defrule: SemillasHortalizas +j+j+j
+Defining defrule: Jornalero +j+j+j
+Defining defrule: Pesca +j+j+j
+Defining defrule: AmpliarHabitacion +j+j+j+j
+Defining defrule: Cocina +j+j+j
+Defining defrule: AmpliacionPlanificada +j+j+j
+Defining defrule: AmpliacionPrecipitada +j+j+j
+Defining defrule: Vallas +j+j+j
+Defining defrule: MercadoOvino +j+j+j
+Defining defrule: MercadoOvinoTurno7 +j+j+j
+Defining defrule: MercadoPorcino +j+j
+Defining defrule: MercadoBovino +j+j
+Defining defrule: ColocarAnimales +j+j+j
+Defining defrule: VenderOvejas +j+j+j+j
+Defining defrule: VenderCerdos =j=j+j+j
+Defining defrule: VenderVacas =j=j+j+j
+Defining defrule: Siembra +j+j+j
+Defining defrule: Hornear +j+j+j+j
+Defining defrule: Turno1 +j+j+j+j+j
+Defining defrule: Turno2Cereal +j+j+j+j
+Defining defrule: Turno2Siembra =j=j=j+j
+Defining defrule: Turno2Jornalero =j=j=j+j
+Defining defrule: Turno3 +j+j+j+j+j
+Defining defrule: Turno4 +j+j+j+j+j
+Defining defrule: Turno5Adobe +j+j+j+j
+Defining defrule: Turno5AmplacionFamilia =j=j=j+j+j
+Defining defrule: Turno5Cocina =j=j=j+j
+Defining defrule: Turno6Madera +j+j+j+j
+Defining defrule: Turno6Cocina =j=j=j+j+j
+Defining defrule: Turno6Ampliacion =j=j+j+j+j
+Defining defrule: Turno6Jornalero =j=j=j+j+j
+Defining defrule: Turno6Sembrado =j=j=j+j+j
+Defining defrule: Turno6SemillaCereal =j=j=j+j
+Defining defrule: Turno7Ovejas +j+j+j+j
+Defining defrule: Turno7Vallas =j=j+j+j
+Defining defrule: Turno7AmpliacionPlanificada =j=j+j+j+j
+Defining defrule: Turno7Labranza +j+j+j+j+j+j+j
+Defining defrule: Turno7Sembrar =j=j=j=j+j+j+j
+Defining defrule: Turno7SemillaCereal =j=j=j=j=j+j
+Defining defrule: Turno7Jornalero +j+j+j+j+j+j
+Defining defrule: Turno7Labranza2 =j=j=j=j+j+j
+Defining defrule: Turno7SemillaCereal2 =j=j=j=j+j+j
+Defining defrule: Turno8SemillaCereal +j+j+j+j
+Defining defrule: Turno8Labranza =j=j=j+j
+Defining defrule: Turno8Pesca =j=j=j+j
+Defining defrule: Turno9Madera +j+j+j+j
+Defining defrule: Turno9Hortaliza =j=j=j+j
+Defining defrule: Turno9SembraryHornear =j=j=j+j
+Defining defrule: Turno10Vallas +j+j+j+j
+Defining defrule: Turno10Labranza =j=j=j+j
+Defining defrule: Turno10SemillasCereales =j=j=j+j
+Defining defrule: Turno11Cerdos +j+j+j+j
+Defining defrule: Turno11Sembraryhornear =j=j=j+j
+Defining defrule: Turno11Vacas =j=j=j+j
+Defining defrule: Turno11Hortaliza =j=j=j+j
+Defining defrule: Turno12SemillasCereales +j+j+j+j
+Defining defrule: Turno12SemillasHortalizas =j=j=j+j
+Defining defrule: Turno12Precipitada =j=j=j+j
+Defining defrule: Turno12ArarySEmbrar =j=j=j+j
+Defining defrule: Turno13SemillasCereales +j+j+j+j
+Defining defrule: Turno13SemillasHortalizas =j=j=j+j
+Defining defrule: Turno13Precipitada =j=j+j+j
+Defining defrule: Turno13SembraryHornear =j=j=j+j
+Defining defrule: Turno14Ovejas +j+j+j+j
+Defining defrule: Turno14Vacas =j=j=j+j
+Defining defrule: Turno14Cerdos =j=j=j+j
+Defining defrule: Turno14Pesca =j=j=j+j
+Defining defrule: Turno14ArarySembrar =j=j=j+j
+Defining defrule: JornaleroExtra =j+j+j+j
+Defining defrule: HortalizasExtra =j=j=j+j
+Defining defrule: SemillasCerealesExtra =j=j=j+j
+Defining defrule: FinFase3 =j+j+j+j+j+j+j+j+j+j+j+j+j+j+j+j+j+j+j+j+j+j
+Defining defrule: ValorUtilizado +j+j
+Defining defrule: TurnodeNoCosecha +j+j+j+j+j
+Defining defrule: Acabar +j
+TRUE
+CLIPS> (load "C:/Users/palom/Documents/GitHub/Agricola/ReglasCosecha.clp")
+Defining defrule: Cosecha =j+j+j+j+j
+Defining defrule: VenderHortalizasParaComer =j=j=j+j+j
+Defining defrule: VenderOvejasParaComer =j=j=j+j
+Defining defrule: VenderCerdosParaComer =j=j=j+j
+Defining defrule: VenderVacasParaComer =j=j=j+j
+Defining defrule: RecogerOvejaCosecha +j+j
+Defining defrule: NoRecogerOvejaCosecha =j+j+j
+Defining defrule: RecogerCerdoCosecha +j+j
+Defining defrule: NoRecogerCerdoCosecha =j+j+j
+Defining defrule: RecogerVacaCosecha +j+j
+Defining defrule: NoRecogerVacaCosecha =j+j+j
+Defining defrule: RecogerCereal +j+j+j
+Defining defrule: FinCosecha +j+j+j+j+j+j+j
+Defining defrule: SinComida =j=j+j+j+j+j+j+j+j
+Defining defrule: ValorRecogido +j+j
+TRUE
+CLIPS> (load "C:/Users/palom/Documents/GitHub/Agricola/Prueba1.clp")
+Defining deffacts: Hechosiniciales
+Defining definstances: Acciones
+Defining definstances: AdquisicionesMayores
+Defining definstances: RecursosIniciales
+Defining definstances: EspacioHabitacion
+TRUE
+CLIPS> (reset)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+(run 1)
+CLIPS> CLIPS> (run 1)
+CLIPS> (run 1)
+(run 1)
+CLIPS> CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+(run 1)
+CLIPS> CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+(run 1)
+CLIPS> (run 1)
+CLIPS> CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+(run 1)
+CLIPS> CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (reset)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (clear)
+CLIPS> (load "C:/Users/palom/Documents/GitHub/Agricola/Ontologia.clp")
+Defining defclass: EspacioAnimales
+Defining defclass: EspacioCampo
+Defining defclass: EspacioHabitacion
+Defining defclass: AdquisicionMayor
+Defining defclass: Accion
+Defining defclass: Almacenado
+Defining deftemplate: InfoJuego
+Defining deftemplate: AccionDisponible
+Defining deftemplate: Habitantes
+Defining deftemplate: AnimalColocar
+Defining deftemplate: AnimalVender
+TRUE
+CLIPS> (load "C:/Users/palom/Documents/GitHub/Agricola/Reglas.clp")
+Defining defrule: inicio +j
+Defining defrule: AccionesRonda +j+j+j
+Defining defrule: Recolocar +j+j
+Defining defrule: Recolocar2 =j+j
+Defining defrule: FinRecolocar =j
+Defining defrule: ValoresRecolocado +j+j
+Defining defrule: ObtenerMadera +j+j+j
+Defining defrule: ObtenerAdobe +j+j+j
+Defining defrule: ObtenerJuncal +j+j+j
+Defining defrule: ObtenerPiedra +j+j+j
+Defining defrule: Labranza +j+j
+Defining defrule: SemillasCereales +j+j+j
+Defining defrule: SemillasHortalizas +j+j+j
+Defining defrule: Jornalero +j+j+j
+Defining defrule: Pesca +j+j+j
+Defining defrule: AmpliarHabitacion +j+j+j+j
+Defining defrule: Cocina +j+j+j
+Defining defrule: AmpliacionPlanificada +j+j+j
+Defining defrule: AmpliacionPrecipitada +j+j+j
+Defining defrule: Vallas +j+j+j
+Defining defrule: MercadoOvino +j+j+j
+Defining defrule: MercadoOvinoTurno7 +j+j+j
+Defining defrule: MercadoPorcino +j+j
+Defining defrule: MercadoBovino +j+j
+Defining defrule: ColocarAnimales +j+j+j
+Defining defrule: VenderOvejas +j+j+j+j
+Defining defrule: VenderCerdos =j=j+j+j
+Defining defrule: VenderVacas =j=j+j+j
+Defining defrule: Siembra +j+j+j
+Defining defrule: Hornear +j+j+j+j
+Defining defrule: Turno1 +j+j+j+j+j
+Defining defrule: Turno2Cereal +j+j+j+j
+Defining defrule: Turno2Siembra =j=j=j+j
+Defining defrule: Turno2Jornalero =j=j=j+j
+Defining defrule: Turno3 +j+j+j+j+j
+Defining defrule: Turno4 +j+j+j+j+j
+Defining defrule: Turno5Adobe +j+j+j+j
+Defining defrule: Turno5AmplacionFamilia =j=j=j+j+j
+Defining defrule: Turno5Cocina =j=j=j+j
+Defining defrule: Turno6Madera +j+j+j+j
+Defining defrule: Turno6Cocina =j=j=j+j+j
+Defining defrule: Turno6Ampliacion =j=j+j+j+j
+Defining defrule: Turno6Jornalero =j=j=j+j+j
+Defining defrule: Turno6Sembrado =j=j=j+j+j
+Defining defrule: Turno6SemillaCereal =j=j=j+j
+Defining defrule: Turno7Ovejas +j+j+j+j
+Defining defrule: Turno7Vallas =j=j+j+j
+Defining defrule: Turno7AmpliacionPlanificada =j=j+j+j+j
+Defining defrule: Turno7Labranza +j+j+j+j+j+j+j
+Defining defrule: Turno7Sembrar =j=j=j=j+j+j+j
+Defining defrule: Turno7SemillaCereal =j=j=j=j=j+j
+Defining defrule: Turno7Jornalero +j+j+j+j+j+j
+Defining defrule: Turno7Labranza2 =j=j=j=j+j+j
+Defining defrule: Turno7SemillaCereal2 =j=j=j=j+j+j
+Defining defrule: Turno8SemillaCereal +j+j+j+j
+Defining defrule: Turno8Labranza =j=j=j+j
+Defining defrule: Turno8Pesca =j=j=j+j
+Defining defrule: Turno9Madera +j+j+j+j
+Defining defrule: Turno9Hortaliza =j=j=j+j
+Defining defrule: Turno9SembraryHornear =j=j=j+j
+Defining defrule: Turno10Vallas +j+j+j+j
+Defining defrule: Turno10Labranza =j=j=j+j
+Defining defrule: Turno10SemillasCereales =j=j=j+j
+Defining defrule: Turno11Cerdos +j+j+j+j
+Defining defrule: Turno11Sembraryhornear =j=j=j+j
+Defining defrule: Turno11Vacas =j=j=j+j
+Defining defrule: Turno11Hortaliza =j=j=j+j
+Defining defrule: Turno12SemillasCereales +j+j+j+j
+Defining defrule: Turno12SemillasHortalizas =j=j=j+j
+Defining defrule: Turno12Precipitada =j=j=j+j
+Defining defrule: Turno12ArarySEmbrar =j=j=j+j
+Defining defrule: Turno13SemillasCereales +j+j+j+j
+Defining defrule: Turno13SemillasHortalizas =j=j=j+j
+Defining defrule: Turno13Precipitada =j=j+j+j
+Defining defrule: Turno13SembraryHornear =j=j=j+j
+Defining defrule: Turno14Ovejas +j+j+j+j
+Defining defrule: Turno14Vacas =j=j=j+j
+Defining defrule: Turno14Cerdos =j=j=j+j
+Defining defrule: Turno14Pesca =j=j=j+j
+Defining defrule: Turno14ArarySembrar =j=j=j+j
+Defining defrule: JornaleroExtra =j+j+j+j
+Defining defrule: HortalizasExtra =j=j=j+j
+Defining defrule: SemillasCerealesExtra =j=j=j+j
+Defining defrule: FinFase3 =j+j+j+j+j+j+j+j+j+j+j+j+j+j+j+j+j+j+j+j+j+j
+Defining defrule: ValorUtilizado +j+j
+Defining defrule: TurnodeNoCosecha +j+j+j+j+j
+Defining defrule: Acabar +j
+TRUE
+CLIPS> (load "C:/Users/palom/Documents/GitHub/Agricola/ReglasCosecha.clp")
+Defining defrule: Cosecha =j+j+j+j+j
+Defining defrule: VenderHortalizasParaComer =j=j=j+j+j
+Defining defrule: VenderOvejasParaComer =j=j=j+j
+Defining defrule: VenderCerdosParaComer =j=j=j+j
+Defining defrule: VenderVacasParaComer =j=j=j+j
+Defining defrule: RecogerOvejaCosecha +j+j
+Defining defrule: NoOvejaCosecha =j+j+j
+Defining defrule: RecogerCerdoCosecha +j+j
+Defining defrule: NoCerdoCosecha =j+j+j
+Defining defrule: RecogerVacaCosecha +j+j
+Defining defrule: NoVacaCosecha =j+j+j
+Defining defrule: RecogerCereal +j+j+j+j
+Defining defrule: NoCereal =j+j+j+j
+Defining defrule: FinCosecha +j+j+j+j+j+j+j
+Defining defrule: SinComida =j=j+j+j+j+j+j+j+j
+Defining defrule: ValorRecogido +j+j
+TRUE
+CLIPS> (load "C:/Users/palom/Documents/GitHub/Agricola/Prueba1.clp")
+Defining deffacts: Hechosiniciales
+Defining definstances: Acciones
+Defining definstances: AdquisicionesMayores
+Defining definstances: RecursosIniciales
+Defining definstances: EspacioHabitacion
+TRUE
+CLIPS> (reset)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
+CLIPS> (run 1)
